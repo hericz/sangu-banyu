@@ -1,0 +1,169 @@
+
+[0](14:14:55)======== MONITA APP STARTING ===========
+[1](14:14:55)Load file konfigurasi
+[2](14:14:55)Baca konfig
+[3](14:14:55)Baca konfig: OK
+[0](15:16:40)======== MONITA APP STARTING ===========
+[1](15:16:40)Load file konfigurasi
+[2](15:16:40)Baca konfig
+[3](15:16:40)Baca konfig: OK
+[0](15:46:06)======== MONITA APP STARTING ===========
+[1](15:46:06)Load file konfigurasi
+[2](15:46:06)Baca konfig
+[3](15:46:06)Baca konfig: OK
+[4](15:46:21)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='93' AND waktu.waktu LIKE '20081016%'ORDER BY waktu ASC LIMIT 1440
+[5](15:46:22)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='94' AND waktu.waktu LIKE '20081016%'ORDER BY waktu ASC LIMIT 1440
+[6](15:46:22)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='95' AND waktu.waktu LIKE '20081016%'ORDER BY waktu ASC LIMIT 1440
+[7](15:46:22)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='96' AND waktu.waktu LIKE '20081016%'ORDER BY waktu ASC LIMIT 1440
+[8](15:46:23)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='97' AND waktu.waktu LIKE '20081016%'ORDER BY waktu ASC LIMIT 1440
+[9](15:46:23)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='98' AND waktu.waktu LIKE '20081016%'ORDER BY waktu ASC LIMIT 1440
+[10](15:46:24)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='99' AND waktu.waktu LIKE '20081016%'ORDER BY waktu ASC LIMIT 1440
+[11](15:46:24)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='100' AND waktu.waktu LIKE '20081016%'ORDER BY waktu ASC LIMIT 1440
+[12](15:46:24)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='111' AND waktu.waktu LIKE '20081016%'ORDER BY waktu ASC LIMIT 1440
+[13](15:46:25)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='112' AND waktu.waktu LIKE '20081016%'ORDER BY waktu ASC LIMIT 1440
+[14](15:46:27)Simpan report csv: gagal
+[15](15:49:35)Mulai logging data
+[16](15:49:36)[0]-- TIME:20081016-154936
+
+[17](15:49:37)[1]-- TIME:20081016-154937
+
+[18](15:49:38)[2]-- TIME:20081016-154938
+
+[19](15:49:39)[3]-- TIME:20081016-154939
+
+[20](15:49:39)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[21](15:49:39)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[22](15:49:39)SET: Alarm off
+[23](15:49:39)alarmKeras mati!
+[24](15:49:39)Inisialisasi buffer alarm: 0
+[25](15:49:39)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[26](15:49:44)[0]-- TIME:20081016-154944
+
+[27](15:49:45)[1]-- TIME:20081016-154945
+
+[28](15:49:46)[2]-- TIME:20081016-154946
+
+[29](15:49:47)[3]-- TIME:20081016-154947
+
+[30](15:49:47)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[31](15:49:47)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[32](15:49:47)SET: Alarm off
+[33](15:49:47)alarmKeras mati!
+[34](15:49:47)Inisialisasi buffer alarm: 0
+[35](15:49:47)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[36](15:49:48)[0]-- TIME:20081016-154948
+
+[37](15:49:49)[1]-- TIME:20081016-154949
+
+[38](15:49:50)[2]-- TIME:20081016-154950
+
+[39](15:49:51)[3]-- TIME:20081016-154951
+
+[40](15:49:51)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[41](15:49:51)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[42](15:49:51)SET: Alarm off
+[43](15:49:51)alarmKeras mati!
+[44](15:49:51)Inisialisasi buffer alarm: 0
+[45](15:49:51)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[46](15:49:52)[0]-- TIME:20081016-154952
+
+[47](15:49:53)[1]-- TIME:20081016-154953
+
+[48](15:49:53)Stop logging data
+[49](15:49:54)[2]-- TIME:20081016-154954
+
+[50](15:51:01)Mulai logging data
+[51](15:51:02)[0]-- TIME:20081016-155102
+
+[52](15:51:03)[1]-- TIME:20081016-155103
+
+[53](15:51:04)[2]-- TIME:20081016-155104
+
+[54](15:51:05)[3]-- TIME:20081016-155105
+
+[55](15:51:06)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[56](15:51:06)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[57](15:51:06)SET: Alarm off
+[58](15:51:06)alarmKeras mati!
+[59](15:51:06)Inisialisasi buffer alarm: 0
+[60](15:51:06)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[61](15:51:06)[0]-- TIME:20081016-155106
+
+[62](15:51:07)[1]-- TIME:20081016-155107
+
+[63](15:51:08)[2]-- TIME:20081016-155108
+
+[64](15:51:09)[3]-- TIME:20081016-155109
+
+[65](15:51:10)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[66](15:51:10)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[67](15:51:10)SET: Alarm off
+[68](15:51:10)alarmKeras mati!
+[69](15:51:10)Inisialisasi buffer alarm: 0
+[70](15:51:10)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[71](15:51:10)[0]-- TIME:20081016-155110
+
+[72](15:51:11)[1]-- TIME:20081016-155111
+
+[73](15:51:12)[2]-- TIME:20081016-155112
+
+[74](15:51:13)[3]-- TIME:20081016-155113
+
+[75](15:51:14)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[76](15:51:14)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[77](15:51:14)SET: Alarm off
+[78](15:51:14)alarmKeras mati!
+[79](15:51:14)Inisialisasi buffer alarm: 0
+[80](15:51:14)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[81](15:51:14)[0]-- TIME:20081016-155114
+
+[82](15:51:15)[1]-- TIME:20081016-155115
+
+[83](15:51:16)[2]-- TIME:20081016-155116
+
+[84](15:51:17)[3]-- TIME:20081016-155117
+
+[85](15:51:18)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[86](15:51:18)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[87](15:51:18)SET: Alarm off
+[88](15:51:18)alarmKeras mati!
+[89](15:51:18)Inisialisasi buffer alarm: 0
+[90](15:51:18)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[91](15:51:18)[0]-- TIME:20081016-155118
+
+[92](15:51:19)[1]-- TIME:20081016-155119
+
+[93](15:51:20)[2]-- TIME:20081016-155120
+
+[94](15:51:21)[3]-- TIME:20081016-155121
+
+[95](15:51:22)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[96](15:51:22)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[97](15:51:22)SET: Alarm off
+[98](15:51:22)alarmKeras mati!
+[99](15:51:22)Inisialisasi buffer alarm: 0
+[100](15:51:22)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[101](15:51:22)[0]-- TIME:20081016-155122
+
+[102](15:51:23)Stop logging data
+[103](15:51:23)[2]-- TIME:20081016-155123
+
+[0](16:47:49)======== MONITA APP STARTING ===========
+[1](16:47:49)Load file konfigurasi
+[2](16:47:49)Baca konfig
+[3](16:47:49)Baca konfig: OK
+[4](16:48:16)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='93' AND waktu.waktu LIKE '20081016%'ORDER BY waktu ASC LIMIT 1440
+[5](16:48:16)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='94' AND waktu.waktu LIKE '20081016%'ORDER BY waktu ASC LIMIT 1440
+[6](16:48:16)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='95' AND waktu.waktu LIKE '20081016%'ORDER BY waktu ASC LIMIT 1440
+[7](16:48:17)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='96' AND waktu.waktu LIKE '20081016%'ORDER BY waktu ASC LIMIT 1440
+[8](16:48:17)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='97' AND waktu.waktu LIKE '20081016%'ORDER BY waktu ASC LIMIT 1440
+[9](16:48:18)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='98' AND waktu.waktu LIKE '20081016%'ORDER BY waktu ASC LIMIT 1440
+[10](16:48:18)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='99' AND waktu.waktu LIKE '20081016%'ORDER BY waktu ASC LIMIT 1440
+[11](16:48:18)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='100' AND waktu.waktu LIKE '20081016%'ORDER BY waktu ASC LIMIT 1440
+[12](16:48:19)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='111' AND waktu.waktu LIKE '20081016%'ORDER BY waktu ASC LIMIT 1440
+[13](16:48:19)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='112' AND waktu.waktu LIKE '20081016%'ORDER BY waktu ASC LIMIT 1440
+[14](16:48:22)Simpan report csv: gagal
+[0](16:53:06)======== MONITA APP STARTING ===========
+[1](16:53:06)Load file konfigurasi
+[2](16:53:06)Baca konfig
+[3](16:53:06)Baca konfig: OK

@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd"> 
+<html>
+        <head>
+                <title>Dojo Date Picker Demo</title>
+
+                <script type="text/javascript">
+                        var djConfig = {isDebug: true};
+                </script>
+
+                <script type="text/javascript" src="../../dojo.js"></script>
+                <script type="text/javascript">
+                       dojo.require("dojo.widget.*");
+                </script>
+        </head>
+        <body>
+        <table>
+			<tbody>
+				<tr>
+					<td style="vertical-align:top;">
+						<h4>In document:</h4><div dojoType="datepicker" widgetId="foo"></div>
+					</td>
+					<td style="vertical-align:top;">                
+						<form action="" onsubmit="return false;">
+                        				<h4>Dropdown:</h4>
+ 							<div dojoType="dropdowndatepicker"></div>
+                				</form>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		</body>
+</html>

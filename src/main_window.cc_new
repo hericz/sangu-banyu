@@ -1,0 +1,109 @@
+// generated 2008/11/21 11:40:54 WIT by herry@LancarJaya.(none)
+// using glademm V2.6.0
+//
+// newer (non customized) versions of this file go to main_window.cc_new
+
+// This file is for your program, I won't touch it again!
+
+#include "config.h"
+#include "main_window.hh"
+
+void main_window::on_konfigurasi1_activate()
+{  
+}
+
+void main_window::on_database_login_setting1_activate()
+{  
+}
+
+void main_window::on_buat_laporan_activate()
+{  
+}
+
+void main_window::on_tambah_entri_perusahaan1_activate()
+{  
+}
+
+void main_window::on_quit1_activate()
+{  
+}
+
+void main_window::on_sumber_data1_activate()
+{  
+}
+
+void main_window::on_posting_pengiriman_data1_activate()
+{  
+}
+
+void main_window::on_mulai_baca_data1_activate()
+{  
+}
+
+void main_window::on_stop_baca_data1_activate()
+{  
+}
+
+void main_window::on_about1_activate()
+{  
+}
+
+void main_window::on_buttonbuka_clicked()
+{  
+}
+
+void main_window::on_button_sumber_clicked()
+{  
+}
+
+void main_window::on_button_logging_data_clicked()
+{  
+}
+
+void main_window::on_treeview1_row_expanded(const Gtk::TreeModel::iterator& iter, const Gtk::TreeModel::Path& path)
+{  
+}
+
+void main_window::on_treeview1_cursor_changed()
+{  
+}
+
+bool main_window::on_treeview1_button_press_event(GdkEventButton *ev)
+{  return 0;
+}
+
+void main_window::on_button_open_kalender_clicked()
+{  
+}
+
+void main_window::on_button_tanggal_apply_clicked()
+{  
+}
+
+bool main_window::on_tree_data_button_press_event(GdkEventButton *ev)
+{  return 0;
+}
+
+void main_window::on_button_refresh_clicked()
+{  
+}
+
+bool main_window::on_drawingarea1_expose_event(GdkEventExpose *ev)
+{  return 0;
+}
+
+void main_window::on_notebook1_switch_page(GtkNotebookPage *p0, guint p1)
+{  
+}
+
+void main_window::on_tree_status_cursor_changed()
+{  
+}
+
+bool main_window::on_tree_status_button_press_event(GdkEventButton *ev)
+{  return 0;
+}
+
+bool main_window::on_main_window_delete_event(GdkEventAny *ev)
+{  return 0;
+}

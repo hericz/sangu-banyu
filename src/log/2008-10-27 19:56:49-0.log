@@ -1,0 +1,48 @@
+
+[0](19:56:49)======== MONITA APP STARTING ===========
+[1](19:56:49)Load file konfigurasi
+[2](19:56:49)Baca konfig
+[3](19:56:49)Baca konfig: OK
+[4](19:56:50)Mulai logging data
+[5](19:56:51)[0]-- TIME:20081027-195651
+
+[6](19:56:52)[1]-- TIME:20081027-195652
+
+[7](19:56:53)[2]-- TIME:20081027-195653
+
+[8](19:56:54)[3]-- TIME:20081027-195654
+
+[9](19:56:54)192.168.1.110: Timeout
+[10](19:56:54)192.168.1.110: Timeout
+[11](19:56:54)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[12](19:56:54)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[13](19:56:54)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[14](19:56:54)192.168.1.39: Timeout
+[15](19:56:54)192.168.1.32: Timeout
+[16](19:56:55)[0]-- TIME:20081027-195655
+
+[17](19:56:56)[1]-- TIME:20081027-195656
+
+[18](19:56:57)[2]-- TIME:20081027-195657
+
+[19](19:56:58)[3]-- TIME:20081027-195658
+
+[20](19:56:58)ALARM: Data Titik 153 (kWh) diluar jangkauan ukur
+[21](19:56:58)ALARM: Data Titik 140 (KwH) diluar jangkauan ukur
+[22](19:56:58)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[23](19:56:58)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[24](19:56:58)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[25](19:56:58)192.168.1.19: Timeout
+[26](19:56:58)192.168.1.39: Timeout
+[27](19:56:58)192.168.1.32: Timeout
+[28](19:56:59)[0]-- TIME:20081027-195659
+
+[29](19:57:00)[1]-- TIME:20081027-195700
+
+[30](19:57:01)[2]-- TIME:20081027-195701
+
+[31](19:57:02)Stop logging data
+[32](19:57:02)[2]-- TIME:20081027-195702
+
+[33](19:57:06)======== MONITA APP CLOSING =========
+[34](19:57:06)============ BYE BYE ===============

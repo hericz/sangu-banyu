@@ -1,0 +1,524 @@
+
+[0](12:21:08)======== MONITA APP STARTING ===========
+[1](12:21:08)Load file konfigurasi
+[2](12:21:08)Baca konfig
+[3](12:21:08)Baca konfig: OK
+[4](12:21:11)Mulai logging data
+[5](12:21:12)[0]-- TIME:20081027-122112
+
+[6](12:21:39)[1]-- TIME:20081027-122139
+
+[7](12:21:41)[2]-- TIME:20081027-122141
+
+[8](12:21:42)[3]-- TIME:20081027-122142
+
+[9](12:21:43)ALARM: Data Titik 153 (kWh) diluar jangkauan ukur
+[10](12:21:43)ALARM: Data Titik 140 (KwH) diluar jangkauan ukur
+[11](12:21:43)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[12](12:21:43)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[13](12:21:43)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[14](12:21:43)192.168.1.39: Timeout
+[15](12:21:43)192.168.1.29: Timeout
+[16](12:21:44)[0]-- TIME:20081027-122144
+
+[17](12:21:45)[1]-- TIME:20081027-122145
+
+[18](12:21:55)[2]-- TIME:20081027-122155
+
+[19](12:21:56)[3]-- TIME:20081027-122156
+
+[20](12:21:57)ALARM: Data Titik 153 (kWh) diluar jangkauan ukur
+[21](12:21:57)ALARM: Data Titik 140 (KwH) diluar jangkauan ukur
+[22](12:21:57)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[23](12:21:57)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[24](12:21:57)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[25](12:21:57)[0]-- TIME:20081027-122157
+
+[26](12:21:58)[1]-- TIME:20081027-122158
+
+[27](12:21:59)[2]-- TIME:20081027-122159
+
+[28](12:22:00)[3]-- TIME:20081027-122200
+
+[29](12:22:01)ALARM: Data Titik 153 (kWh) diluar jangkauan ukur
+[30](12:22:01)ALARM: Data Titik 140 (KwH) diluar jangkauan ukur
+[31](12:22:01)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[32](12:22:01)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[33](12:22:01)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[34](12:22:01)192.168.1.25: Timeout
+[35](12:22:01)ALARM: Data Titik 108 (Flowmeter) diluar jangkauan ukur
+[36](12:22:01)192.168.1.39: Timeout
+[37](12:22:01)192.168.1.29: Timeout
+[38](12:22:01)192.168.1.32: Timeout
+[39](12:22:01)[0]-- TIME:20081027-122201
+
+[40](12:22:03)[1]-- TIME:20081027-122203
+
+[41](12:22:06)[2]-- TIME:20081027-122206
+
+[42](12:22:07)[3]-- TIME:20081027-122207
+
+[43](12:22:08)ALARM: Data Titik 153 (kWh) diluar jangkauan ukur
+[44](12:22:08)ALARM: Data Titik 140 (KwH) diluar jangkauan ukur
+[45](12:22:08)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[46](12:22:08)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[47](12:22:08)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[48](12:22:08)[0]-- TIME:20081027-122208
+
+[49](12:22:09)[1]-- TIME:20081027-122209
+
+[50](12:22:10)[2]-- TIME:20081027-122210
+
+[51](12:22:11)[3]-- TIME:20081027-122211
+
+[52](12:22:12)ALARM: Data Titik 153 (kWh) diluar jangkauan ukur
+[53](12:22:12)ALARM: Data Titik 140 (KwH) diluar jangkauan ukur
+[54](12:22:12)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[55](12:22:12)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[56](12:22:12)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[57](12:22:12)192.168.1.25: Timeout
+[58](12:22:12)ALARM: Data Titik 108 (Flowmeter) diluar jangkauan ukur
+[59](12:22:12)192.168.1.39: Timeout
+[60](12:22:12)192.168.1.29: Timeout
+[61](12:22:12)192.168.1.32: Timeout
+[62](12:22:12)[0]-- TIME:20081027-122212
+
+[63](12:22:13)[1]-- TIME:20081027-122213
+
+[64](12:22:48)[2]-- TIME:20081027-122248
+
+[65](12:22:50)[3]-- TIME:20081027-122250
+
+[66](12:22:56)ALARM: Data Titik 153 (kWh) diluar jangkauan ukur
+[67](12:22:56)ALARM: Data Titik 140 (KwH) diluar jangkauan ukur
+[68](12:22:56)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[69](12:22:56)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[70](12:22:56)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[71](12:22:56)[0]-- TIME:20081027-122256
+
+[72](12:22:57)[1]-- TIME:20081027-122257
+
+[73](12:22:58)[2]-- TIME:20081027-122258
+
+[74](12:22:59)[3]-- TIME:20081027-122259
+
+[75](12:23:58)ALARM: Data Titik 153 (kWh) diluar jangkauan ukur
+[76](12:23:58)ALARM: Data Titik 140 (KwH) diluar jangkauan ukur
+[77](12:23:58)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[78](12:23:58)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[79](12:23:58)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[80](12:23:58)ALARM: Data Titik 108 (Flowmeter) diluar jangkauan ukur
+[81](12:23:58)192.168.1.39: Timeout
+[82](12:23:58)192.168.1.29: Timeout
+[83](12:23:58)192.168.1.32: Timeout
+[84](12:23:58)[0]-- TIME:20081027-122358
+
+[85](12:23:59)[1]-- TIME:20081027-122359
+
+[86](12:24:00)[2]-- TIME:20081027-122400
+
+[87](12:24:05)[3]-- TIME:20081027-122405
+
+[88](12:24:06)ALARM: Data Titik 153 (kWh) diluar jangkauan ukur
+[89](12:24:06)ALARM: Data Titik 140 (KwH) diluar jangkauan ukur
+[90](12:24:06)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[91](12:24:06)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[92](12:24:06)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[93](12:24:06)ALARM: Data Titik 108 (Flowmeter) diluar jangkauan ukur
+[94](12:24:06)[0]-- TIME:20081027-122406
+
+[95](12:24:07)[1]-- TIME:20081027-122407
+
+[96](12:24:08)[2]-- TIME:20081027-122408
+
+[97](12:24:09)[3]-- TIME:20081027-122409
+
+[98](12:24:09)ALARM: Data Titik 153 (kWh) diluar jangkauan ukur
+[99](12:24:09)ALARM: Data Titik 140 (KwH) diluar jangkauan ukur
+[100](12:24:09)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[101](12:24:10)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[102](12:24:10)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[103](12:24:10)192.168.1.25: Timeout
+[104](12:24:10)ALARM: Data Titik 108 (Flowmeter) diluar jangkauan ukur
+[105](12:24:10)192.168.1.39: Timeout
+[106](12:24:10)192.168.1.29: Timeout
+[107](12:24:10)192.168.1.32: Timeout
+[108](12:24:10)[0]-- TIME:20081027-122410
+
+[109](12:24:30)[1]-- TIME:20081027-122430
+
+[110](12:24:31)[2]-- TIME:20081027-122431
+
+[111](12:24:36)[3]-- TIME:20081027-122436
+
+[112](12:24:37)ALARM: Data Titik 153 (kWh) diluar jangkauan ukur
+[113](12:24:37)ALARM: Data Titik 140 (KwH) diluar jangkauan ukur
+[114](12:24:37)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[115](12:24:37)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[116](12:24:37)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[117](12:24:37)ALARM: Data Titik 108 (Flowmeter) diluar jangkauan ukur
+[118](12:24:37)[0]-- TIME:20081027-122437
+
+[119](12:24:38)[1]-- TIME:20081027-122438
+
+[120](12:24:39)[2]-- TIME:20081027-122439
+
+[121](12:24:41)[3]-- TIME:20081027-122441
+
+[122](12:24:43)ALARM: Data Titik 153 (kWh) diluar jangkauan ukur
+[123](12:24:43)ALARM: Data Titik 140 (KwH) diluar jangkauan ukur
+[124](12:24:43)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[125](12:24:43)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[126](12:24:43)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[127](12:24:43)192.168.1.25: Timeout
+[128](12:24:43)ALARM: Data Titik 108 (Flowmeter) diluar jangkauan ukur
+[129](12:24:43)192.168.1.39: Timeout
+[130](12:24:43)192.168.1.29: Timeout
+[131](12:24:43)192.168.1.32: Timeout
+[132](12:24:43)[0]-- TIME:20081027-122443
+
+[133](12:24:45)[1]-- TIME:20081027-122445
+
+[134](12:24:46)[2]-- TIME:20081027-122446
+
+[135](12:24:47)[3]-- TIME:20081027-122447
+
+[136](12:24:48)ALARM: Data Titik 153 (kWh) diluar jangkauan ukur
+[137](12:24:48)ALARM: Data Titik 140 (KwH) diluar jangkauan ukur
+[138](12:24:48)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[139](12:24:48)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[140](12:24:48)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[141](12:24:48)192.168.1.25: Timeout
+[142](12:24:48)ALARM: Data Titik 108 (Flowmeter) diluar jangkauan ukur
+[143](12:24:48)192.168.1.39: Timeout
+[144](12:24:48)192.168.1.29: Timeout
+[145](12:24:48)192.168.1.32: Timeout
+[146](12:24:48)[0]-- TIME:20081027-122448
+
+[147](12:24:49)[1]-- TIME:20081027-122449
+
+[148](12:24:50)[2]-- TIME:20081027-122450
+
+[149](12:24:51)[3]-- TIME:20081027-122451
+
+[150](12:24:52)ALARM: Data Titik 153 (kWh) diluar jangkauan ukur
+[151](12:24:52)ALARM: Data Titik 140 (KwH) diluar jangkauan ukur
+[152](12:24:52)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[153](12:24:52)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[154](12:24:52)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[155](12:24:52)ALARM: Data Titik 108 (Flowmeter) diluar jangkauan ukur
+[156](12:24:52)192.168.1.39: Timeout
+[157](12:24:52)192.168.1.29: Timeout
+[158](12:24:52)192.168.1.32: Timeout
+[159](12:24:52)[0]-- TIME:20081027-122452
+
+[160](12:24:53)[1]-- TIME:20081027-122453
+
+[161](12:24:55)[2]-- TIME:20081027-122455
+
+[162](12:24:56)[3]-- TIME:20081027-122456
+
+[163](12:25:00)ALARM: Data Titik 153 (kWh) diluar jangkauan ukur
+[164](12:25:00)ALARM: Data Titik 140 (KwH) diluar jangkauan ukur
+[165](12:25:01)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[166](12:25:01)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[167](12:25:01)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[168](12:25:01)ALARM: Data Titik 108 (Flowmeter) diluar jangkauan ukur
+[169](12:25:01)[0]-- TIME:20081027-122501
+
+[170](12:25:02)[1]-- TIME:20081027-122502
+
+[171](12:25:03)[2]-- TIME:20081027-122503
+
+[172](12:25:04)[3]-- TIME:20081027-122504
+
+[173](12:25:05)ALARM: Data Titik 153 (kWh) diluar jangkauan ukur
+[174](12:25:06)ALARM: Data Titik 140 (KwH) diluar jangkauan ukur
+[175](12:25:06)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[176](12:25:06)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[177](12:25:06)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[178](12:25:06)192.168.1.25: Timeout
+[179](12:25:06)ALARM: Data Titik 108 (Flowmeter) diluar jangkauan ukur
+[180](12:25:06)192.168.1.39: Timeout
+[181](12:25:06)192.168.1.29: Timeout
+[182](12:25:06)192.168.1.32: Timeout
+[183](12:25:06)[0]-- TIME:20081027-122506
+
+[184](12:25:07)[1]-- TIME:20081027-122507
+
+[185](12:25:08)[2]-- TIME:20081027-122508
+
+[186](12:25:09)[3]-- TIME:20081027-122509
+
+[187](12:25:10)ALARM: Data Titik 153 (kWh) diluar jangkauan ukur
+[188](12:25:10)ALARM: Data Titik 140 (KwH) diluar jangkauan ukur
+[189](12:25:10)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[190](12:25:10)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[191](12:25:10)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[192](12:25:10)ALARM: Data Titik 108 (Flowmeter) diluar jangkauan ukur
+[193](12:25:10)192.168.1.39: Timeout
+[194](12:25:10)192.168.1.29: Timeout
+[195](12:25:10)192.168.1.32: Timeout
+[196](12:25:10)[0]-- TIME:20081027-122510
+
+[197](12:25:12)[1]-- TIME:20081027-122512
+
+[198](12:25:13)[2]-- TIME:20081027-122513
+
+[199](12:25:14)[3]-- TIME:20081027-122514
+
+[200](12:25:17)ALARM: Data Titik 153 (kWh) diluar jangkauan ukur
+[201](12:25:17)ALARM: Data Titik 140 (KwH) diluar jangkauan ukur
+[202](12:25:17)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[203](12:25:17)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[204](12:25:17)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[205](12:25:17)ALARM: Data Titik 108 (Flowmeter) diluar jangkauan ukur
+[206](12:25:17)192.168.1.39: Timeout
+[207](12:25:17)192.168.1.29: Timeout
+[208](12:25:17)192.168.1.32: Timeout
+[209](12:25:17)[0]-- TIME:20081027-122517
+
+[210](12:25:18)[1]-- TIME:20081027-122518
+
+[211](12:25:19)[2]-- TIME:20081027-122519
+
+[212](12:25:20)[3]-- TIME:20081027-122520
+
+[213](12:25:21)ALARM: Data Titik 153 (kWh) diluar jangkauan ukur
+[214](12:25:21)ALARM: Data Titik 140 (KwH) diluar jangkauan ukur
+[215](12:25:21)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[216](12:25:21)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[217](12:25:21)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[218](12:25:21)192.168.1.25: Timeout
+[219](12:25:21)ALARM: Data Titik 108 (Flowmeter) diluar jangkauan ukur
+[220](12:25:21)192.168.1.39: Timeout
+[221](12:25:21)192.168.1.29: Timeout
+[222](12:25:21)192.168.1.32: Timeout
+[223](12:25:21)[0]-- TIME:20081027-122521
+
+[224](12:25:22)[1]-- TIME:20081027-122522
+
+[225](12:25:23)[2]-- TIME:20081027-122523
+
+[226](12:25:24)[3]-- TIME:20081027-122524
+
+[227](12:48:05)ALARM: Data Titik 153 (kWh) diluar jangkauan ukur
+[228](12:48:05)ALARM: Data Titik 140 (KwH) diluar jangkauan ukur
+[229](12:48:05)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[230](12:48:05)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[231](12:48:05)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[232](12:48:05)192.168.1.18: Timeout
+[233](12:48:05)192.168.1.25: Timeout
+[234](12:48:05)ALARM: Data Titik 108 (Flowmeter) diluar jangkauan ukur
+[235](12:48:05)192.168.1.39: Timeout
+[236](12:48:05)192.168.1.29: Timeout
+[237](12:48:05)192.168.1.32: Timeout
+[238](12:48:05)[0]-- TIME:20081027-124805
+
+[239](12:48:06)[1]-- TIME:20081027-124806
+
+[240](12:48:07)[2]-- TIME:20081027-124807
+
+[241](12:48:08)[3]-- TIME:20081027-124808
+
+[242](12:48:09)ALARM: Data Titik 153 (kWh) diluar jangkauan ukur
+[243](12:48:09)ALARM: Data Titik 140 (KwH) diluar jangkauan ukur
+[244](12:48:09)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[245](12:48:09)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[246](12:48:09)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[247](12:48:09)192.168.1.25: Timeout
+[248](12:48:09)ALARM: Data Titik 108 (Flowmeter) diluar jangkauan ukur
+[249](12:48:09)192.168.1.39: Timeout
+[250](12:48:09)192.168.1.29: Timeout
+[251](12:48:09)192.168.1.32: Timeout
+[252](12:48:09)[0]-- TIME:20081027-124809
+
+[253](12:48:10)[1]-- TIME:20081027-124810
+
+[254](12:48:11)[2]-- TIME:20081027-124811
+
+[255](12:49:30)[3]-- TIME:20081027-124930
+
+[256](12:49:30)ALARM: Data Titik 153 (kWh) diluar jangkauan ukur
+[257](12:49:30)ALARM: Data Titik 140 (KwH) diluar jangkauan ukur
+[258](12:49:30)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[259](12:49:30)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[260](12:49:30)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[261](12:49:30)ALARM: Data Titik 108 (Flowmeter) diluar jangkauan ukur
+[262](12:49:31)[0]-- TIME:20081027-124931
+
+[263](12:49:32)[1]-- TIME:20081027-124932
+
+[264](12:49:33)[2]-- TIME:20081027-124933
+
+[265](12:50:46)[3]-- TIME:20081027-125046
+
+[266](12:50:46)ALARM: Data Titik 153 (kWh) diluar jangkauan ukur
+[267](12:50:46)ALARM: Data Titik 140 (KwH) diluar jangkauan ukur
+[268](12:50:47)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[269](12:50:47)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[270](12:50:47)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[271](12:50:47)ALARM: Data Titik 108 (Flowmeter) diluar jangkauan ukur
+[272](12:50:47)[0]-- TIME:20081027-125047
+
+[273](12:50:48)[1]-- TIME:20081027-125048
+
+[274](12:50:49)[2]-- TIME:20081027-125049
+
+[275](12:50:50)[3]-- TIME:20081027-125050
+
+[276](12:50:50)ALARM: Data Titik 153 (kWh) diluar jangkauan ukur
+[277](12:50:50)ALARM: Data Titik 140 (KwH) diluar jangkauan ukur
+[278](12:50:50)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[279](12:50:50)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[280](12:50:50)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[281](12:50:50)192.168.1.25: Timeout
+[282](12:50:50)ALARM: Data Titik 108 (Flowmeter) diluar jangkauan ukur
+[283](12:50:50)192.168.1.39: Timeout
+[284](12:50:50)192.168.1.29: Timeout
+[285](12:50:50)192.168.1.32: Timeout
+[286](12:50:51)[0]-- TIME:20081027-125051
+
+[287](12:50:52)[1]-- TIME:20081027-125052
+
+[288](12:50:53)[2]-- TIME:20081027-125053
+
+[289](12:50:54)[3]-- TIME:20081027-125054
+
+[290](12:50:54)ALARM: Data Titik 153 (kWh) diluar jangkauan ukur
+[291](12:50:54)ALARM: Data Titik 140 (KwH) diluar jangkauan ukur
+[292](12:50:54)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[293](12:50:54)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[294](12:50:54)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[295](12:50:54)192.168.1.25: Timeout
+[296](12:50:54)ALARM: Data Titik 108 (Flowmeter) diluar jangkauan ukur
+[297](12:50:54)192.168.1.39: Timeout
+[298](12:50:54)192.168.1.29: Timeout
+[299](12:50:54)192.168.1.32: Timeout
+[300](12:50:55)[0]-- TIME:20081027-125055
+
+[301](12:50:56)[1]-- TIME:20081027-125056
+
+[302](12:50:57)[2]-- TIME:20081027-125057
+
+[303](12:50:58)[3]-- TIME:20081027-125058
+
+[304](12:50:58)ALARM: Data Titik 153 (kWh) diluar jangkauan ukur
+[305](12:50:58)ALARM: Data Titik 140 (KwH) diluar jangkauan ukur
+[306](12:50:58)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[307](12:50:58)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[308](12:50:58)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[309](12:50:58)ALARM: Data Titik 108 (Flowmeter) diluar jangkauan ukur
+[310](12:50:58)192.168.1.39: Timeout
+[311](12:50:58)192.168.1.29: Timeout
+[312](12:50:58)192.168.1.32: Timeout
+[313](12:50:59)[0]-- TIME:20081027-125059
+
+[314](12:51:00)[1]-- TIME:20081027-125100
+
+[315](12:51:01)[2]-- TIME:20081027-125101
+
+[316](12:51:02)[3]-- TIME:20081027-125102
+
+[317](12:51:02)ALARM: Data Titik 153 (kWh) diluar jangkauan ukur
+[318](12:51:02)ALARM: Data Titik 140 (KwH) diluar jangkauan ukur
+[319](12:51:03)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[320](12:51:03)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[321](12:51:03)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[322](12:51:03)192.168.1.25: Timeout
+[323](12:51:03)ALARM: Data Titik 108 (Flowmeter) diluar jangkauan ukur
+[324](12:51:03)192.168.1.39: Timeout
+[325](12:51:03)192.168.1.29: Timeout
+[326](12:51:03)192.168.1.32: Timeout
+[327](12:51:03)[0]-- TIME:20081027-125103
+
+[328](12:51:04)[1]-- TIME:20081027-125104
+
+[329](12:51:05)[2]-- TIME:20081027-125105
+
+[330](12:51:07)[3]-- TIME:20081027-125107
+
+[331](12:51:08)ALARM: Data Titik 153 (kWh) diluar jangkauan ukur
+[332](12:51:08)ALARM: Data Titik 140 (KwH) diluar jangkauan ukur
+[333](12:51:08)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[334](12:51:08)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[335](12:51:08)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[336](12:51:08)ALARM: Data Titik 108 (Flowmeter) diluar jangkauan ukur
+[337](12:51:08)[0]-- TIME:20081027-125108
+
+[338](12:51:10)[1]-- TIME:20081027-125110
+
+[339](12:51:11)[2]-- TIME:20081027-125111
+
+[340](12:51:13)[3]-- TIME:20081027-125113
+
+[341](12:51:14)ALARM: Data Titik 153 (kWh) diluar jangkauan ukur
+[342](12:51:14)ALARM: Data Titik 140 (KwH) diluar jangkauan ukur
+[343](12:51:15)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[344](12:51:15)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[345](12:51:15)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[346](12:51:15)ALARM: Data Titik 108 (Flowmeter) diluar jangkauan ukur
+[347](12:51:15)192.168.1.32: Timeout
+[348](12:51:15)[0]-- TIME:20081027-125115
+
+[349](12:51:16)[1]-- TIME:20081027-125116
+
+[350](12:51:17)[2]-- TIME:20081027-125117
+
+[351](12:51:22)[3]-- TIME:20081027-125122
+
+[352](12:51:23)ALARM: Data Titik 153 (kWh) diluar jangkauan ukur
+[353](12:51:23)ALARM: Data Titik 140 (KwH) diluar jangkauan ukur
+[354](12:51:23)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[355](12:51:23)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[356](12:51:23)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[357](12:51:23)ALARM: Data Titik 108 (Flowmeter) diluar jangkauan ukur
+[358](12:51:23)[0]-- TIME:20081027-125123
+
+[359](12:51:24)[1]-- TIME:20081027-125124
+
+[360](12:51:26)[2]-- TIME:20081027-125126
+
+[361](12:52:14)[3]-- TIME:20081027-125214
+
+[362](12:52:15)ALARM: Data Titik 153 (kWh) diluar jangkauan ukur
+[363](12:52:15)ALARM: Data Titik 140 (KwH) diluar jangkauan ukur
+[364](12:52:15)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[365](12:52:15)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[366](12:52:15)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[367](12:52:16)ALARM: Data Titik 108 (Flowmeter) diluar jangkauan ukur
+[368](12:52:16)[0]-- TIME:20081027-125216
+
+[369](12:52:17)[1]-- TIME:20081027-125217
+
+[370](12:52:18)[2]-- TIME:20081027-125218
+
+[371](12:52:35)[3]-- TIME:20081027-125235
+
+[372](12:52:36)ALARM: Data Titik 153 (kWh) diluar jangkauan ukur
+[373](12:52:36)ALARM: Data Titik 140 (KwH) diluar jangkauan ukur
+[374](12:52:36)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[375](12:52:36)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[376](12:52:36)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[377](12:52:36)ALARM: Data Titik 108 (Flowmeter) diluar jangkauan ukur
+[378](12:52:36)[0]-- TIME:20081027-125236
+
+[379](12:52:37)[1]-- TIME:20081027-125237
+
+[380](12:52:39)[2]-- TIME:20081027-125239
+
+[381](12:52:40)[3]-- TIME:20081027-125240
+
+[382](12:52:41)ALARM: Data Titik 153 (kWh) diluar jangkauan ukur
+[383](12:52:41)ALARM: Data Titik 140 (KwH) diluar jangkauan ukur
+[384](12:52:41)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[385](12:52:41)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[386](12:52:41)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[387](12:52:41)ALARM: Data Titik 108 (Flowmeter) diluar jangkauan ukur
+[388](12:52:41)[0]-- TIME:20081027-125241
+
+[389](12:52:42)[1]-- TIME:20081027-125242
+
+[390](12:52:43)[2]-- TIME:20081027-125243
+
+[391](12:52:44)[3]-- TIME:20081027-125244

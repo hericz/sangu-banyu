@@ -1,0 +1,26 @@
+#makefile
+
+gtk_object = main.o 
+main_program_source = main.cc  db_setting.cc db_setting_glade.cc sql_routine.cpp
+main_window_source = main_window.cc main_window_glade.cc
+db_setting_source = db_setting.cc db_setting_glade.cc
+#socket_source = Socket.cpp ClientSocket.cpp simple_client_main.cpp
+
+#simple_server_objects = ServerSocket.o Socket.o simple_server_main.o
+program_output = monitaapp
+nama_project = MonitaApp
+INCLUDE_DIR = /usr/include/libglademm-2.4
+INCLUDE_DIR2= /usr/include/mysql/
+LIBRARY_DIR = /usr/lib/
+
+all: app
+	echo "Kompilasi semua"
+
+app:
+	echo "Kompilasi $(nama_project)"
+	g++ -I$(INCLUDE_DIR) main_program_source $(socket_source) -o $(gtk_output) `pkg-config --cflags --libs libglademm-2.4` -I$(INCLUDE_DIR2) -L$(LIBRARY_DIR) -lmysqlclient
+	echo Selesai kompilasi
+
+clean:
+	echo Cleaning directory
+	rm -f *.o $(gtk_output)

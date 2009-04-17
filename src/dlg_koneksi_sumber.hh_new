@@ -1,0 +1,20 @@
+// generated 2008/9/12 23:20:51 WIT by herry@LancarJaya.(none)
+// using glademm V2.6.0
+//
+// newer (non customized) versions of this file go to dlg_koneksi_sumber.hh_new
+
+// you might replace
+//    class foo : public foo_glade { ... };
+// by
+//    typedef foo_glade foo;
+// if you didn't make any modifications to the widget
+
+#ifndef _DLG_KONEKSI_SUMBER_HH
+#  include "dlg_koneksi_sumber_glade.hh"
+#  define _DLG_KONEKSI_SUMBER_HH
+class dlg_koneksi_sumber : public dlg_koneksi_sumber_glade
+{  
+        
+        void on_okbutton1_clicked();
+};
+#endif

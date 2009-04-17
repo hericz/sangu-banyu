@@ -1,0 +1,13 @@
+
+[0](10:10:05)======== MONITA APP STARTING ===========
+[1](10:10:05)Load file konfigurasi
+[2](10:10:05)Baca konfig
+[3](10:10:05)Baca konfig: OK
+[4](10:10:07)Mulai logging data
+[5](10:10:08)[0]-- TIME:20081028-101008
+
+[6](10:10:08)Stop logging data
+[7](10:10:09)[2]-- TIME:20081028-101009
+
+[8](10:12:24)======== MONITA APP CLOSING =========
+[9](10:12:24)============ BYE BYE ===============

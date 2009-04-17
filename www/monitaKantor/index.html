@@ -1,0 +1,25 @@
+<html>
+<head>
+<script type="text/javascript" src="kantor.js"></script>
+<script type="text/javascript">
+	var id_dept = getCookie('id_dept');
+	var jmlRekHome = 21;
+	var timeRefresh = 5000;	// 5 detik;mysq
+	if (id_dept) {
+		//alert("dept.php?rek=" + jmlRekHome + "&tf=" + timeRefresh + "&id=" + id_dept);
+	    window.location.href = "home.php?rek=" + jmlRekHome + "&tf=" + timeRefresh + "&id=" + id_dept;
+	} else  {
+		window.location.href = "setting.php?rek=" + jmlRekHome + "&tf=" + timeRefresh;
+		//alert("baru masuk !!");
+	    //exit();
+	}
+
+</script>
+</head>
+<body>
+<script type="text/javascript">
+	alert("baru masuk body !!");
+</script>
+masuk home
+</body>
+</html>

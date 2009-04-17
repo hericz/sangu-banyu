@@ -1,0 +1,2725 @@
+
+[0](08:55:25)======== MONITA APP STARTING ===========
+[1](08:55:25)Load file konfigurasi
+[2](08:55:25)Baca konfig
+[3](08:55:25)Baca konfig: OK
+[4](09:13:36)Mulai logging data
+[5](09:13:38)[0]-- TIME:20081017-091338
+
+[6](09:13:39)[1]-- TIME:20081017-091339
+
+[7](09:13:40)[2]-- TIME:20081017-091340
+
+[8](09:13:41)[3]-- TIME:20081017-091341
+
+[9](09:13:41)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[10](09:13:48)[0]-- TIME:20081017-091348
+
+[11](09:13:49)[1]-- TIME:20081017-091349
+
+[12](09:13:50)[2]-- TIME:20081017-091350
+
+[13](09:13:51)[3]-- TIME:20081017-091351
+
+[14](09:13:51)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[15](09:13:51)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[16](09:13:51)SET: Alarm off
+[17](09:13:51)alarmKeras mati!
+[18](09:13:51)Inisialisasi buffer alarm: 0
+[19](09:13:51)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[20](09:13:52)[0]-- TIME:20081017-091352
+
+[21](09:13:53)[1]-- TIME:20081017-091353
+
+[22](09:13:54)[2]-- TIME:20081017-091354
+
+[23](09:13:55)[3]-- TIME:20081017-091355
+
+[24](09:13:55)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[25](09:13:55)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[26](09:13:55)SET: Alarm off
+[27](09:13:55)alarmKeras mati!
+[28](09:13:55)Inisialisasi buffer alarm: 0
+[29](09:13:55)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[30](09:13:56)[0]-- TIME:20081017-091356
+
+[31](09:13:57)[1]-- TIME:20081017-091357
+
+[32](09:13:58)[2]-- TIME:20081017-091358
+
+[33](09:13:59)[3]-- TIME:20081017-091359
+
+[34](09:13:59)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[35](09:13:59)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[36](09:13:59)SET: Alarm off
+[37](09:13:59)alarmKeras mati!
+[38](09:13:59)Inisialisasi buffer alarm: 0
+[39](09:13:59)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[40](09:14:00)[0]-- TIME:20081017-091400
+
+[41](09:14:01)[1]-- TIME:20081017-091401
+
+[42](09:14:02)[2]-- TIME:20081017-091402
+
+[43](09:14:03)[3]-- TIME:20081017-091403
+
+[44](09:14:03)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[45](09:14:03)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[46](09:14:03)SET: Alarm off
+[47](09:14:03)alarmKeras mati!
+[48](09:14:03)Inisialisasi buffer alarm: 0
+[49](09:14:03)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[50](09:14:04)[0]-- TIME:20081017-091404
+
+[51](09:14:05)[1]-- TIME:20081017-091405
+
+[52](09:14:06)[2]-- TIME:20081017-091406
+
+[53](09:14:07)[3]-- TIME:20081017-091407
+
+[54](09:14:07)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[55](09:14:07)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[56](09:14:07)SET: Alarm off
+[57](09:14:07)alarmKeras mati!
+[58](09:14:07)Inisialisasi buffer alarm: 0
+[59](09:14:07)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[60](09:14:08)[0]-- TIME:20081017-091408
+
+[61](09:14:09)[1]-- TIME:20081017-091409
+
+[62](09:14:10)[2]-- TIME:20081017-091410
+
+[63](09:14:11)[3]-- TIME:20081017-091411
+
+[64](09:14:11)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[65](09:14:11)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[66](09:14:11)SET: Alarm off
+[67](09:14:11)alarmKeras mati!
+[68](09:14:11)Inisialisasi buffer alarm: 0
+[69](09:14:11)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[70](09:14:12)[0]-- TIME:20081017-091412
+
+[71](09:14:13)[1]-- TIME:20081017-091413
+
+[72](09:14:14)[2]-- TIME:20081017-091414
+
+[73](09:14:15)[3]-- TIME:20081017-091415
+
+[74](09:14:15)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[75](09:14:15)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[76](09:14:15)SET: Alarm off
+[77](09:14:15)alarmKeras mati!
+[78](09:14:15)Inisialisasi buffer alarm: 0
+[79](09:14:15)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[80](09:14:16)[0]-- TIME:20081017-091416
+
+[81](09:14:17)[1]-- TIME:20081017-091417
+
+[82](09:14:18)[2]-- TIME:20081017-091418
+
+[83](09:14:19)[3]-- TIME:20081017-091419
+
+[84](09:14:19)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[85](09:14:19)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[86](09:14:19)SET: Alarm off
+[87](09:14:19)alarmKeras mati!
+[88](09:14:19)Inisialisasi buffer alarm: 0
+[89](09:14:19)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[90](09:14:20)[0]-- TIME:20081017-091420
+
+[91](09:14:21)[1]-- TIME:20081017-091421
+
+[92](09:14:22)[2]-- TIME:20081017-091422
+
+[93](09:14:23)[3]-- TIME:20081017-091423
+
+[94](09:14:23)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[95](09:14:23)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[96](09:14:23)SET: Alarm off
+[97](09:14:23)alarmKeras mati!
+[98](09:14:23)Inisialisasi buffer alarm: 0
+[99](09:14:23)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[100](09:14:24)[0]-- TIME:20081017-091424
+
+[101](09:14:25)[1]-- TIME:20081017-091425
+
+[102](09:14:26)[2]-- TIME:20081017-091426
+
+[103](09:14:27)[3]-- TIME:20081017-091427
+
+[104](09:14:27)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[105](09:14:27)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[106](09:14:27)SET: Alarm off
+[107](09:14:27)alarmKeras mati!
+[108](09:14:27)Inisialisasi buffer alarm: 0
+[109](09:14:27)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[110](09:14:28)[0]-- TIME:20081017-091428
+
+[111](09:14:29)[1]-- TIME:20081017-091429
+
+[112](09:14:30)[2]-- TIME:20081017-091430
+
+[113](09:14:31)[3]-- TIME:20081017-091431
+
+[114](09:14:31)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[115](09:14:31)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[116](09:14:31)SET: Alarm off
+[117](09:14:31)alarmKeras mati!
+[118](09:14:31)Inisialisasi buffer alarm: 0
+[119](09:14:31)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[120](09:14:32)[0]-- TIME:20081017-091432
+
+[121](09:14:33)[1]-- TIME:20081017-091433
+
+[122](09:14:34)[2]-- TIME:20081017-091434
+
+[123](09:14:35)[3]-- TIME:20081017-091435
+
+[124](09:14:35)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[125](09:14:35)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[126](09:14:35)SET: Alarm off
+[127](09:14:35)alarmKeras mati!
+[128](09:14:35)Inisialisasi buffer alarm: 0
+[129](09:14:35)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[130](09:14:36)[0]-- TIME:20081017-091436
+
+[131](09:14:37)[1]-- TIME:20081017-091437
+
+[132](09:14:38)[2]-- TIME:20081017-091438
+
+[133](09:14:39)[3]-- TIME:20081017-091439
+
+[134](09:14:39)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[135](09:14:39)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[136](09:14:39)SET: Alarm off
+[137](09:14:39)alarmKeras mati!
+[138](09:14:39)Inisialisasi buffer alarm: 0
+[139](09:14:39)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[140](09:14:40)[0]-- TIME:20081017-091440
+
+[141](09:14:41)[1]-- TIME:20081017-091441
+
+[142](09:14:42)[2]-- TIME:20081017-091442
+
+[143](09:14:43)[3]-- TIME:20081017-091443
+
+[144](09:14:43)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[145](09:14:43)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[146](09:14:43)SET: Alarm off
+[147](09:14:43)alarmKeras mati!
+[148](09:14:43)Inisialisasi buffer alarm: 0
+[149](09:14:43)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[150](09:14:44)[0]-- TIME:20081017-091444
+
+[151](09:14:45)[1]-- TIME:20081017-091445
+
+[152](09:14:46)[2]-- TIME:20081017-091446
+
+[153](09:14:47)[3]-- TIME:20081017-091447
+
+[154](09:14:47)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[155](09:14:47)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[156](09:14:47)SET: Alarm off
+[157](09:14:47)alarmKeras mati!
+[158](09:14:47)Inisialisasi buffer alarm: 0
+[159](09:14:47)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[160](09:14:48)[0]-- TIME:20081017-091448
+
+[161](09:14:49)[1]-- TIME:20081017-091449
+
+[162](09:14:50)[2]-- TIME:20081017-091450
+
+[163](09:14:51)[3]-- TIME:20081017-091451
+
+[164](09:14:51)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[165](09:14:51)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[166](09:14:51)SET: Alarm off
+[167](09:14:51)alarmKeras mati!
+[168](09:14:51)Inisialisasi buffer alarm: 0
+[169](09:14:51)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[170](09:14:52)[0]-- TIME:20081017-091452
+
+[171](09:14:53)[1]-- TIME:20081017-091453
+
+[172](09:14:54)[2]-- TIME:20081017-091454
+
+[173](09:14:55)[3]-- TIME:20081017-091455
+
+[174](09:14:55)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[175](09:14:55)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[176](09:14:55)SET: Alarm off
+[177](09:14:55)alarmKeras mati!
+[178](09:14:55)Inisialisasi buffer alarm: 0
+[179](09:14:55)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[180](09:14:56)[0]-- TIME:20081017-091456
+
+[181](09:14:57)[1]-- TIME:20081017-091457
+
+[182](09:14:58)[2]-- TIME:20081017-091458
+
+[183](09:14:59)[3]-- TIME:20081017-091459
+
+[184](09:14:59)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[185](09:14:59)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[186](09:14:59)SET: Alarm off
+[187](09:14:59)alarmKeras mati!
+[188](09:14:59)Inisialisasi buffer alarm: 0
+[189](09:14:59)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[190](09:15:00)[0]-- TIME:20081017-091500
+
+[191](09:15:01)[1]-- TIME:20081017-091501
+
+[192](09:15:02)[2]-- TIME:20081017-091502
+
+[193](09:15:03)[3]-- TIME:20081017-091503
+
+[194](09:15:03)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[195](09:15:03)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[196](09:15:03)SET: Alarm off
+[197](09:15:03)alarmKeras mati!
+[198](09:15:03)Inisialisasi buffer alarm: 0
+[199](09:15:03)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[200](09:15:04)[0]-- TIME:20081017-091504
+
+[201](09:15:05)[1]-- TIME:20081017-091505
+
+[202](09:15:06)[2]-- TIME:20081017-091506
+
+[203](09:15:07)[3]-- TIME:20081017-091507
+
+[204](09:15:07)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[205](09:15:07)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[206](09:15:07)SET: Alarm off
+[207](09:15:07)alarmKeras mati!
+[208](09:15:07)Inisialisasi buffer alarm: 0
+[209](09:15:07)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[210](09:15:08)[0]-- TIME:20081017-091508
+
+[211](09:15:09)[1]-- TIME:20081017-091509
+
+[212](09:15:10)[2]-- TIME:20081017-091510
+
+[213](09:15:11)[3]-- TIME:20081017-091511
+
+[214](09:15:11)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[215](09:15:11)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[216](09:15:11)SET: Alarm off
+[217](09:15:11)alarmKeras mati!
+[218](09:15:11)Inisialisasi buffer alarm: 0
+[219](09:15:11)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[220](09:15:12)[0]-- TIME:20081017-091512
+
+[221](09:15:13)[1]-- TIME:20081017-091513
+
+[222](09:15:14)[2]-- TIME:20081017-091514
+
+[223](09:15:15)[3]-- TIME:20081017-091515
+
+[224](09:15:15)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[225](09:15:15)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[226](09:15:15)SET: Alarm off
+[227](09:15:15)alarmKeras mati!
+[228](09:15:15)Inisialisasi buffer alarm: 0
+[229](09:15:15)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[230](09:15:16)[0]-- TIME:20081017-091516
+
+[231](09:15:17)[1]-- TIME:20081017-091517
+
+[232](09:15:18)[2]-- TIME:20081017-091518
+
+[233](09:15:19)[3]-- TIME:20081017-091519
+
+[234](09:15:19)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[235](09:15:19)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[236](09:15:19)SET: Alarm off
+[237](09:15:19)alarmKeras mati!
+[238](09:15:19)Inisialisasi buffer alarm: 0
+[239](09:15:19)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[240](09:15:20)[0]-- TIME:20081017-091520
+
+[241](09:15:21)[1]-- TIME:20081017-091521
+
+[242](09:15:22)[2]-- TIME:20081017-091522
+
+[243](09:15:23)[3]-- TIME:20081017-091523
+
+[244](09:15:23)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[245](09:15:23)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[246](09:15:23)SET: Alarm off
+[247](09:15:23)alarmKeras mati!
+[248](09:15:23)Inisialisasi buffer alarm: 0
+[249](09:15:23)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[250](09:15:24)[0]-- TIME:20081017-091524
+
+[251](09:15:25)[1]-- TIME:20081017-091525
+
+[252](09:15:26)[2]-- TIME:20081017-091526
+
+[253](09:15:27)[3]-- TIME:20081017-091527
+
+[254](09:15:27)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[255](09:15:27)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[256](09:15:27)SET: Alarm off
+[257](09:15:27)alarmKeras mati!
+[258](09:15:27)Inisialisasi buffer alarm: 0
+[259](09:15:27)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[260](09:15:28)[0]-- TIME:20081017-091528
+
+[261](09:15:29)[1]-- TIME:20081017-091529
+
+[262](09:15:30)[2]-- TIME:20081017-091530
+
+[263](09:15:31)[3]-- TIME:20081017-091531
+
+[264](09:15:31)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[265](09:15:31)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[266](09:15:31)SET: Alarm off
+[267](09:15:31)alarmKeras mati!
+[268](09:15:31)Inisialisasi buffer alarm: 0
+[269](09:15:31)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[270](09:15:32)[0]-- TIME:20081017-091532
+
+[271](09:15:33)[1]-- TIME:20081017-091533
+
+[272](09:15:34)[2]-- TIME:20081017-091534
+
+[273](09:15:35)[3]-- TIME:20081017-091535
+
+[274](09:15:35)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[275](09:15:35)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[276](09:15:35)SET: Alarm off
+[277](09:15:35)alarmKeras mati!
+[278](09:15:35)Inisialisasi buffer alarm: 0
+[279](09:15:35)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[280](09:15:36)[0]-- TIME:20081017-091536
+
+[281](09:15:37)[1]-- TIME:20081017-091537
+
+[282](09:15:38)[2]-- TIME:20081017-091538
+
+[283](09:15:39)[3]-- TIME:20081017-091539
+
+[284](09:15:39)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[285](09:15:39)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[286](09:15:39)SET: Alarm off
+[287](09:15:39)alarmKeras mati!
+[288](09:15:39)Inisialisasi buffer alarm: 0
+[289](09:15:39)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[290](09:15:40)[0]-- TIME:20081017-091540
+
+[291](09:15:41)[1]-- TIME:20081017-091541
+
+[292](09:15:42)[2]-- TIME:20081017-091542
+
+[293](09:15:43)[3]-- TIME:20081017-091543
+
+[294](09:15:43)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[295](09:15:43)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[296](09:15:43)SET: Alarm off
+[297](09:15:43)alarmKeras mati!
+[298](09:15:43)Inisialisasi buffer alarm: 0
+[299](09:15:43)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[300](09:15:44)[0]-- TIME:20081017-091544
+
+[301](09:15:45)[1]-- TIME:20081017-091545
+
+[302](09:15:46)[2]-- TIME:20081017-091546
+
+[303](09:15:47)[3]-- TIME:20081017-091547
+
+[304](09:15:47)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[305](09:15:47)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[306](09:15:47)SET: Alarm off
+[307](09:15:47)alarmKeras mati!
+[308](09:15:47)Inisialisasi buffer alarm: 0
+[309](09:15:47)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[310](09:15:48)[0]-- TIME:20081017-091548
+
+[311](09:15:49)[1]-- TIME:20081017-091549
+
+[312](09:15:50)[2]-- TIME:20081017-091550
+
+[313](09:15:51)[3]-- TIME:20081017-091551
+
+[314](09:15:51)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[315](09:15:51)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[316](09:15:51)SET: Alarm off
+[317](09:15:51)alarmKeras mati!
+[318](09:15:51)Inisialisasi buffer alarm: 0
+[319](09:15:51)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[320](09:15:52)[0]-- TIME:20081017-091552
+
+[321](09:15:53)[1]-- TIME:20081017-091553
+
+[322](09:15:54)[2]-- TIME:20081017-091554
+
+[323](09:15:55)[3]-- TIME:20081017-091555
+
+[324](09:15:55)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[325](09:15:55)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[326](09:15:55)SET: Alarm off
+[327](09:15:55)alarmKeras mati!
+[328](09:15:55)Inisialisasi buffer alarm: 0
+[329](09:15:55)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[330](09:15:56)[0]-- TIME:20081017-091556
+
+[331](09:15:57)[1]-- TIME:20081017-091557
+
+[332](09:15:58)[2]-- TIME:20081017-091558
+
+[333](09:15:59)[3]-- TIME:20081017-091559
+
+[334](09:15:59)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[335](09:15:59)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[336](09:15:59)SET: Alarm off
+[337](09:15:59)alarmKeras mati!
+[338](09:15:59)Inisialisasi buffer alarm: 0
+[339](09:15:59)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[340](09:16:00)[0]-- TIME:20081017-091600
+
+[341](09:16:01)[1]-- TIME:20081017-091601
+
+[342](09:16:02)[2]-- TIME:20081017-091602
+
+[343](09:16:03)[3]-- TIME:20081017-091603
+
+[344](09:16:03)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[345](09:16:03)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[346](09:16:03)SET: Alarm off
+[347](09:16:03)alarmKeras mati!
+[348](09:16:03)Inisialisasi buffer alarm: 0
+[349](09:16:03)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[350](09:16:04)[0]-- TIME:20081017-091604
+
+[351](09:16:05)[1]-- TIME:20081017-091605
+
+[352](09:16:06)[2]-- TIME:20081017-091606
+
+[353](09:16:07)[3]-- TIME:20081017-091607
+
+[354](09:16:07)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[355](09:16:07)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[356](09:16:07)SET: Alarm off
+[357](09:16:07)alarmKeras mati!
+[358](09:16:07)Inisialisasi buffer alarm: 0
+[359](09:16:07)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[360](09:16:08)[0]-- TIME:20081017-091608
+
+[361](09:16:09)[1]-- TIME:20081017-091609
+
+[362](09:16:10)[2]-- TIME:20081017-091610
+
+[363](09:16:11)[3]-- TIME:20081017-091611
+
+[364](09:16:11)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[365](09:16:11)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[366](09:16:11)SET: Alarm off
+[367](09:16:11)alarmKeras mati!
+[368](09:16:11)Inisialisasi buffer alarm: 0
+[369](09:16:11)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[370](09:16:12)[0]-- TIME:20081017-091612
+
+[371](09:16:13)[1]-- TIME:20081017-091613
+
+[372](09:16:14)[2]-- TIME:20081017-091614
+
+[373](09:16:15)[3]-- TIME:20081017-091615
+
+[374](09:16:15)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[375](09:16:15)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[376](09:16:15)SET: Alarm off
+[377](09:16:15)alarmKeras mati!
+[378](09:16:15)Inisialisasi buffer alarm: 0
+[379](09:16:15)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[380](09:16:16)[0]-- TIME:20081017-091616
+
+[381](09:16:17)[1]-- TIME:20081017-091617
+
+[382](09:16:18)[2]-- TIME:20081017-091618
+
+[383](09:16:19)[3]-- TIME:20081017-091619
+
+[384](09:16:19)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[385](09:16:19)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[386](09:16:19)SET: Alarm off
+[387](09:16:19)alarmKeras mati!
+[388](09:16:19)Inisialisasi buffer alarm: 0
+[389](09:16:19)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[390](09:16:20)[0]-- TIME:20081017-091620
+
+[391](09:16:21)[1]-- TIME:20081017-091621
+
+[392](09:16:22)[2]-- TIME:20081017-091622
+
+[393](09:16:23)[3]-- TIME:20081017-091623
+
+[394](09:16:23)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[395](09:16:23)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[396](09:16:23)SET: Alarm off
+[397](09:16:23)alarmKeras mati!
+[398](09:16:23)Inisialisasi buffer alarm: 0
+[399](09:16:23)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[400](09:16:24)[0]-- TIME:20081017-091624
+
+[401](09:16:25)[1]-- TIME:20081017-091625
+
+[402](09:16:26)[2]-- TIME:20081017-091626
+
+[403](09:16:27)[3]-- TIME:20081017-091627
+
+[404](09:16:27)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[405](09:16:27)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[406](09:16:27)SET: Alarm off
+[407](09:16:27)alarmKeras mati!
+[408](09:16:27)Inisialisasi buffer alarm: 0
+[409](09:16:27)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[410](09:16:28)[0]-- TIME:20081017-091628
+
+[411](09:16:29)[1]-- TIME:20081017-091629
+
+[412](09:16:30)[2]-- TIME:20081017-091630
+
+[413](09:16:31)[3]-- TIME:20081017-091631
+
+[414](09:16:31)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[415](09:16:31)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[416](09:16:31)SET: Alarm off
+[417](09:16:31)alarmKeras mati!
+[418](09:16:31)Inisialisasi buffer alarm: 0
+[419](09:16:31)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[420](09:16:32)[0]-- TIME:20081017-091632
+
+[421](09:16:33)[1]-- TIME:20081017-091633
+
+[422](09:16:34)[2]-- TIME:20081017-091634
+
+[423](09:16:35)[3]-- TIME:20081017-091635
+
+[424](09:16:35)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[425](09:16:35)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[426](09:16:35)SET: Alarm off
+[427](09:16:35)alarmKeras mati!
+[428](09:16:35)Inisialisasi buffer alarm: 0
+[429](09:16:35)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[430](09:16:36)[0]-- TIME:20081017-091636
+
+[431](09:16:37)[1]-- TIME:20081017-091637
+
+[432](09:16:38)[2]-- TIME:20081017-091638
+
+[433](09:16:39)[3]-- TIME:20081017-091639
+
+[434](09:16:39)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[435](09:16:39)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[436](09:16:39)SET: Alarm off
+[437](09:16:39)alarmKeras mati!
+[438](09:16:39)Inisialisasi buffer alarm: 0
+[439](09:16:39)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[440](09:16:40)[0]-- TIME:20081017-091640
+
+[441](09:16:41)[1]-- TIME:20081017-091641
+
+[442](09:16:42)[2]-- TIME:20081017-091642
+
+[443](09:16:43)[3]-- TIME:20081017-091643
+
+[444](09:16:43)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[445](09:16:43)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[446](09:16:43)SET: Alarm off
+[447](09:16:43)alarmKeras mati!
+[448](09:16:43)Inisialisasi buffer alarm: 0
+[449](09:16:43)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[450](09:16:44)[0]-- TIME:20081017-091644
+
+[451](09:16:45)[1]-- TIME:20081017-091645
+
+[452](09:16:46)[2]-- TIME:20081017-091646
+
+[453](09:16:47)[3]-- TIME:20081017-091647
+
+[454](09:16:47)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[455](09:16:47)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[456](09:16:47)SET: Alarm off
+[457](09:16:47)alarmKeras mati!
+[458](09:16:47)Inisialisasi buffer alarm: 0
+[459](09:16:47)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[460](09:16:48)[0]-- TIME:20081017-091648
+
+[461](09:16:49)[1]-- TIME:20081017-091649
+
+[462](09:16:50)[2]-- TIME:20081017-091650
+
+[463](09:16:51)[3]-- TIME:20081017-091651
+
+[464](09:16:51)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[465](09:16:51)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[466](09:16:51)SET: Alarm off
+[467](09:16:51)alarmKeras mati!
+[468](09:16:51)Inisialisasi buffer alarm: 0
+[469](09:16:51)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[470](09:16:52)[0]-- TIME:20081017-091652
+
+[471](09:16:53)[1]-- TIME:20081017-091653
+
+[472](09:16:54)[2]-- TIME:20081017-091654
+
+[473](09:16:55)[3]-- TIME:20081017-091655
+
+[474](09:16:55)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[475](09:16:55)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[476](09:16:55)SET: Alarm off
+[477](09:16:55)alarmKeras mati!
+[478](09:16:55)Inisialisasi buffer alarm: 0
+[479](09:16:55)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[480](09:16:56)[0]-- TIME:20081017-091656
+
+[481](09:16:57)[1]-- TIME:20081017-091657
+
+[482](09:16:58)[2]-- TIME:20081017-091658
+
+[483](09:16:59)[3]-- TIME:20081017-091659
+
+[484](09:16:59)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[485](09:16:59)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[486](09:16:59)SET: Alarm off
+[487](09:16:59)alarmKeras mati!
+[488](09:16:59)Inisialisasi buffer alarm: 0
+[489](09:16:59)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[490](09:17:00)[0]-- TIME:20081017-091700
+
+[491](09:17:01)[1]-- TIME:20081017-091701
+
+[492](09:17:02)[2]-- TIME:20081017-091702
+
+[493](09:17:03)[3]-- TIME:20081017-091703
+
+[494](09:17:03)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[495](09:17:03)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[496](09:17:03)SET: Alarm off
+[497](09:17:03)alarmKeras mati!
+[498](09:17:03)Inisialisasi buffer alarm: 0
+[499](09:17:03)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[500](09:17:04)[0]-- TIME:20081017-091704
+
+[501](09:17:05)[1]-- TIME:20081017-091705
+
+[502](09:17:06)[2]-- TIME:20081017-091706
+
+[503](09:17:07)[3]-- TIME:20081017-091707
+
+[504](09:17:07)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[505](09:17:07)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[506](09:17:07)SET: Alarm off
+[507](09:17:07)alarmKeras mati!
+[508](09:17:07)Inisialisasi buffer alarm: 0
+[509](09:17:07)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[510](09:17:08)[0]-- TIME:20081017-091708
+
+[511](09:17:09)[1]-- TIME:20081017-091709
+
+[512](09:17:10)[2]-- TIME:20081017-091710
+
+[513](09:17:11)[3]-- TIME:20081017-091711
+
+[514](09:17:11)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[515](09:17:11)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[516](09:17:11)SET: Alarm off
+[517](09:17:11)alarmKeras mati!
+[518](09:17:11)Inisialisasi buffer alarm: 0
+[519](09:17:11)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[520](09:17:12)[0]-- TIME:20081017-091712
+
+[521](09:17:13)[1]-- TIME:20081017-091713
+
+[522](09:17:14)[2]-- TIME:20081017-091714
+
+[523](09:17:15)[3]-- TIME:20081017-091715
+
+[524](09:17:15)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[525](09:17:15)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[526](09:17:15)SET: Alarm off
+[527](09:17:15)alarmKeras mati!
+[528](09:17:15)Inisialisasi buffer alarm: 0
+[529](09:17:15)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[530](09:17:16)[0]-- TIME:20081017-091716
+
+[531](09:17:17)[1]-- TIME:20081017-091717
+
+[532](09:17:18)[2]-- TIME:20081017-091718
+
+[533](09:17:19)[3]-- TIME:20081017-091719
+
+[534](09:17:19)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[535](09:17:19)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[536](09:17:19)SET: Alarm off
+[537](09:17:19)alarmKeras mati!
+[538](09:17:19)Inisialisasi buffer alarm: 0
+[539](09:17:19)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[540](09:17:20)[0]-- TIME:20081017-091720
+
+[541](09:17:21)[1]-- TIME:20081017-091721
+
+[542](09:17:22)[2]-- TIME:20081017-091722
+
+[543](09:17:23)[3]-- TIME:20081017-091723
+
+[544](09:17:23)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[545](09:17:23)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[546](09:17:23)SET: Alarm off
+[547](09:17:23)alarmKeras mati!
+[548](09:17:23)Inisialisasi buffer alarm: 0
+[549](09:17:23)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[550](09:17:24)[0]-- TIME:20081017-091724
+
+[551](09:17:25)[1]-- TIME:20081017-091725
+
+[552](09:17:26)[2]-- TIME:20081017-091726
+
+[553](09:17:27)[3]-- TIME:20081017-091727
+
+[554](09:17:27)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[555](09:17:27)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[556](09:17:27)SET: Alarm off
+[557](09:17:27)alarmKeras mati!
+[558](09:17:27)Inisialisasi buffer alarm: 0
+[559](09:17:27)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[560](09:17:28)[0]-- TIME:20081017-091728
+
+[561](09:17:29)[1]-- TIME:20081017-091729
+
+[562](09:17:30)[2]-- TIME:20081017-091730
+
+[563](09:17:31)[3]-- TIME:20081017-091731
+
+[564](09:17:31)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[565](09:17:31)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[566](09:17:31)SET: Alarm off
+[567](09:17:31)alarmKeras mati!
+[568](09:17:31)Inisialisasi buffer alarm: 0
+[569](09:17:31)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[570](09:17:32)[0]-- TIME:20081017-091732
+
+[571](09:17:33)[1]-- TIME:20081017-091733
+
+[572](09:17:34)[2]-- TIME:20081017-091734
+
+[573](09:17:35)[3]-- TIME:20081017-091735
+
+[574](09:17:35)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[575](09:17:35)ALARM: Pintu terbuka
+[576](09:17:35)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[577](09:17:35)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[578](09:17:35)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[579](09:17:35)SET: Alarm off
+[580](09:17:35)alarmKeras mati!
+[581](09:17:35)Inisialisasi buffer alarm: 0
+[582](09:17:35)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[583](09:17:36)[0]-- TIME:20081017-091736
+
+[584](09:17:37)[1]-- TIME:20081017-091737
+
+[585](09:17:38)[2]-- TIME:20081017-091738
+
+[586](09:17:39)[3]-- TIME:20081017-091739
+
+[587](09:17:39)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[588](09:17:39)ALARM: Pintu terbuka
+[589](09:17:39)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[590](09:17:39)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[591](09:17:39)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[592](09:17:39)SET: Alarm off
+[593](09:17:39)alarmKeras mati!
+[594](09:17:39)Inisialisasi buffer alarm: 0
+[595](09:17:39)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[596](09:17:40)[0]-- TIME:20081017-091740
+
+[597](09:17:41)[1]-- TIME:20081017-091741
+
+[598](09:17:42)[2]-- TIME:20081017-091742
+
+[599](09:17:43)[3]-- TIME:20081017-091743
+
+[600](09:17:43)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[601](09:17:43)ALARM: Pintu terbuka
+[602](09:17:43)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[603](09:17:43)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[604](09:17:43)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[605](09:17:43)SET: Alarm off
+[606](09:17:43)alarmKeras mati!
+[607](09:17:43)Inisialisasi buffer alarm: 0
+[608](09:17:43)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[609](09:17:44)[0]-- TIME:20081017-091744
+
+[610](09:17:45)[1]-- TIME:20081017-091745
+
+[611](09:17:46)[2]-- TIME:20081017-091746
+
+[612](09:17:47)[3]-- TIME:20081017-091747
+
+[613](09:17:47)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[614](09:17:47)ALARM: Pintu terbuka
+[615](09:17:47)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[616](09:17:47)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[617](09:17:47)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[618](09:17:47)SET: Alarm off
+[619](09:17:47)alarmKeras mati!
+[620](09:17:47)Inisialisasi buffer alarm: 0
+[621](09:17:47)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[622](09:17:48)[0]-- TIME:20081017-091748
+
+[623](09:17:49)[1]-- TIME:20081017-091749
+
+[624](09:17:50)[2]-- TIME:20081017-091750
+
+[625](09:17:51)[3]-- TIME:20081017-091751
+
+[626](09:17:51)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[627](09:17:51)ALARM: Pintu terbuka
+[628](09:17:51)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[629](09:17:51)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[630](09:17:51)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[631](09:17:51)SET: Alarm off
+[632](09:17:51)alarmKeras mati!
+[633](09:17:51)Inisialisasi buffer alarm: 0
+[634](09:17:51)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[635](09:17:52)[0]-- TIME:20081017-091752
+
+[636](09:17:53)[1]-- TIME:20081017-091753
+
+[637](09:17:54)[2]-- TIME:20081017-091754
+
+[638](09:17:55)[3]-- TIME:20081017-091755
+
+[639](09:17:55)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[640](09:17:55)ALARM: Pintu terbuka
+[641](09:17:55)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[642](09:17:55)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[643](09:17:55)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[644](09:17:55)SET: Alarm off
+[645](09:17:55)alarmKeras mati!
+[646](09:17:55)Inisialisasi buffer alarm: 0
+[647](09:17:55)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[648](09:17:56)[0]-- TIME:20081017-091756
+
+[649](09:17:57)[1]-- TIME:20081017-091757
+
+[650](09:17:58)[2]-- TIME:20081017-091758
+
+[651](09:17:59)[3]-- TIME:20081017-091759
+
+[652](09:17:59)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[653](09:17:59)ALARM: Pintu terbuka
+[654](09:17:59)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[655](09:17:59)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[656](09:17:59)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[657](09:17:59)SET: Alarm off
+[658](09:17:59)alarmKeras mati!
+[659](09:17:59)Inisialisasi buffer alarm: 0
+[660](09:17:59)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[661](09:18:00)[0]-- TIME:20081017-091800
+
+[662](09:18:01)[1]-- TIME:20081017-091801
+
+[663](09:18:02)[2]-- TIME:20081017-091802
+
+[664](09:18:03)[3]-- TIME:20081017-091803
+
+[665](09:18:03)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[666](09:18:03)ALARM: Pintu terbuka
+[667](09:18:03)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[668](09:18:03)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[669](09:18:03)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[670](09:18:03)SET: Alarm off
+[671](09:18:03)alarmKeras mati!
+[672](09:18:03)Inisialisasi buffer alarm: 0
+[673](09:18:03)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[674](09:18:04)[0]-- TIME:20081017-091804
+
+[675](09:18:05)[1]-- TIME:20081017-091805
+
+[676](09:18:06)[2]-- TIME:20081017-091806
+
+[677](09:18:07)[3]-- TIME:20081017-091807
+
+[678](09:18:07)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[679](09:18:07)ALARM: Pintu terbuka
+[680](09:18:07)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[681](09:18:07)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[682](09:18:07)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[683](09:18:07)SET: Alarm off
+[684](09:18:07)alarmKeras mati!
+[685](09:18:07)Inisialisasi buffer alarm: 0
+[686](09:18:07)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[687](09:18:08)[0]-- TIME:20081017-091808
+
+[688](09:18:09)[1]-- TIME:20081017-091809
+
+[689](09:18:10)[2]-- TIME:20081017-091810
+
+[690](09:18:11)[3]-- TIME:20081017-091811
+
+[691](09:18:11)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[692](09:18:11)ALARM: Pintu terbuka
+[693](09:18:11)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[694](09:18:11)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[695](09:18:11)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[696](09:18:11)SET: Alarm off
+[697](09:18:11)alarmKeras mati!
+[698](09:18:11)Inisialisasi buffer alarm: 0
+[699](09:18:11)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[700](09:18:12)[0]-- TIME:20081017-091812
+
+[701](09:18:13)[1]-- TIME:20081017-091813
+
+[702](09:18:14)[2]-- TIME:20081017-091814
+
+[703](09:18:15)[3]-- TIME:20081017-091815
+
+[704](09:18:15)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[705](09:18:15)ALARM: Pintu terbuka
+[706](09:18:15)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[707](09:18:15)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[708](09:18:15)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[709](09:18:15)SET: Alarm off
+[710](09:18:15)alarmKeras mati!
+[711](09:18:15)Inisialisasi buffer alarm: 0
+[712](09:18:15)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[713](09:18:16)[0]-- TIME:20081017-091816
+
+[714](09:18:17)[1]-- TIME:20081017-091817
+
+[715](09:18:18)[2]-- TIME:20081017-091818
+
+[716](09:18:19)[3]-- TIME:20081017-091819
+
+[717](09:18:19)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[718](09:18:19)ALARM: Pintu terbuka
+[719](09:18:19)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[720](09:18:19)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[721](09:18:19)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[722](09:18:19)SET: Alarm off
+[723](09:18:19)alarmKeras mati!
+[724](09:18:19)Inisialisasi buffer alarm: 0
+[725](09:18:19)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[726](09:18:20)[0]-- TIME:20081017-091820
+
+[727](09:18:21)[1]-- TIME:20081017-091821
+
+[728](09:18:22)[2]-- TIME:20081017-091822
+
+[729](09:18:23)[3]-- TIME:20081017-091823
+
+[730](09:18:23)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[731](09:18:23)ALARM: Pintu terbuka
+[732](09:18:23)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[733](09:18:23)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[734](09:18:23)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[735](09:18:23)SET: Alarm off
+[736](09:18:23)alarmKeras mati!
+[737](09:18:23)Inisialisasi buffer alarm: 0
+[738](09:18:23)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[739](09:18:24)[0]-- TIME:20081017-091824
+
+[740](09:18:25)[1]-- TIME:20081017-091825
+
+[741](09:18:26)[2]-- TIME:20081017-091826
+
+[742](09:18:27)[3]-- TIME:20081017-091827
+
+[743](09:18:27)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[744](09:18:27)ALARM: Pintu terbuka
+[745](09:18:27)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[746](09:18:27)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[747](09:18:27)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[748](09:18:27)SET: Alarm off
+[749](09:18:27)alarmKeras mati!
+[750](09:18:27)Inisialisasi buffer alarm: 0
+[751](09:18:27)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[752](09:18:28)[0]-- TIME:20081017-091828
+
+[753](09:18:29)[1]-- TIME:20081017-091829
+
+[754](09:18:30)[2]-- TIME:20081017-091830
+
+[755](09:18:31)[3]-- TIME:20081017-091831
+
+[756](09:18:31)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[757](09:18:31)ALARM: Pintu terbuka
+[758](09:18:31)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[759](09:18:31)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[760](09:18:31)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[761](09:18:31)SET: Alarm off
+[762](09:18:31)alarmKeras mati!
+[763](09:18:31)Inisialisasi buffer alarm: 0
+[764](09:18:31)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[765](09:18:32)[0]-- TIME:20081017-091832
+
+[766](09:18:33)[1]-- TIME:20081017-091833
+
+[767](09:18:34)[2]-- TIME:20081017-091834
+
+[768](09:18:35)[3]-- TIME:20081017-091835
+
+[769](09:18:35)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[770](09:18:35)ALARM: Pintu terbuka
+[771](09:18:35)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[772](09:18:35)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[773](09:18:35)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[774](09:18:35)SET: Alarm off
+[775](09:18:35)alarmKeras mati!
+[776](09:18:35)Inisialisasi buffer alarm: 0
+[777](09:18:35)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[778](09:18:36)[0]-- TIME:20081017-091836
+
+[779](09:18:37)[1]-- TIME:20081017-091837
+
+[780](09:18:38)[2]-- TIME:20081017-091838
+
+[781](09:18:39)[3]-- TIME:20081017-091839
+
+[782](09:18:39)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[783](09:18:39)ALARM: Pintu terbuka
+[784](09:18:39)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[785](09:18:39)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[786](09:18:39)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[787](09:18:39)SET: Alarm off
+[788](09:18:39)alarmKeras mati!
+[789](09:18:39)Inisialisasi buffer alarm: 0
+[790](09:18:39)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[791](09:18:40)[0]-- TIME:20081017-091840
+
+[792](09:18:41)[1]-- TIME:20081017-091841
+
+[793](09:18:42)[2]-- TIME:20081017-091842
+
+[794](09:18:43)[3]-- TIME:20081017-091843
+
+[795](09:18:43)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[796](09:18:43)ALARM: Pintu terbuka
+[797](09:18:43)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[798](09:18:43)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[799](09:18:43)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[800](09:18:43)SET: Alarm off
+[801](09:18:43)alarmKeras mati!
+[802](09:18:43)Inisialisasi buffer alarm: 0
+[803](09:18:43)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[804](09:18:44)[0]-- TIME:20081017-091844
+
+[805](09:18:45)[1]-- TIME:20081017-091845
+
+[806](09:18:46)[2]-- TIME:20081017-091846
+
+[807](09:18:47)[3]-- TIME:20081017-091847
+
+[808](09:18:47)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[809](09:18:47)ALARM: Pintu terbuka
+[810](09:18:47)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[811](09:18:47)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[812](09:18:47)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[813](09:18:47)SET: Alarm off
+[814](09:18:47)alarmKeras mati!
+[815](09:18:47)Inisialisasi buffer alarm: 0
+[816](09:18:47)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[817](09:18:48)[0]-- TIME:20081017-091848
+
+[818](09:18:49)[1]-- TIME:20081017-091849
+
+[819](09:18:50)[2]-- TIME:20081017-091850
+
+[820](09:18:51)[3]-- TIME:20081017-091851
+
+[821](09:18:51)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[822](09:18:51)ALARM: Pintu terbuka
+[823](09:18:51)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[824](09:18:51)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[825](09:18:51)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[826](09:18:51)SET: Alarm off
+[827](09:18:51)alarmKeras mati!
+[828](09:18:51)Inisialisasi buffer alarm: 0
+[829](09:18:51)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[830](09:18:52)[0]-- TIME:20081017-091852
+
+[831](09:18:53)[1]-- TIME:20081017-091853
+
+[832](09:18:54)[2]-- TIME:20081017-091854
+
+[833](09:18:55)[3]-- TIME:20081017-091855
+
+[834](09:18:55)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[835](09:18:55)ALARM: Pintu terbuka
+[836](09:18:55)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[837](09:18:55)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[838](09:18:55)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[839](09:18:55)SET: Alarm off
+[840](09:18:55)alarmKeras mati!
+[841](09:18:55)Inisialisasi buffer alarm: 0
+[842](09:18:55)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[843](09:18:56)[0]-- TIME:20081017-091856
+
+[844](09:18:57)[1]-- TIME:20081017-091857
+
+[845](09:18:58)[2]-- TIME:20081017-091858
+
+[846](09:18:59)[3]-- TIME:20081017-091859
+
+[847](09:18:59)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[848](09:18:59)ALARM: Pintu terbuka
+[849](09:18:59)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[850](09:18:59)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[851](09:18:59)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[852](09:18:59)SET: Alarm off
+[853](09:18:59)alarmKeras mati!
+[854](09:18:59)Inisialisasi buffer alarm: 0
+[855](09:18:59)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[856](09:19:00)[0]-- TIME:20081017-091900
+
+[857](09:19:01)[1]-- TIME:20081017-091901
+
+[858](09:19:02)[2]-- TIME:20081017-091902
+
+[859](09:19:03)[3]-- TIME:20081017-091903
+
+[860](09:19:04)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[861](09:19:04)ALARM: Pintu terbuka
+[862](09:19:04)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[863](09:19:04)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[864](09:19:04)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[865](09:19:04)SET: Alarm off
+[866](09:19:04)alarmKeras mati!
+[867](09:19:04)Inisialisasi buffer alarm: 0
+[868](09:19:04)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[869](09:19:04)[0]-- TIME:20081017-091904
+
+[870](09:19:05)[1]-- TIME:20081017-091905
+
+[871](09:19:06)[2]-- TIME:20081017-091906
+
+[872](09:19:07)[3]-- TIME:20081017-091907
+
+[873](09:19:07)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[874](09:19:07)ALARM: Pintu terbuka
+[875](09:19:07)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[876](09:19:07)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[877](09:19:07)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[878](09:19:07)SET: Alarm off
+[879](09:19:07)alarmKeras mati!
+[880](09:19:07)Inisialisasi buffer alarm: 0
+[881](09:19:07)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[882](09:19:08)[0]-- TIME:20081017-091908
+
+[883](09:19:09)[1]-- TIME:20081017-091909
+
+[884](09:19:10)[2]-- TIME:20081017-091910
+
+[885](09:19:11)[3]-- TIME:20081017-091911
+
+[886](09:19:11)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[887](09:19:11)ALARM: Pintu terbuka
+[888](09:19:11)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[889](09:19:11)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[890](09:19:11)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[891](09:19:11)SET: Alarm off
+[892](09:19:11)alarmKeras mati!
+[893](09:19:11)Inisialisasi buffer alarm: 0
+[894](09:19:11)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[895](09:19:12)[0]-- TIME:20081017-091912
+
+[896](09:19:13)[1]-- TIME:20081017-091913
+
+[897](09:19:14)[2]-- TIME:20081017-091914
+
+[898](09:19:15)[3]-- TIME:20081017-091915
+
+[899](09:19:15)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[900](09:19:15)ALARM: Pintu terbuka
+[901](09:19:15)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[902](09:19:15)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[903](09:19:15)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[904](09:19:15)SET: Alarm off
+[905](09:19:15)alarmKeras mati!
+[906](09:19:15)Inisialisasi buffer alarm: 0
+[907](09:19:15)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[908](09:19:16)[0]-- TIME:20081017-091916
+
+[909](09:19:17)[1]-- TIME:20081017-091917
+
+[910](09:19:18)[2]-- TIME:20081017-091918
+
+[911](09:19:19)[3]-- TIME:20081017-091919
+
+[912](09:19:19)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[913](09:19:19)ALARM: Pintu terbuka
+[914](09:19:19)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[915](09:19:19)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[916](09:19:19)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[917](09:19:19)SET: Alarm off
+[918](09:19:19)alarmKeras mati!
+[919](09:19:19)Inisialisasi buffer alarm: 0
+[920](09:19:19)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[921](09:19:20)[0]-- TIME:20081017-091920
+
+[922](09:19:21)[1]-- TIME:20081017-091921
+
+[923](09:19:22)[2]-- TIME:20081017-091922
+
+[924](09:19:23)[3]-- TIME:20081017-091923
+
+[925](09:19:23)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[926](09:19:23)ALARM: Pintu terbuka
+[927](09:19:23)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[928](09:19:23)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[929](09:19:23)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[930](09:19:23)SET: Alarm off
+[931](09:19:23)alarmKeras mati!
+[932](09:19:23)Inisialisasi buffer alarm: 0
+[933](09:19:23)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[934](09:19:24)[0]-- TIME:20081017-091924
+
+[935](09:19:25)[1]-- TIME:20081017-091925
+
+[936](09:19:26)[2]-- TIME:20081017-091926
+
+[937](09:19:27)[3]-- TIME:20081017-091927
+
+[938](09:19:27)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[939](09:19:27)ALARM: Pintu terbuka
+[940](09:19:27)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[941](09:19:27)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[942](09:19:27)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[943](09:19:27)SET: Alarm off
+[944](09:19:27)alarmKeras mati!
+[945](09:19:27)Inisialisasi buffer alarm: 0
+[946](09:19:27)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[947](09:19:28)[0]-- TIME:20081017-091928
+
+[948](09:19:29)[1]-- TIME:20081017-091929
+
+[949](09:19:30)[2]-- TIME:20081017-091930
+
+[950](09:19:31)[3]-- TIME:20081017-091931
+
+[951](09:19:31)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[952](09:19:31)ALARM: Pintu terbuka
+[953](09:19:31)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[954](09:19:31)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[955](09:19:31)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[956](09:19:31)SET: Alarm off
+[957](09:19:31)alarmKeras mati!
+[958](09:19:31)Inisialisasi buffer alarm: 0
+[959](09:19:31)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[960](09:19:32)[0]-- TIME:20081017-091932
+
+[961](09:19:33)[1]-- TIME:20081017-091933
+
+[962](09:19:34)[2]-- TIME:20081017-091934
+
+[963](09:19:35)[3]-- TIME:20081017-091935
+
+[964](09:19:35)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[965](09:19:35)ALARM: Pintu terbuka
+[966](09:19:35)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[967](09:19:35)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[968](09:19:35)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[969](09:19:35)SET: Alarm off
+[970](09:19:35)alarmKeras mati!
+[971](09:19:35)Inisialisasi buffer alarm: 0
+[972](09:19:35)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[973](09:19:36)[0]-- TIME:20081017-091936
+
+[974](09:19:37)[1]-- TIME:20081017-091937
+
+[975](09:19:38)[2]-- TIME:20081017-091938
+
+[976](09:19:39)[3]-- TIME:20081017-091939
+
+[977](09:19:39)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[978](09:19:39)ALARM: Pintu terbuka
+[979](09:19:39)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[980](09:19:39)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[981](09:19:39)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[982](09:19:39)SET: Alarm off
+[983](09:19:39)alarmKeras mati!
+[984](09:19:39)Inisialisasi buffer alarm: 0
+[985](09:19:39)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[986](09:19:40)[0]-- TIME:20081017-091940
+
+[987](09:19:41)[1]-- TIME:20081017-091941
+
+[988](09:19:42)[2]-- TIME:20081017-091942
+
+[989](09:19:43)[3]-- TIME:20081017-091943
+
+[990](09:19:43)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[991](09:19:43)ALARM: Pintu terbuka
+[992](09:19:43)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[993](09:19:43)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[994](09:19:43)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[995](09:19:43)SET: Alarm off
+[996](09:19:43)alarmKeras mati!
+[997](09:19:43)Inisialisasi buffer alarm: 0
+[998](09:19:43)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[999](09:19:44)[0]-- TIME:20081017-091944
+
+[1000](09:19:45)[1]-- TIME:20081017-091945
+
+[0](10:23:31)======== MONITA APP STARTING ===========
+[1](10:23:31)Load file konfigurasi
+[2](10:23:31)Baca konfig
+[3](10:23:31)Baca konfig: OK
+[4](10:23:33)Mulai logging data
+[5](10:23:35)[0]-- TIME:20081017-102335
+
+[6](10:23:36)[1]-- TIME:20081017-102336
+
+[7](10:23:37)[2]-- TIME:20081017-102337
+
+[8](10:23:38)[3]-- TIME:20081017-102338
+
+[9](10:23:38)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[10](10:23:38)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[11](10:23:38)SET: Alarm off
+[12](10:23:38)alarmKeras mati!
+[13](10:23:38)Inisialisasi buffer alarm: 0
+[14](10:23:38)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[15](10:23:38)192.168.1.113: Timeout
+[16](10:23:42)[0]-- TIME:20081017-102342
+
+[17](10:23:43)[1]-- TIME:20081017-102343
+
+[18](10:23:44)[2]-- TIME:20081017-102344
+
+[19](10:23:45)[3]-- TIME:20081017-102345
+
+[20](10:23:45)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[21](10:23:45)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[22](10:23:45)SET: Alarm off
+[23](10:23:45)alarmKeras mati!
+[24](10:23:45)Inisialisasi buffer alarm: 0
+[25](10:23:45)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[26](10:23:45)192.168.1.113: Timeout
+[27](10:23:46)[0]-- TIME:20081017-102346
+
+[28](10:23:47)[1]-- TIME:20081017-102347
+
+[29](10:23:48)[2]-- TIME:20081017-102348
+
+[30](10:23:49)[3]-- TIME:20081017-102349
+
+[31](10:23:49)192.168.1.122: Timeout
+[32](10:23:49)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[33](10:23:49)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[34](10:23:49)SET: Alarm off
+[35](10:23:49)alarmKeras mati!
+[36](10:23:49)Inisialisasi buffer alarm: 0
+[37](10:23:49)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[38](10:23:49)192.168.1.113: Timeout
+[39](10:23:50)[0]-- TIME:20081017-102350
+
+[40](10:23:51)[1]-- TIME:20081017-102351
+
+[41](10:23:52)[2]-- TIME:20081017-102352
+
+[42](10:23:53)[3]-- TIME:20081017-102353
+
+[43](10:23:53)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[44](10:23:53)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[45](10:23:53)SET: Alarm off
+[46](10:23:53)alarmKeras mati!
+[47](10:23:53)Inisialisasi buffer alarm: 0
+[48](10:23:53)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[49](10:23:53)192.168.1.113: Timeout
+[50](10:23:54)[0]-- TIME:20081017-102354
+
+[51](10:23:55)[1]-- TIME:20081017-102355
+
+[52](10:23:56)[2]-- TIME:20081017-102356
+
+[53](10:23:57)[3]-- TIME:20081017-102357
+
+[54](10:23:57)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[55](10:23:57)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[56](10:23:57)SET: Alarm off
+[57](10:23:57)alarmKeras mati!
+[58](10:23:57)Inisialisasi buffer alarm: 0
+[59](10:23:57)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[60](10:23:57)192.168.1.113: Timeout
+[61](10:23:58)[0]-- TIME:20081017-102358
+
+[62](10:23:59)[1]-- TIME:20081017-102359
+
+[63](10:24:00)[2]-- TIME:20081017-102400
+
+[64](10:24:01)[3]-- TIME:20081017-102401
+
+[65](10:24:01)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[66](10:24:01)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[67](10:24:01)SET: Alarm off
+[68](10:24:01)alarmKeras mati!
+[69](10:24:01)Inisialisasi buffer alarm: 0
+[70](10:24:01)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[71](10:24:01)192.168.1.113: Timeout
+[72](10:24:02)[0]-- TIME:20081017-102402
+
+[73](10:24:03)[1]-- TIME:20081017-102403
+
+[74](10:24:04)[2]-- TIME:20081017-102404
+
+[75](10:24:05)[3]-- TIME:20081017-102405
+
+[76](10:24:05)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[77](10:24:05)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[78](10:24:05)SET: Alarm off
+[79](10:24:05)alarmKeras mati!
+[80](10:24:05)Inisialisasi buffer alarm: 0
+[81](10:24:05)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[82](10:24:05)192.168.1.113: Timeout
+[83](10:24:06)[0]-- TIME:20081017-102406
+
+[84](10:24:07)[1]-- TIME:20081017-102407
+
+[85](10:24:08)[2]-- TIME:20081017-102408
+
+[86](10:24:09)[3]-- TIME:20081017-102409
+
+[87](10:24:09)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[88](10:24:09)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[89](10:24:09)SET: Alarm off
+[90](10:24:09)alarmKeras mati!
+[91](10:24:09)Inisialisasi buffer alarm: 0
+[92](10:24:09)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[93](10:24:09)192.168.1.113: Timeout
+[94](10:24:09)192.168.1.26: Timeout
+[95](10:24:10)[0]-- TIME:20081017-102410
+
+[96](10:24:11)[1]-- TIME:20081017-102411
+
+[97](10:24:12)[2]-- TIME:20081017-102412
+
+[98](10:24:13)[3]-- TIME:20081017-102413
+
+[99](10:24:13)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[100](10:24:13)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[101](10:24:13)SET: Alarm off
+[102](10:24:13)alarmKeras mati!
+[103](10:24:13)Inisialisasi buffer alarm: 0
+[104](10:24:13)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[105](10:24:13)192.168.1.113: Timeout
+[106](10:24:14)[0]-- TIME:20081017-102414
+
+[107](10:24:15)[1]-- TIME:20081017-102415
+
+[108](10:24:16)[2]-- TIME:20081017-102416
+
+[109](10:24:17)[3]-- TIME:20081017-102417
+
+[110](10:24:17)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[111](10:24:17)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[112](10:24:17)SET: Alarm off
+[113](10:24:17)alarmKeras mati!
+[114](10:24:17)Inisialisasi buffer alarm: 0
+[115](10:24:17)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[116](10:24:17)192.168.1.113: Timeout
+[117](10:24:18)[0]-- TIME:20081017-102418
+
+[118](10:24:19)[1]-- TIME:20081017-102419
+
+[119](10:24:20)[2]-- TIME:20081017-102420
+
+[120](10:24:21)[3]-- TIME:20081017-102421
+
+[121](10:24:21)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[122](10:24:21)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[123](10:24:21)SET: Alarm off
+[124](10:24:21)alarmKeras mati!
+[125](10:24:21)Inisialisasi buffer alarm: 0
+[126](10:24:21)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[127](10:24:21)192.168.1.113: Timeout
+[128](10:24:22)[0]-- TIME:20081017-102422
+
+[129](10:24:23)[1]-- TIME:20081017-102423
+
+[130](10:24:24)[2]-- TIME:20081017-102424
+
+[131](10:24:25)[3]-- TIME:20081017-102425
+
+[132](10:24:25)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[133](10:24:25)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[134](10:24:25)SET: Alarm off
+[135](10:24:25)alarmKeras mati!
+[136](10:24:25)Inisialisasi buffer alarm: 0
+[137](10:24:25)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[138](10:24:25)192.168.1.113: Timeout
+[139](10:24:26)[0]-- TIME:20081017-102426
+
+[140](10:24:27)[1]-- TIME:20081017-102427
+
+[141](10:24:28)[2]-- TIME:20081017-102428
+
+[142](10:24:29)[3]-- TIME:20081017-102429
+
+[143](10:24:29)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[144](10:24:29)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[145](10:24:29)SET: Alarm off
+[146](10:24:29)alarmKeras mati!
+[147](10:24:29)Inisialisasi buffer alarm: 0
+[148](10:24:29)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[149](10:24:29)192.168.1.113: Timeout
+[150](10:24:30)[0]-- TIME:20081017-102430
+
+[151](10:24:31)[1]-- TIME:20081017-102431
+
+[152](10:24:32)[2]-- TIME:20081017-102432
+
+[153](10:24:33)[3]-- TIME:20081017-102433
+
+[154](10:24:33)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[155](10:24:33)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[156](10:24:33)SET: Alarm off
+[157](10:24:33)alarmKeras mati!
+[158](10:24:33)Inisialisasi buffer alarm: 0
+[159](10:24:33)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[160](10:24:33)192.168.1.113: Timeout
+[161](10:24:34)[0]-- TIME:20081017-102434
+
+[162](10:24:35)[1]-- TIME:20081017-102435
+
+[163](10:24:36)[2]-- TIME:20081017-102436
+
+[164](10:24:37)[3]-- TIME:20081017-102437
+
+[165](10:24:37)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[166](10:24:37)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[167](10:24:37)SET: Alarm off
+[168](10:24:37)alarmKeras mati!
+[169](10:24:37)Inisialisasi buffer alarm: 0
+[170](10:24:37)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[171](10:24:37)192.168.1.113: Timeout
+[172](10:24:38)[0]-- TIME:20081017-102438
+
+[173](10:24:39)[1]-- TIME:20081017-102439
+
+[174](10:24:40)[2]-- TIME:20081017-102440
+
+[175](10:24:41)[3]-- TIME:20081017-102441
+
+[176](10:24:41)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[177](10:24:41)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[178](10:24:41)SET: Alarm off
+[179](10:24:41)alarmKeras mati!
+[180](10:24:41)Inisialisasi buffer alarm: 0
+[181](10:24:41)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[182](10:24:41)192.168.1.113: Timeout
+[183](10:24:42)[0]-- TIME:20081017-102442
+
+[184](10:24:43)[1]-- TIME:20081017-102443
+
+[185](10:24:44)[2]-- TIME:20081017-102444
+
+[186](10:24:45)[3]-- TIME:20081017-102445
+
+[187](10:24:45)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[188](10:24:45)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[189](10:24:45)SET: Alarm off
+[190](10:24:45)alarmKeras mati!
+[191](10:24:45)Inisialisasi buffer alarm: 0
+[192](10:24:45)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[193](10:24:45)192.168.1.113: Timeout
+[194](10:24:46)[0]-- TIME:20081017-102446
+
+[195](10:24:47)[1]-- TIME:20081017-102447
+
+[196](10:24:48)[2]-- TIME:20081017-102448
+
+[197](10:24:49)[3]-- TIME:20081017-102449
+
+[198](10:24:49)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[199](10:24:49)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[200](10:24:49)SET: Alarm off
+[201](10:24:49)alarmKeras mati!
+[202](10:24:49)Inisialisasi buffer alarm: 0
+[203](10:24:49)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[204](10:24:49)192.168.1.113: Timeout
+[205](10:24:50)[0]-- TIME:20081017-102450
+
+[206](10:24:51)[1]-- TIME:20081017-102451
+
+[207](10:24:52)[2]-- TIME:20081017-102452
+
+[208](10:24:53)[3]-- TIME:20081017-102453
+
+[209](10:24:53)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[210](10:24:53)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[211](10:24:53)SET: Alarm off
+[212](10:24:53)alarmKeras mati!
+[213](10:24:53)Inisialisasi buffer alarm: 0
+[214](10:24:53)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[215](10:24:53)192.168.1.113: Timeout
+[216](10:24:54)[0]-- TIME:20081017-102454
+
+[217](10:24:55)[1]-- TIME:20081017-102455
+
+[218](10:24:56)[2]-- TIME:20081017-102456
+
+[219](10:24:57)[3]-- TIME:20081017-102457
+
+[220](10:24:57)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[221](10:24:57)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[222](10:24:57)SET: Alarm off
+[223](10:24:57)alarmKeras mati!
+[224](10:24:57)Inisialisasi buffer alarm: 0
+[225](10:24:57)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[226](10:24:57)192.168.1.113: Timeout
+[227](10:24:58)[0]-- TIME:20081017-102458
+
+[228](10:24:59)[1]-- TIME:20081017-102459
+
+[229](10:25:00)[2]-- TIME:20081017-102500
+
+[230](10:25:01)[3]-- TIME:20081017-102501
+
+[231](10:25:01)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[232](10:25:01)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[233](10:25:01)SET: Alarm off
+[234](10:25:01)alarmKeras mati!
+[235](10:25:01)Inisialisasi buffer alarm: 0
+[236](10:25:01)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[237](10:25:01)192.168.1.113: Timeout
+[238](10:25:02)[0]-- TIME:20081017-102502
+
+[239](10:25:03)[1]-- TIME:20081017-102503
+
+[240](10:25:04)[2]-- TIME:20081017-102504
+
+[241](10:25:05)[3]-- TIME:20081017-102505
+
+[242](10:25:05)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[243](10:25:05)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[244](10:25:05)SET: Alarm off
+[245](10:25:05)alarmKeras mati!
+[246](10:25:05)Inisialisasi buffer alarm: 0
+[247](10:25:05)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[248](10:25:05)192.168.1.113: Timeout
+[249](10:25:06)[0]-- TIME:20081017-102506
+
+[250](10:25:07)[1]-- TIME:20081017-102507
+
+[251](10:25:08)[2]-- TIME:20081017-102508
+
+[252](10:25:09)[3]-- TIME:20081017-102509
+
+[253](10:25:09)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[254](10:25:09)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[255](10:25:09)SET: Alarm off
+[256](10:25:09)alarmKeras mati!
+[257](10:25:09)Inisialisasi buffer alarm: 0
+[258](10:25:09)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[259](10:25:09)192.168.1.113: Timeout
+[260](10:25:10)[0]-- TIME:20081017-102510
+
+[261](10:25:11)[1]-- TIME:20081017-102511
+
+[262](10:25:12)[2]-- TIME:20081017-102512
+
+[263](10:25:13)[3]-- TIME:20081017-102513
+
+[264](10:25:13)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[265](10:25:13)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[266](10:25:13)SET: Alarm off
+[267](10:25:13)alarmKeras mati!
+[268](10:25:13)Inisialisasi buffer alarm: 0
+[269](10:25:13)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[270](10:25:13)192.168.1.113: Timeout
+[271](10:25:14)[0]-- TIME:20081017-102514
+
+[272](10:25:15)[1]-- TIME:20081017-102515
+
+[273](10:25:16)[2]-- TIME:20081017-102516
+
+[274](10:25:17)[3]-- TIME:20081017-102517
+
+[275](10:25:17)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[276](10:25:17)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[277](10:25:17)SET: Alarm off
+[278](10:25:17)alarmKeras mati!
+[279](10:25:17)Inisialisasi buffer alarm: 0
+[280](10:25:17)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[281](10:25:17)192.168.1.113: Timeout
+[282](10:25:18)[0]-- TIME:20081017-102518
+
+[283](10:25:19)[1]-- TIME:20081017-102519
+
+[284](10:25:20)[2]-- TIME:20081017-102520
+
+[285](10:25:21)[3]-- TIME:20081017-102521
+
+[286](10:25:21)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[287](10:25:21)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[288](10:25:21)SET: Alarm off
+[289](10:25:21)alarmKeras mati!
+[290](10:25:21)Inisialisasi buffer alarm: 0
+[291](10:25:21)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[292](10:25:21)192.168.1.113: Timeout
+[293](10:25:22)[0]-- TIME:20081017-102522
+
+[294](10:25:23)[1]-- TIME:20081017-102523
+
+[295](10:25:24)[2]-- TIME:20081017-102524
+
+[296](10:25:25)[3]-- TIME:20081017-102525
+
+[297](10:25:25)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[298](10:25:25)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[299](10:25:25)SET: Alarm off
+[300](10:25:25)alarmKeras mati!
+[301](10:25:25)Inisialisasi buffer alarm: 0
+[302](10:25:25)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[303](10:25:25)192.168.1.113: Timeout
+[304](10:25:26)[0]-- TIME:20081017-102526
+
+[305](10:25:27)[1]-- TIME:20081017-102527
+
+[306](10:25:28)[2]-- TIME:20081017-102528
+
+[307](10:25:29)[3]-- TIME:20081017-102529
+
+[308](10:25:30)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[309](10:25:30)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[310](10:25:30)SET: Alarm off
+[311](10:25:30)alarmKeras mati!
+[312](10:25:30)Inisialisasi buffer alarm: 0
+[313](10:25:30)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[314](10:25:30)192.168.1.113: Timeout
+[315](10:25:30)[0]-- TIME:20081017-102530
+
+[316](10:25:31)[1]-- TIME:20081017-102531
+
+[317](10:25:32)[2]-- TIME:20081017-102532
+
+[318](10:25:33)[3]-- TIME:20081017-102533
+
+[319](10:25:34)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[320](10:25:34)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[321](10:25:34)SET: Alarm off
+[322](10:25:34)alarmKeras mati!
+[323](10:25:34)Inisialisasi buffer alarm: 0
+[324](10:25:34)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[325](10:25:34)192.168.1.113: Timeout
+[326](10:25:35)[0]-- TIME:20081017-102535
+
+[327](10:25:36)[1]-- TIME:20081017-102536
+
+[328](10:25:37)[2]-- TIME:20081017-102537
+
+[329](10:25:38)[3]-- TIME:20081017-102538
+
+[330](10:25:38)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[331](10:25:38)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[332](10:25:38)SET: Alarm off
+[333](10:25:38)alarmKeras mati!
+[334](10:25:38)Inisialisasi buffer alarm: 0
+[335](10:25:38)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[336](10:25:38)192.168.1.113: Timeout
+[337](10:25:39)[0]-- TIME:20081017-102539
+
+[338](10:25:40)[1]-- TIME:20081017-102540
+
+[339](10:25:41)[2]-- TIME:20081017-102541
+
+[340](10:25:42)[3]-- TIME:20081017-102542
+
+[341](10:25:42)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[342](10:25:42)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[343](10:25:42)SET: Alarm off
+[344](10:25:42)alarmKeras mati!
+[345](10:25:42)Inisialisasi buffer alarm: 0
+[346](10:25:42)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[347](10:25:42)192.168.1.113: Timeout
+[348](10:25:43)[0]-- TIME:20081017-102543
+
+[349](10:25:44)[1]-- TIME:20081017-102544
+
+[350](10:25:45)[2]-- TIME:20081017-102545
+
+[351](10:25:46)[3]-- TIME:20081017-102546
+
+[352](10:25:46)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[353](10:25:46)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[354](10:25:46)SET: Alarm off
+[355](10:25:46)alarmKeras mati!
+[356](10:25:46)Inisialisasi buffer alarm: 0
+[357](10:25:46)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[358](10:25:46)192.168.1.113: Timeout
+[359](10:25:47)[0]-- TIME:20081017-102547
+
+[360](10:25:48)[1]-- TIME:20081017-102548
+
+[361](10:25:49)[2]-- TIME:20081017-102549
+
+[362](10:25:50)[3]-- TIME:20081017-102550
+
+[363](10:25:50)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[364](10:25:50)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[365](10:25:50)SET: Alarm off
+[366](10:25:50)alarmKeras mati!
+[367](10:25:50)Inisialisasi buffer alarm: 0
+[368](10:25:50)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[369](10:25:50)192.168.1.113: Timeout
+[370](10:25:51)[0]-- TIME:20081017-102551
+
+[371](10:25:52)[1]-- TIME:20081017-102552
+
+[372](10:25:53)[2]-- TIME:20081017-102553
+
+[373](10:25:54)[3]-- TIME:20081017-102554
+
+[374](10:25:54)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[375](10:25:54)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[376](10:25:54)SET: Alarm off
+[377](10:25:54)alarmKeras mati!
+[378](10:25:54)Inisialisasi buffer alarm: 0
+[379](10:25:54)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[380](10:25:54)192.168.1.113: Timeout
+[381](10:25:55)[0]-- TIME:20081017-102555
+
+[382](10:25:56)[1]-- TIME:20081017-102556
+
+[383](10:25:57)[2]-- TIME:20081017-102557
+
+[384](10:25:58)[3]-- TIME:20081017-102558
+
+[385](10:25:58)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[386](10:25:58)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[387](10:25:58)SET: Alarm off
+[388](10:25:58)alarmKeras mati!
+[389](10:25:58)Inisialisasi buffer alarm: 0
+[390](10:25:58)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[391](10:25:58)192.168.1.113: Timeout
+[392](10:25:59)[0]-- TIME:20081017-102559
+
+[393](10:26:00)[1]-- TIME:20081017-102600
+
+[394](10:26:01)[2]-- TIME:20081017-102601
+
+[395](10:26:02)[3]-- TIME:20081017-102602
+
+[396](10:26:02)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[397](10:26:02)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[398](10:26:02)SET: Alarm off
+[399](10:26:02)alarmKeras mati!
+[400](10:26:02)Inisialisasi buffer alarm: 0
+[401](10:26:02)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[402](10:26:02)192.168.1.113: Timeout
+[403](10:26:03)[0]-- TIME:20081017-102603
+
+[404](10:26:04)[1]-- TIME:20081017-102604
+
+[405](10:26:05)[2]-- TIME:20081017-102605
+
+[406](10:26:06)[3]-- TIME:20081017-102606
+
+[407](10:26:06)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[408](10:26:06)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[409](10:26:06)SET: Alarm off
+[410](10:26:06)alarmKeras mati!
+[411](10:26:06)Inisialisasi buffer alarm: 0
+[412](10:26:06)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[413](10:26:06)192.168.1.113: Timeout
+[414](10:26:07)[0]-- TIME:20081017-102607
+
+[415](10:26:08)[1]-- TIME:20081017-102608
+
+[416](10:26:09)[2]-- TIME:20081017-102609
+
+[417](10:26:10)[3]-- TIME:20081017-102610
+
+[418](10:26:10)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[419](10:26:10)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[420](10:26:10)SET: Alarm off
+[421](10:26:10)alarmKeras mati!
+[422](10:26:10)Inisialisasi buffer alarm: 0
+[423](10:26:10)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[424](10:26:10)192.168.1.113: Timeout
+[425](10:26:11)[0]-- TIME:20081017-102611
+
+[426](10:26:12)[1]-- TIME:20081017-102612
+
+[427](10:26:13)[2]-- TIME:20081017-102613
+
+[428](10:26:14)[3]-- TIME:20081017-102614
+
+[429](10:26:14)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[430](10:26:14)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[431](10:26:14)SET: Alarm off
+[432](10:26:14)alarmKeras mati!
+[433](10:26:14)Inisialisasi buffer alarm: 0
+[434](10:26:14)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[435](10:26:14)192.168.1.113: Timeout
+[436](10:26:15)[0]-- TIME:20081017-102615
+
+[437](10:26:16)[1]-- TIME:20081017-102616
+
+[438](10:26:17)[2]-- TIME:20081017-102617
+
+[439](10:26:18)[3]-- TIME:20081017-102618
+
+[440](10:26:18)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[441](10:26:18)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[442](10:26:18)SET: Alarm off
+[443](10:26:18)alarmKeras mati!
+[444](10:26:18)Inisialisasi buffer alarm: 0
+[445](10:26:18)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[446](10:26:18)192.168.1.113: Timeout
+[447](10:26:19)[0]-- TIME:20081017-102619
+
+[448](10:26:20)[1]-- TIME:20081017-102620
+
+[449](10:26:21)[2]-- TIME:20081017-102621
+
+[450](10:26:22)[3]-- TIME:20081017-102622
+
+[451](10:26:22)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[452](10:26:22)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[453](10:26:22)SET: Alarm off
+[454](10:26:22)alarmKeras mati!
+[455](10:26:22)Inisialisasi buffer alarm: 0
+[456](10:26:22)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[457](10:26:22)192.168.1.113: Timeout
+[458](10:26:23)[0]-- TIME:20081017-102623
+
+[459](10:26:24)[1]-- TIME:20081017-102624
+
+[460](10:26:25)[2]-- TIME:20081017-102625
+
+[461](10:26:26)[3]-- TIME:20081017-102626
+
+[462](10:26:26)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[463](10:26:26)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[464](10:26:26)SET: Alarm off
+[465](10:26:26)alarmKeras mati!
+[466](10:26:26)Inisialisasi buffer alarm: 0
+[467](10:26:26)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[468](10:26:26)192.168.1.113: Timeout
+[469](10:26:27)[0]-- TIME:20081017-102627
+
+[470](10:26:28)[1]-- TIME:20081017-102628
+
+[471](10:26:29)[2]-- TIME:20081017-102629
+
+[472](10:26:30)[3]-- TIME:20081017-102630
+
+[473](10:26:30)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[474](10:26:30)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[475](10:26:30)SET: Alarm off
+[476](10:26:30)alarmKeras mati!
+[477](10:26:30)Inisialisasi buffer alarm: 0
+[478](10:26:30)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[479](10:26:30)192.168.1.113: Timeout
+[480](10:26:31)[0]-- TIME:20081017-102631
+
+[481](10:26:32)[1]-- TIME:20081017-102632
+
+[482](10:26:33)[2]-- TIME:20081017-102633
+
+[483](10:26:34)[3]-- TIME:20081017-102634
+
+[484](10:26:34)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[485](10:26:34)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[486](10:26:34)SET: Alarm off
+[487](10:26:34)alarmKeras mati!
+[488](10:26:34)Inisialisasi buffer alarm: 0
+[489](10:26:34)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[490](10:26:34)192.168.1.113: Timeout
+[491](10:26:35)[0]-- TIME:20081017-102635
+
+[492](10:26:36)[1]-- TIME:20081017-102636
+
+[493](10:26:37)[2]-- TIME:20081017-102637
+
+[494](10:26:38)[3]-- TIME:20081017-102638
+
+[495](10:26:38)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[496](10:26:38)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[497](10:26:38)SET: Alarm off
+[498](10:26:38)alarmKeras mati!
+[499](10:26:38)Inisialisasi buffer alarm: 0
+[500](10:26:38)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[501](10:26:38)192.168.1.113: Timeout
+[502](10:26:39)[0]-- TIME:20081017-102639
+
+[503](10:26:40)[1]-- TIME:20081017-102640
+
+[504](10:26:41)[2]-- TIME:20081017-102641
+
+[505](10:26:42)[3]-- TIME:20081017-102642
+
+[506](10:26:42)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[507](10:26:42)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[508](10:26:42)SET: Alarm off
+[509](10:26:42)alarmKeras mati!
+[510](10:26:42)Inisialisasi buffer alarm: 0
+[511](10:26:42)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[512](10:26:42)192.168.1.113: Timeout
+[513](10:26:43)[0]-- TIME:20081017-102643
+
+[514](10:26:44)[1]-- TIME:20081017-102644
+
+[515](10:26:45)[2]-- TIME:20081017-102645
+
+[516](10:26:46)[3]-- TIME:20081017-102646
+
+[517](10:26:46)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[518](10:26:46)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[519](10:26:46)SET: Alarm off
+[520](10:26:46)alarmKeras mati!
+[521](10:26:46)Inisialisasi buffer alarm: 0
+[522](10:26:46)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[523](10:26:46)192.168.1.113: Timeout
+[524](10:26:47)[0]-- TIME:20081017-102647
+
+[525](10:26:48)[1]-- TIME:20081017-102648
+
+[526](10:26:49)[2]-- TIME:20081017-102649
+
+[527](10:26:50)[3]-- TIME:20081017-102650
+
+[528](10:26:50)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[529](10:26:50)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[530](10:26:50)SET: Alarm off
+[531](10:26:50)alarmKeras mati!
+[532](10:26:50)Inisialisasi buffer alarm: 0
+[533](10:26:50)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[534](10:26:50)192.168.1.113: Timeout
+[535](10:26:51)[0]-- TIME:20081017-102651
+
+[536](10:26:52)[1]-- TIME:20081017-102652
+
+[537](10:26:53)[2]-- TIME:20081017-102653
+
+[538](10:26:54)[3]-- TIME:20081017-102654
+
+[539](10:26:54)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[540](10:26:54)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[541](10:26:54)SET: Alarm off
+[542](10:26:54)alarmKeras mati!
+[543](10:26:54)Inisialisasi buffer alarm: 0
+[544](10:26:54)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[545](10:26:54)192.168.1.113: Timeout
+[546](10:26:55)[0]-- TIME:20081017-102655
+
+[547](10:26:56)[1]-- TIME:20081017-102656
+
+[548](10:26:57)[2]-- TIME:20081017-102657
+
+[549](10:26:58)[3]-- TIME:20081017-102658
+
+[550](10:26:58)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[551](10:26:58)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[552](10:26:58)SET: Alarm off
+[553](10:26:58)alarmKeras mati!
+[554](10:26:58)Inisialisasi buffer alarm: 0
+[555](10:26:58)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[556](10:26:58)192.168.1.113: Timeout
+[557](10:26:59)[0]-- TIME:20081017-102659
+
+[558](10:27:00)[1]-- TIME:20081017-102700
+
+[559](10:27:01)[2]-- TIME:20081017-102701
+
+[560](10:27:02)[3]-- TIME:20081017-102702
+
+[561](10:27:02)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[562](10:27:02)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[563](10:27:02)SET: Alarm off
+[564](10:27:02)alarmKeras mati!
+[565](10:27:02)Inisialisasi buffer alarm: 0
+[566](10:27:02)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[567](10:27:02)192.168.1.113: Timeout
+[568](10:27:03)[0]-- TIME:20081017-102703
+
+[569](10:27:04)[1]-- TIME:20081017-102704
+
+[570](10:27:05)[2]-- TIME:20081017-102705
+
+[571](10:27:06)[3]-- TIME:20081017-102706
+
+[572](10:27:06)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[573](10:27:06)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[574](10:27:06)SET: Alarm off
+[575](10:27:06)alarmKeras mati!
+[576](10:27:06)Inisialisasi buffer alarm: 0
+[577](10:27:06)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[578](10:27:06)192.168.1.113: Timeout
+[579](10:27:07)[0]-- TIME:20081017-102707
+
+[580](10:27:08)[1]-- TIME:20081017-102708
+
+[581](10:27:09)[2]-- TIME:20081017-102709
+
+[582](10:27:10)[3]-- TIME:20081017-102710
+
+[583](10:27:10)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[584](10:27:10)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[585](10:27:10)SET: Alarm off
+[586](10:27:10)alarmKeras mati!
+[587](10:27:10)Inisialisasi buffer alarm: 0
+[588](10:27:10)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[589](10:27:10)192.168.1.113: Timeout
+[590](10:27:11)[0]-- TIME:20081017-102711
+
+[591](10:27:12)[1]-- TIME:20081017-102712
+
+[592](10:27:13)[2]-- TIME:20081017-102713
+
+[593](10:27:14)[3]-- TIME:20081017-102714
+
+[594](10:27:14)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[595](10:27:14)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[596](10:27:14)SET: Alarm off
+[597](10:27:14)alarmKeras mati!
+[598](10:27:14)Inisialisasi buffer alarm: 0
+[599](10:27:14)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[600](10:27:14)192.168.1.113: Timeout
+[601](10:27:15)[0]-- TIME:20081017-102715
+
+[602](10:27:16)[1]-- TIME:20081017-102716
+
+[603](10:27:17)[2]-- TIME:20081017-102717
+
+[604](10:27:18)[3]-- TIME:20081017-102718
+
+[605](10:27:18)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[606](10:27:18)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[607](10:27:18)SET: Alarm off
+[608](10:27:18)alarmKeras mati!
+[609](10:27:18)Inisialisasi buffer alarm: 0
+[610](10:27:18)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[611](10:27:18)192.168.1.113: Timeout
+[612](10:27:19)[0]-- TIME:20081017-102719
+
+[613](10:27:20)[1]-- TIME:20081017-102720
+
+[614](10:27:21)[2]-- TIME:20081017-102721
+
+[615](10:27:22)[3]-- TIME:20081017-102722
+
+[616](10:27:22)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[617](10:27:22)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[618](10:27:22)SET: Alarm off
+[619](10:27:22)alarmKeras mati!
+[620](10:27:22)Inisialisasi buffer alarm: 0
+[621](10:27:22)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[622](10:27:22)192.168.1.113: Timeout
+[623](10:27:23)[0]-- TIME:20081017-102723
+
+[624](10:27:24)[1]-- TIME:20081017-102724
+
+[625](10:27:25)[2]-- TIME:20081017-102725
+
+[626](10:27:26)[3]-- TIME:20081017-102726
+
+[627](10:27:26)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[628](10:27:26)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[629](10:27:26)SET: Alarm off
+[630](10:27:26)alarmKeras mati!
+[631](10:27:26)Inisialisasi buffer alarm: 0
+[632](10:27:26)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[633](10:27:26)192.168.1.113: Timeout
+[634](10:27:27)[0]-- TIME:20081017-102727
+
+[635](10:27:28)[1]-- TIME:20081017-102728
+
+[636](10:27:29)[2]-- TIME:20081017-102729
+
+[637](10:27:30)[3]-- TIME:20081017-102730
+
+[638](10:27:30)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[639](10:27:30)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[640](10:27:30)SET: Alarm off
+[641](10:27:30)alarmKeras mati!
+[642](10:27:30)Inisialisasi buffer alarm: 0
+[643](10:27:30)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[644](10:27:30)192.168.1.113: Timeout
+[645](10:27:31)[0]-- TIME:20081017-102731
+
+[646](10:27:32)[1]-- TIME:20081017-102732
+
+[647](10:27:33)[2]-- TIME:20081017-102733
+
+[648](10:27:34)[3]-- TIME:20081017-102734
+
+[649](10:27:34)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[650](10:27:34)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[651](10:27:34)SET: Alarm off
+[652](10:27:34)alarmKeras mati!
+[653](10:27:34)Inisialisasi buffer alarm: 0
+[654](10:27:34)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[655](10:27:34)192.168.1.113: Timeout
+[656](10:27:35)[0]-- TIME:20081017-102735
+
+[657](10:27:36)[1]-- TIME:20081017-102736
+
+[658](10:27:37)[2]-- TIME:20081017-102737
+
+[659](10:27:38)[3]-- TIME:20081017-102738
+
+[660](10:27:38)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[661](10:27:38)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[662](10:27:38)SET: Alarm off
+[663](10:27:38)alarmKeras mati!
+[664](10:27:38)Inisialisasi buffer alarm: 0
+[665](10:27:38)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[666](10:27:38)192.168.1.113: Timeout
+[667](10:27:39)[0]-- TIME:20081017-102739
+
+[668](10:27:40)[1]-- TIME:20081017-102740
+
+[669](10:27:41)[2]-- TIME:20081017-102741
+
+[670](10:27:42)[3]-- TIME:20081017-102742
+
+[671](10:27:42)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[672](10:27:42)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[673](10:27:42)SET: Alarm off
+[674](10:27:42)alarmKeras mati!
+[675](10:27:42)Inisialisasi buffer alarm: 0
+[676](10:27:42)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[677](10:27:42)192.168.1.113: Timeout
+[678](10:27:43)[0]-- TIME:20081017-102743
+
+[679](10:27:44)[1]-- TIME:20081017-102744
+
+[680](10:27:45)[2]-- TIME:20081017-102745
+
+[681](10:27:46)[3]-- TIME:20081017-102746
+
+[682](10:27:46)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[683](10:27:46)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[684](10:27:46)SET: Alarm off
+[685](10:27:46)alarmKeras mati!
+[686](10:27:46)Inisialisasi buffer alarm: 0
+[687](10:27:46)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[688](10:27:46)192.168.1.113: Timeout
+[689](10:27:47)[0]-- TIME:20081017-102747
+
+[690](10:27:48)[1]-- TIME:20081017-102748
+
+[691](10:27:49)[2]-- TIME:20081017-102749
+
+[692](10:27:50)[3]-- TIME:20081017-102750
+
+[693](10:27:50)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[694](10:27:50)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[695](10:27:50)SET: Alarm off
+[696](10:27:50)alarmKeras mati!
+[697](10:27:50)Inisialisasi buffer alarm: 0
+[698](10:27:50)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[699](10:27:50)192.168.1.113: Timeout
+[700](10:27:51)[0]-- TIME:20081017-102751
+
+[701](10:27:52)[1]-- TIME:20081017-102752
+
+[702](10:27:53)[2]-- TIME:20081017-102753
+
+[703](10:27:54)[3]-- TIME:20081017-102754
+
+[704](10:27:54)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[705](10:27:54)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[706](10:27:54)SET: Alarm off
+[707](10:27:54)alarmKeras mati!
+[708](10:27:54)Inisialisasi buffer alarm: 0
+[709](10:27:54)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[710](10:27:54)192.168.1.113: Timeout
+[711](10:27:55)[0]-- TIME:20081017-102755
+
+[712](10:27:56)[1]-- TIME:20081017-102756
+
+[713](10:27:57)[2]-- TIME:20081017-102757
+
+[714](10:27:58)[3]-- TIME:20081017-102758
+
+[715](10:27:58)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[716](10:27:58)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[717](10:27:58)SET: Alarm off
+[718](10:27:58)alarmKeras mati!
+[719](10:27:58)Inisialisasi buffer alarm: 0
+[720](10:27:58)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[721](10:27:58)192.168.1.113: Timeout
+[722](10:27:59)[0]-- TIME:20081017-102759
+
+[723](10:28:00)[1]-- TIME:20081017-102800
+
+[724](10:28:01)[2]-- TIME:20081017-102801
+
+[725](10:28:02)[3]-- TIME:20081017-102802
+
+[726](10:28:02)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[727](10:28:02)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[728](10:28:02)SET: Alarm off
+[729](10:28:02)alarmKeras mati!
+[730](10:28:02)Inisialisasi buffer alarm: 0
+[731](10:28:02)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[732](10:28:02)192.168.1.113: Timeout
+[733](10:28:03)[0]-- TIME:20081017-102803
+
+[734](10:28:04)[1]-- TIME:20081017-102804
+
+[735](10:28:05)[2]-- TIME:20081017-102805
+
+[736](10:28:06)[3]-- TIME:20081017-102806
+
+[737](10:28:06)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[738](10:28:06)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[739](10:28:06)SET: Alarm off
+[740](10:28:06)alarmKeras mati!
+[741](10:28:06)Inisialisasi buffer alarm: 0
+[742](10:28:06)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[743](10:28:06)192.168.1.113: Timeout
+[744](10:28:07)[0]-- TIME:20081017-102807
+
+[745](10:28:08)[1]-- TIME:20081017-102808
+
+[746](10:28:09)[2]-- TIME:20081017-102809
+
+[747](10:28:10)[3]-- TIME:20081017-102810
+
+[748](10:28:10)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[749](10:28:10)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[750](10:28:10)SET: Alarm off
+[751](10:28:10)alarmKeras mati!
+[752](10:28:10)Inisialisasi buffer alarm: 0
+[753](10:28:10)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[754](10:28:10)192.168.1.113: Timeout
+[755](10:28:11)[0]-- TIME:20081017-102811
+
+[756](10:28:12)[1]-- TIME:20081017-102812
+
+[757](10:28:13)[2]-- TIME:20081017-102813
+
+[758](10:28:14)[3]-- TIME:20081017-102814
+
+[759](10:28:14)192.168.1.109: Timeout
+[760](10:28:14)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[761](10:28:14)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[762](10:28:14)SET: Alarm off
+[763](10:28:14)alarmKeras mati!
+[764](10:28:14)Inisialisasi buffer alarm: 0
+[765](10:28:14)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[766](10:28:14)192.168.1.113: Timeout
+[767](10:28:15)[0]-- TIME:20081017-102815
+
+[768](10:28:16)[1]-- TIME:20081017-102816
+
+[769](10:28:17)[2]-- TIME:20081017-102817
+
+[770](10:28:18)[3]-- TIME:20081017-102818
+
+[771](10:28:18)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[772](10:28:18)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[773](10:28:18)SET: Alarm off
+[774](10:28:18)alarmKeras mati!
+[775](10:28:18)Inisialisasi buffer alarm: 0
+[776](10:28:18)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[777](10:28:18)192.168.1.113: Timeout
+[778](10:28:19)[0]-- TIME:20081017-102819
+
+[779](10:28:20)[1]-- TIME:20081017-102820
+
+[780](10:28:21)[2]-- TIME:20081017-102821
+
+[781](10:28:22)[3]-- TIME:20081017-102822
+
+[782](10:28:22)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[783](10:28:22)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[784](10:28:22)SET: Alarm off
+[785](10:28:22)alarmKeras mati!
+[786](10:28:22)Inisialisasi buffer alarm: 0
+[787](10:28:22)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[788](10:28:22)192.168.1.113: Timeout
+[789](10:28:23)[0]-- TIME:20081017-102823
+
+[790](10:28:24)[1]-- TIME:20081017-102824
+
+[791](10:28:25)[2]-- TIME:20081017-102825
+
+[792](10:28:26)[3]-- TIME:20081017-102826
+
+[793](10:28:26)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[794](10:28:26)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[795](10:28:26)SET: Alarm off
+[796](10:28:26)alarmKeras mati!
+[797](10:28:26)Inisialisasi buffer alarm: 0
+[798](10:28:26)192.168.1.112: Timeout
+[799](10:28:26)192.168.1.113: Timeout
+[800](10:28:27)[0]-- TIME:20081017-102827
+
+[801](10:28:28)[1]-- TIME:20081017-102828
+
+[802](10:28:29)[2]-- TIME:20081017-102829
+
+[803](10:28:30)[3]-- TIME:20081017-102830
+
+[804](10:28:30)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[805](10:28:30)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[806](10:28:30)SET: Alarm off
+[807](10:28:30)alarmKeras mati!
+[808](10:28:30)Inisialisasi buffer alarm: 0
+[809](10:28:30)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[810](10:28:30)192.168.1.113: Timeout
+[811](10:28:31)[0]-- TIME:20081017-102831
+
+[812](10:28:32)[1]-- TIME:20081017-102832
+
+[813](10:28:33)[2]-- TIME:20081017-102833
+
+[814](10:28:34)[3]-- TIME:20081017-102834
+
+[815](10:28:34)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[816](10:28:34)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[817](10:28:34)SET: Alarm off
+[818](10:28:34)alarmKeras mati!
+[819](10:28:34)Inisialisasi buffer alarm: 0
+[820](10:28:34)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[821](10:28:34)192.168.1.113: Timeout
+[822](10:28:35)[0]-- TIME:20081017-102835
+
+[823](10:28:36)[1]-- TIME:20081017-102836
+
+[824](10:28:37)[2]-- TIME:20081017-102837
+
+[825](10:28:38)[3]-- TIME:20081017-102838
+
+[826](10:28:38)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[827](10:28:38)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[828](10:28:38)SET: Alarm off
+[829](10:28:38)alarmKeras mati!
+[830](10:28:38)Inisialisasi buffer alarm: 0
+[831](10:28:38)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[832](10:28:38)192.168.1.113: Timeout
+[833](10:28:39)[0]-- TIME:20081017-102839
+
+[834](10:28:40)[1]-- TIME:20081017-102840
+
+[835](10:28:41)[2]-- TIME:20081017-102841
+
+[836](10:28:42)[3]-- TIME:20081017-102842
+
+[837](10:28:42)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[838](10:28:42)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[839](10:28:42)SET: Alarm off
+[840](10:28:42)alarmKeras mati!
+[841](10:28:42)Inisialisasi buffer alarm: 0
+[842](10:28:42)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[843](10:28:42)192.168.1.113: Timeout
+[844](10:28:43)[0]-- TIME:20081017-102843
+
+[845](10:28:44)[1]-- TIME:20081017-102844
+
+[846](10:28:45)[2]-- TIME:20081017-102845
+
+[847](10:28:46)[3]-- TIME:20081017-102846
+
+[848](10:28:46)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[849](10:28:46)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[850](10:28:46)SET: Alarm off
+[851](10:28:46)alarmKeras mati!
+[852](10:28:46)Inisialisasi buffer alarm: 0
+[853](10:28:46)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[854](10:28:46)192.168.1.113: Timeout
+[855](10:28:47)[0]-- TIME:20081017-102847
+
+[856](10:28:48)[1]-- TIME:20081017-102848
+
+[857](10:28:49)[2]-- TIME:20081017-102849
+
+[858](10:28:50)[3]-- TIME:20081017-102850
+
+[859](10:28:50)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[860](10:28:50)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[861](10:28:50)SET: Alarm off
+[862](10:28:50)alarmKeras mati!
+[863](10:28:50)Inisialisasi buffer alarm: 0
+[864](10:28:50)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[865](10:28:50)192.168.1.113: Timeout
+[866](10:28:51)[0]-- TIME:20081017-102851
+
+[867](10:28:52)[1]-- TIME:20081017-102852
+
+[868](10:28:53)[2]-- TIME:20081017-102853
+
+[869](10:28:54)[3]-- TIME:20081017-102854
+
+[870](10:28:54)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[871](10:28:54)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[872](10:28:54)SET: Alarm off
+[873](10:28:54)alarmKeras mati!
+[874](10:28:54)Inisialisasi buffer alarm: 0
+[875](10:28:54)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[876](10:28:54)192.168.1.113: Timeout
+[877](10:28:55)[0]-- TIME:20081017-102855
+
+[878](10:28:56)[1]-- TIME:20081017-102856
+
+[879](10:28:57)[2]-- TIME:20081017-102857
+
+[880](10:28:58)[3]-- TIME:20081017-102858
+
+[881](10:28:58)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[882](10:28:58)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[883](10:28:58)SET: Alarm off
+[884](10:28:58)alarmKeras mati!
+[885](10:28:58)Inisialisasi buffer alarm: 0
+[886](10:28:58)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[887](10:28:58)192.168.1.113: Timeout
+[888](10:28:59)[0]-- TIME:20081017-102859
+
+[889](10:29:00)[1]-- TIME:20081017-102900
+
+[890](10:29:01)[2]-- TIME:20081017-102901
+
+[891](10:29:02)[3]-- TIME:20081017-102902
+
+[892](10:29:02)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[893](10:29:02)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[894](10:29:02)SET: Alarm off
+[895](10:29:02)alarmKeras mati!
+[896](10:29:02)Inisialisasi buffer alarm: 0
+[897](10:29:02)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[898](10:29:02)192.168.1.113: Timeout
+[899](10:29:03)[0]-- TIME:20081017-102903
+
+[900](10:29:04)[1]-- TIME:20081017-102904
+
+[901](10:29:05)[2]-- TIME:20081017-102905
+
+[902](10:29:06)[3]-- TIME:20081017-102906
+
+[903](10:29:06)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[904](10:29:06)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[905](10:29:06)SET: Alarm off
+[906](10:29:06)alarmKeras mati!
+[907](10:29:06)Inisialisasi buffer alarm: 0
+[908](10:29:06)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[909](10:29:06)192.168.1.113: Timeout
+[910](10:29:07)[0]-- TIME:20081017-102907
+
+[911](10:29:08)[1]-- TIME:20081017-102908
+
+[912](10:29:09)[2]-- TIME:20081017-102909
+
+[913](10:29:10)[3]-- TIME:20081017-102910
+
+[914](10:29:10)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[915](10:29:10)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[916](10:29:10)SET: Alarm off
+[917](10:29:10)alarmKeras mati!
+[918](10:29:10)Inisialisasi buffer alarm: 0
+[919](10:29:10)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[920](10:29:10)192.168.1.113: Timeout
+[921](10:29:10)192.168.1.26: Timeout
+[922](10:29:11)[0]-- TIME:20081017-102911
+
+[923](10:29:12)[1]-- TIME:20081017-102912
+
+[924](10:29:13)[2]-- TIME:20081017-102913
+
+[925](10:29:14)[3]-- TIME:20081017-102914
+
+[926](10:29:14)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[927](10:29:14)ALARM: Pintu terbuka
+[928](10:29:14)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[929](10:29:14)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[930](10:29:14)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[931](10:29:14)SET: Alarm off
+[932](10:29:14)alarmKeras mati!
+[933](10:29:14)Inisialisasi buffer alarm: 0
+[934](10:29:14)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[935](10:29:14)192.168.1.113: Timeout
+[936](10:29:15)[0]-- TIME:20081017-102915
+
+[937](10:29:16)[1]-- TIME:20081017-102916
+
+[938](10:29:17)[2]-- TIME:20081017-102917
+
+[939](10:29:18)[3]-- TIME:20081017-102918
+
+[940](10:29:18)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[941](10:29:18)ALARM: Pintu terbuka
+[942](10:29:18)ALARM: Data Titik 158 (pintu depan) tinggi (0x3F)
+[943](10:29:18)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[944](10:29:18)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[945](10:29:18)SET: Alarm off
+[946](10:29:18)alarmKeras mati!
+[947](10:29:18)Inisialisasi buffer alarm: 0
+[948](10:29:18)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[949](10:29:18)192.168.1.113: Timeout
+[950](10:29:19)[0]-- TIME:20081017-102919
+
+[951](10:29:20)[1]-- TIME:20081017-102920
+
+[952](10:29:21)[2]-- TIME:20081017-102921
+
+[953](10:29:22)[3]-- TIME:20081017-102922
+
+[954](10:29:22)192.168.1.123: Timeout
+[955](10:29:22)192.168.1.108: Timeout
+[956](10:29:22)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[957](10:29:22)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[958](10:29:22)SET: Alarm off
+[959](10:29:22)alarmKeras mati!
+[960](10:29:22)Inisialisasi buffer alarm: 0
+[961](10:29:22)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[962](10:29:22)192.168.1.113: Timeout
+[963](10:29:23)[0]-- TIME:20081017-102923
+
+[964](10:29:24)[1]-- TIME:20081017-102924
+
+[965](10:29:25)[2]-- TIME:20081017-102925
+
+[966](10:29:26)[3]-- TIME:20081017-102926
+
+[967](10:29:26)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[968](10:29:26)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[969](10:29:26)SET: Alarm off
+[970](10:29:26)alarmKeras mati!
+[971](10:29:26)Inisialisasi buffer alarm: 0
+[972](10:29:26)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[973](10:29:26)192.168.1.113: Timeout
+[974](10:29:27)[0]-- TIME:20081017-102927
+
+[975](10:29:28)[1]-- TIME:20081017-102928
+
+[976](10:29:29)[2]-- TIME:20081017-102929
+
+[977](10:29:30)[3]-- TIME:20081017-102930
+
+[978](10:29:30)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[979](10:29:30)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[980](10:29:30)SET: Alarm off
+[981](10:29:30)alarmKeras mati!
+[982](10:29:30)Inisialisasi buffer alarm: 0
+[983](10:29:30)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[984](10:29:30)192.168.1.113: Timeout
+[985](10:29:31)[0]-- TIME:20081017-102931
+
+[986](10:29:32)[1]-- TIME:20081017-102932
+
+[987](10:29:33)[2]-- TIME:20081017-102933
+
+[988](10:29:34)[3]-- TIME:20081017-102934
+
+[989](10:29:34)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)
+[990](10:29:34)ALARM: Data Titik 221 (saklar semua pintu dbe) tinggi (0x5F)
+[991](10:29:34)SET: Alarm off
+[992](10:29:34)alarmKeras mati!
+[993](10:29:34)Inisialisasi buffer alarm: 0
+[994](10:29:34)ALARM: Data Titik 104 (Ac) tinggi (0xF)
+[995](10:29:34)192.168.1.113: Timeout
+[996](10:29:35)[0]-- TIME:20081017-102935
+
+[997](10:29:36)[1]-- TIME:20081017-102936
+
+[998](10:29:37)[2]-- TIME:20081017-102937
+
+[999](10:29:38)[3]-- TIME:20081017-102938
+
+[1000](10:29:38)ALARM: Data Titik 159 (pintu gerbang(besi)) tinggi (0xF)

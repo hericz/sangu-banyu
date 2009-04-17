@@ -1,0 +1,20 @@
+// generated 2008/7/17 14:37:24 WIT by herry@LancarJaya.(none)
+// using glademm V2.6.0
+//
+// newer (non customized) versions of this file go to db_setting.hh_new
+
+// you might replace
+//    class foo : public foo_glade { ... };
+// by
+//    typedef foo_glade foo;
+// if you didn't make any modifications to the widget
+
+#ifndef _DB_SETTING_HH
+#  include "db_setting_glade.hh"
+#  define _DB_SETTING_HH
+class db_setting : public db_setting_glade
+{  
+        
+        void on_buttonOK_clicked();
+};
+#endif

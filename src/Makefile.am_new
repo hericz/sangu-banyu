@@ -1,0 +1,21 @@
+# generated 2008/11/21 19:20:26 WIT by herry@LancarJaya.(none)
+# using glademm V2.6.0
+
+SUBDIRS = po  
+
+EXTRA_DIST = AUTHORS TODO README configure 
+le.am_new
+bin_PROGRAMS = dlg_edit_sumber
+
+dlg_edit_sumber_SOURCES = \
+	dlg_edit_sumber.cc\
+	dlg_edit_sumber_glade.cc \
+	dlg_edit_sumber.cc 
+
+noinst_HEADERS = \
+	dlg_edit_sumber_glade.hh \
+	dlg_edit_sumber.hh 
+
+AM_CXXFLAGS = @GTKMM_CFLAGS@ 
+
+dlg_edit_sumber_LDADD = @LIBS@ @GTKMM_LIBS@ 

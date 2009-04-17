@@ -1,0 +1,20 @@
+// generated 2008/8/9 10:44:33 WIT by herry@LancarJaya.(none)
+// using glademm V2.6.0
+//
+// newer (non customized) versions of this file go to dlg_edit_post.hh_new
+
+// you might replace
+//    class foo : public foo_glade { ... };
+// by
+//    typedef foo_glade foo;
+// if you didn't make any modifications to the widget
+
+#ifndef _DLG_EDIT_POST_HH
+#  include "dlg_edit_post_glade.hh"
+#  define _DLG_EDIT_POST_HH
+class dlg_edit_post : public dlg_edit_post_glade
+{  
+        
+        void on_parameter_changed();
+};
+#endif

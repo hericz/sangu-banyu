@@ -1,0 +1,24 @@
+<html>
+<head>
+<!--script type="text/javascript" src="lombokskrip.js"></script-->
+<script type="text/javascript" src="kantor.js"></script>
+<script type="text/javascript">
+	jmlRekHome  = getCookie('jmlRekHome');
+	timeRefresh = getCookie('timeRefresh');
+	id_dept = getCookie('id_dept');
+
+	if (id_dept) {
+		//alert("dept.php?rek=" + jmlRekHome + "&tf=" + timeRefresh + "&id=" + id_dept);
+		window.location.href = "setting.php?rek=" + jmlRekHome + "&tf=" + timeRefresh + "&id=" + id_dept;
+	} else  {
+		window.location.href = "setting.php?rek=" + jmlRekHome + "&tf=" + timeRefresh;	
+		//alert("baru masuk !!");
+		//exit();
+	}
+
+</script>
+</head>
+<body>
+	kue cukis
+</body>
+</html>

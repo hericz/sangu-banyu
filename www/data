@@ -1,0 +1,7 @@
+clear
+echo "Hari ini : `date`"; 
+df -Th > data.txt;
+if [ -f data.txt ]
+then
+   grep ^/dev data.txt
+fi

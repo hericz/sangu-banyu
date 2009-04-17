@@ -1,0 +1,359 @@
+
+[0](09:03:05)======== MONITA APP STARTING ===========
+[1](09:03:05)Load file konfigurasi
+[2](09:03:05)Baca konfig
+[3](09:03:05)Baca konfig: OK
+[4](09:10:58)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='101' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[5](09:10:58)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='102' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[6](09:10:58)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='103' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[7](09:10:59)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='104' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[8](09:10:59)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='105' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[9](09:10:59)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='106' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[10](09:10:59)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='107' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[11](09:11:00)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='108' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[12](09:11:00)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='109' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[13](09:11:00)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='110' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[0](09:11:19)======== MONITA APP STARTING ===========
+[1](09:11:19)Load file konfigurasi
+[2](09:11:19)Baca konfig
+[3](09:11:19)Baca konfig: OK
+[4](09:16:24)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='101' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[5](09:16:24)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='102' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[6](09:16:24)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='103' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[7](09:16:24)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='104' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[8](09:16:25)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='105' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[9](09:16:25)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='106' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[10](09:16:25)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='107' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[11](09:16:25)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='108' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[12](09:16:26)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='109' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[13](09:16:26)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='110' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[0](10:44:03)======== MONITA APP STARTING ===========
+[1](10:44:03)Load file konfigurasi
+[2](10:44:03)Baca konfig
+[3](10:44:03)Baca konfig: OK
+[4](10:44:06)======== MONITA APP CLOSING =========
+[5](10:44:06)============ BYE BYE ===============
+[0](10:48:12)======== MONITA APP STARTING ===========
+[1](10:48:12)Load file konfigurasi
+[2](10:48:12)Baca konfig
+[3](10:48:12)Baca konfig: OK
+[4](10:48:29)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='101' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[5](10:48:30)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='102' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[6](10:48:30)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='103' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[7](10:48:30)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='104' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[8](10:48:30)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='105' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[9](10:48:31)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='106' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[10](10:48:31)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='107' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[11](10:48:31)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='108' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[12](10:48:32)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='109' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[13](10:48:32)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='110' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[0](11:03:37)======== MONITA APP STARTING ===========
+[1](11:03:37)Load file konfigurasi
+[2](11:03:37)Baca konfig
+[3](11:03:37)Baca konfig: OK
+[4](11:27:21)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='101' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[5](11:27:21)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='102' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[6](11:27:21)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='103' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[7](11:27:22)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='104' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[8](11:27:22)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='105' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[9](11:27:22)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='106' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[10](11:27:22)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='107' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[11](11:27:23)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='108' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[12](11:27:23)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='109' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[13](11:27:23)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='110' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[0](11:38:52)======== MONITA APP STARTING ===========
+[1](11:38:52)Load file konfigurasi
+[2](11:38:52)Baca konfig
+[3](11:38:52)Baca konfig: OK
+[4](11:39:41)======== MONITA APP CLOSING =========
+[5](11:39:41)============ BYE BYE ===============
+[0](11:51:04)======== MONITA APP STARTING ===========
+[1](11:51:04)Load file konfigurasi
+[2](11:51:04)Baca konfig
+[3](11:51:04)Baca konfig: OK
+[4](11:51:12)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='101' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[5](11:51:12)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='102' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[6](11:51:12)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='103' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[7](11:51:12)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='104' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[8](11:51:13)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='105' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[9](11:51:13)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='106' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[10](11:51:13)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='107' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[11](11:51:14)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='108' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[12](11:51:14)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='109' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[13](11:51:14)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='110' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[0](11:53:53)======== MONITA APP STARTING ===========
+[1](11:53:53)Load file konfigurasi
+[2](11:53:53)Baca konfig
+[3](11:53:53)Baca konfig: OK
+[4](11:53:57)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='101' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[5](11:53:57)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='102' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[6](11:53:57)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='103' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[7](11:53:58)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='104' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[8](11:53:58)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='105' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[9](11:53:58)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='106' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[10](11:53:58)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='107' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[11](11:53:59)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='108' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[12](11:53:59)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='109' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[13](11:53:59)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='110' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[0](11:57:40)======== MONITA APP STARTING ===========
+[1](11:57:40)Load file konfigurasi
+[2](11:57:40)Baca konfig
+[3](11:57:40)Baca konfig: OK
+[4](11:57:44)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='101' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[5](11:57:44)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='102' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[6](11:57:44)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='103' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[7](11:57:45)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='104' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[8](11:57:45)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='105' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[9](11:57:45)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='106' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[10](11:57:45)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='107' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[11](11:57:46)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='108' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[12](11:57:46)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='109' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[13](11:57:46)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='110' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[0](12:51:29)======== MONITA APP STARTING ===========
+[1](12:51:29)Load file konfigurasi
+[2](12:51:29)Baca konfig
+[3](12:51:29)Baca konfig: OK
+[4](12:59:13)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='101' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[5](12:59:13)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='102' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[6](12:59:13)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='103' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[7](12:59:13)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='104' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[8](12:59:14)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='105' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[9](12:59:14)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='106' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[10](12:59:14)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='107' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[11](12:59:14)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='108' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[12](12:59:15)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='109' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[13](12:59:15)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='110' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[0](13:00:28)======== MONITA APP STARTING ===========
+[1](13:00:28)Load file konfigurasi
+[2](13:00:28)Baca konfig
+[3](13:00:28)Baca konfig: OK
+[4](13:00:33)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='101' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[5](13:00:34)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='102' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[6](13:00:34)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='103' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[7](13:00:34)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='104' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[8](13:00:34)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='105' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[9](13:00:35)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='106' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[10](13:00:35)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='107' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[11](13:00:35)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='108' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[12](13:00:35)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='109' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[13](13:00:36)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='110' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[0](13:23:38)======== MONITA APP STARTING ===========
+[1](13:23:38)Load file konfigurasi
+[2](13:23:38)Baca konfig
+[3](13:23:38)Baca konfig: OK
+[4](13:23:41)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='101' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[5](13:23:41)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='102' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[6](13:23:42)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='103' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[7](13:23:42)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='104' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[8](13:23:42)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='105' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[9](13:23:43)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='106' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[10](13:23:43)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='107' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[11](13:23:43)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='108' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[12](13:23:43)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='109' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[13](13:23:44)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='110' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[0](13:26:43)======== MONITA APP STARTING ===========
+[1](13:26:43)Load file konfigurasi
+[2](13:26:43)Baca konfig
+[3](13:26:43)Baca konfig: OK
+[4](13:26:46)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='101' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[5](13:26:46)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='102' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[6](13:26:47)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='103' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[7](13:26:47)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='104' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[8](13:26:47)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='105' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[9](13:26:47)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='106' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[10](13:26:48)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='107' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[11](13:26:48)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='108' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[12](13:26:48)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='109' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[13](13:26:48)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='110' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[0](13:35:22)======== MONITA APP STARTING ===========
+[1](13:35:22)Load file konfigurasi
+[2](13:35:22)Baca konfig
+[3](13:35:22)Baca konfig: OK
+[4](13:35:25)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='101' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[5](13:35:25)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='102' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[6](13:35:26)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='103' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[7](13:35:26)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='104' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[8](13:35:26)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='105' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[9](13:35:26)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='106' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[10](13:35:27)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='107' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[11](13:35:27)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='108' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[12](13:35:27)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='109' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[13](13:35:28)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='110' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[14](13:36:00)======== MONITA APP CLOSING =========
+[15](13:36:00)============ BYE BYE ===============
+[0](13:38:18)======== MONITA APP STARTING ===========
+[1](13:38:18)Load file konfigurasi
+[2](13:38:18)Baca konfig
+[3](13:38:18)Baca konfig: OK
+[4](13:38:21)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='101' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[5](13:38:22)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='102' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[6](13:38:22)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='103' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[7](13:38:22)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='104' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[8](13:38:23)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='105' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[9](13:38:23)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='106' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[10](13:38:23)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='107' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[11](13:38:23)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='108' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[12](13:38:24)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='109' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[13](13:38:24)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='110' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[0](13:44:19)======== MONITA APP STARTING ===========
+[1](13:44:19)Load file konfigurasi
+[2](13:44:19)Baca konfig
+[3](13:44:19)Baca konfig: OK
+[4](13:44:24)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='101' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[5](13:44:24)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='102' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[6](13:44:24)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='103' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[7](13:44:25)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='104' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[8](13:44:25)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='105' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[9](13:44:25)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='106' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[10](13:44:25)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='107' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[11](13:44:26)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='108' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[12](13:44:26)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='109' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[13](13:44:26)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='110' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[0](14:06:57)======== MONITA APP STARTING ===========
+[1](14:06:57)Load file konfigurasi
+[2](14:06:57)Baca konfig
+[3](14:06:57)Baca konfig: OK
+[4](14:07:02)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='101' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[5](14:07:02)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='102' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[6](14:07:02)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='103' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[7](14:07:03)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='104' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[8](14:07:03)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='105' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[9](14:07:03)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='106' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[10](14:07:03)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='107' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[11](14:07:04)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='108' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[12](14:07:04)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='109' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[13](14:07:04)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='110' AND waktu.waktu LIKE '20080924%'ORDER BY waktu ASC LIMIT 1440
+[0](14:10:53)======== MONITA APP STARTING ===========
+[1](14:10:53)Load file konfigurasi
+[2](14:10:53)Baca konfig
+[3](14:10:53)Baca konfig: OK
+[4](14:10:58)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='101' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[5](14:10:59)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='102' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[6](14:10:59)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='103' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[7](14:10:59)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='104' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[8](14:11:00)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='105' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[9](14:11:00)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='106' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[10](14:11:00)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='107' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[11](14:11:01)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='108' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[12](14:11:01)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='109' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[13](14:11:01)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='110' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[0](14:16:01)======== MONITA APP STARTING ===========
+[1](14:16:01)Load file konfigurasi
+[2](14:16:01)Baca konfig
+[3](14:16:01)Baca konfig: OK
+[0](14:16:13)======== MONITA APP STARTING ===========
+[1](14:16:13)Load file konfigurasi
+[2](14:16:13)Baca konfig
+[3](14:16:13)Baca konfig: OK
+[0](15:45:27)======== MONITA APP STARTING ===========
+[1](15:45:27)Load file konfigurasi
+[2](15:45:27)Baca konfig
+[3](15:45:27)Baca konfig: OK
+[4](15:45:31)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='101' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[5](15:45:32)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='102' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[6](15:45:32)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='103' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[7](15:45:33)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='104' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[8](15:45:33)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='105' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[9](15:45:33)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='106' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[10](15:45:34)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='107' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[11](15:45:34)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='108' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[12](15:45:34)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='109' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[13](15:45:34)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='110' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[0](16:17:11)======== MONITA APP STARTING ===========
+[1](16:17:11)Load file konfigurasi
+[2](16:17:11)Baca konfig
+[3](16:17:11)Baca konfig: OK
+[4](16:17:14)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='101' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[5](16:17:15)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='102' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[6](16:17:15)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='103' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[7](16:17:15)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='104' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[8](16:17:15)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='105' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[9](16:17:16)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='106' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[10](16:17:16)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='107' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[11](16:17:16)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='108' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[12](16:17:17)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='109' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[13](16:17:17)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='110' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[14](16:17:54)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='101' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[15](16:17:54)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='102' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[16](16:17:54)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='103' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[17](16:17:54)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='104' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[18](16:17:54)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='105' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[19](16:17:54)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='106' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[20](16:17:54)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='107' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[21](16:17:54)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='108' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[22](16:17:54)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='109' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[23](16:17:54)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='110' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[0](16:58:13)======== MONITA APP STARTING ===========
+[1](16:58:13)Load file konfigurasi
+[2](16:58:13)Baca konfig
+[3](16:58:13)Baca konfig: OK
+[0](16:58:25)======== MONITA APP STARTING ===========
+[1](16:58:25)Load file konfigurasi
+[2](16:58:25)Baca konfig
+[3](16:58:25)Baca konfig: OK
+[0](17:01:02)======== MONITA APP STARTING ===========
+[1](17:01:02)Load file konfigurasi
+[2](17:01:02)Baca konfig
+[3](17:01:02)Baca konfig: OK
+[0](17:06:06)======== MONITA APP STARTING ===========
+[1](17:06:06)Load file konfigurasi
+[2](17:06:06)Baca konfig
+[3](17:06:06)Baca konfig: OK
+[0](17:42:45)======== MONITA APP STARTING ===========
+[1](17:42:45)Load file konfigurasi
+[2](17:42:45)Baca konfig
+[3](17:42:45)Baca konfig: OK
+[4](17:42:57)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='93' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[5](17:42:57)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='94' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[6](17:42:58)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='95' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[7](17:42:58)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='96' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[8](17:42:58)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='97' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[9](17:42:58)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='98' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[10](17:42:59)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='99' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[11](17:42:59)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='100' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[12](17:42:59)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='111' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[13](17:43:00)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='112' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[14](17:43:01)Simpan report csv: gagal
+[0](17:48:25)======== MONITA APP STARTING ===========
+[1](17:48:25)Load file konfigurasi
+[2](17:48:25)Baca konfig
+[3](17:48:25)Baca konfig: OK
+[4](17:48:27)Mulai logging data
+[5](17:48:28)[0]-- TIME:20081014-174828
+
+[6](17:48:29)Stop logging data
+[7](17:48:29)[2]-- TIME:20081014-174829
+
+[8](17:48:41)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='93' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[9](17:48:41)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='94' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[10](17:48:41)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='95' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[11](17:48:42)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='96' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[12](17:48:42)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='97' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[13](17:48:42)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='98' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[14](17:48:42)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='99' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[15](17:48:43)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='100' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[16](17:48:43)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='111' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[17](17:48:43)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='112' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[18](17:48:46)Simpan report csv: gagal
+[19](17:49:30)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='93' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[20](17:49:30)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='94' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[21](17:49:30)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='95' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[22](17:49:31)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='96' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[23](17:49:31)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='97' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[24](17:49:31)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='98' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[25](17:49:32)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='99' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[26](17:49:32)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='100' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[27](17:49:32)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='111' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[28](17:49:33)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='112' AND waktu.waktu LIKE '20081014%'ORDER BY waktu ASC LIMIT 1440
+[29](17:49:34)Simpan report csv: gagal
+[30](18:01:19)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='93' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[31](18:01:20)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='94' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[32](18:01:20)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='95' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[33](18:01:20)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='96' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[34](18:01:21)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='97' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[35](18:01:21)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='98' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[36](18:01:21)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='99' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[37](18:01:21)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='100' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[38](18:01:22)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='111' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[39](18:01:22)SELECT * FROM data_harian RIGHT JOIN waktu on waktu.id_waktu=data_harian.id_waktu WHERE id_titik_ukur='112' AND waktu.waktu LIKE '20070101%'ORDER BY waktu ASC LIMIT 1440
+[40](18:01:23)Simpan report csv: gagal

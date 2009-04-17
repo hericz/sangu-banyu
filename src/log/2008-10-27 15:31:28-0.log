@@ -1,0 +1,126 @@
+
+[0](15:31:28)======== MONITA APP STARTING ===========
+[1](15:31:28)Load file konfigurasi
+[2](15:31:28)Baca konfig
+[3](15:31:28)Baca konfig: OK
+[4](15:37:38)Mulai logging data
+[5](15:37:40)[0]-- TIME:20081027-153740
+
+[6](15:37:41)[1]-- TIME:20081027-153741
+
+[7](15:37:42)[2]-- TIME:20081027-153742
+
+[8](15:37:43)[3]-- TIME:20081027-153743
+
+[9](15:37:43)ALARM: Data Titik 153 (kWh) diluar jangkauan ukur
+[10](15:37:43)ALARM: Data Titik 140 (KwH) diluar jangkauan ukur
+[11](15:37:43)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[12](15:37:43)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[13](15:37:43)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[14](15:37:43)192.168.1.27: Timeout
+[15](15:37:43)192.168.1.39: Timeout
+[16](15:37:43)192.168.1.29: Timeout
+[17](15:37:43)192.168.1.32: Timeout
+[18](15:37:44)[0]-- TIME:20081027-153744
+
+[19](15:37:45)Stop logging data
+[20](15:37:45)[2]-- TIME:20081027-153745
+
+[21](15:40:12)Mulai logging data
+[22](15:40:14)[0]-- TIME:20081027-154014
+
+[23](15:40:15)[1]-- TIME:20081027-154015
+
+[24](15:40:16)[2]-- TIME:20081027-154016
+
+[25](15:40:17)[3]-- TIME:20081027-154017
+
+[26](15:40:17)ALARM: Data Titik 153 (kWh) diluar jangkauan ukur
+[27](15:40:17)ALARM: Data Titik 140 (KwH) diluar jangkauan ukur
+[28](15:40:17)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[29](15:40:17)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[30](15:40:17)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[31](15:40:17)192.168.1.39: Timeout
+[32](15:40:17)192.168.1.29: Timeout
+[33](15:40:17)192.168.1.32: Timeout
+[34](15:40:18)[0]-- TIME:20081027-154018
+
+[35](15:40:19)[1]-- TIME:20081027-154019
+
+[36](15:40:20)[2]-- TIME:20081027-154020
+
+[37](15:40:21)[3]-- TIME:20081027-154021
+
+[38](15:40:21)ALARM: Data Titik 153 (kWh) diluar jangkauan ukur
+[39](15:40:21)ALARM: Data Titik 140 (KwH) diluar jangkauan ukur
+[40](15:40:21)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[41](15:40:21)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[42](15:40:21)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[43](15:40:21)192.168.1.39: Timeout
+[44](15:40:21)192.168.1.29: Timeout
+[45](15:40:21)192.168.1.32: Timeout
+[46](15:40:22)[0]-- TIME:20081027-154022
+
+[47](15:40:23)Stop logging data
+[48](15:40:23)[2]-- TIME:20081027-154023
+
+[49](15:49:31)Mulai logging data
+[50](15:49:33)[0]-- TIME:20081027-154933
+
+[51](15:49:34)[1]-- TIME:20081027-154934
+
+[52](15:49:35)[2]-- TIME:20081027-154935
+
+[53](15:49:36)[3]-- TIME:20081027-154936
+
+[54](15:49:36)ALARM: Data Titik 153 (kWh) diluar jangkauan ukur
+[55](15:49:36)ALARM: Data Titik 140 (KwH) diluar jangkauan ukur
+[56](15:49:37)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[57](15:49:37)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[58](15:49:37)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[59](15:49:37)192.168.1.29: Timeout
+[60](15:49:37)192.168.1.32: Timeout
+[61](15:49:38)[0]-- TIME:20081027-154937
+
+[62](15:49:39)[1]-- TIME:20081027-154939
+
+[63](15:49:40)[2]-- TIME:20081027-154940
+
+[64](15:49:41)[3]-- TIME:20081027-154941
+
+[65](15:49:41)ALARM: Data Titik 153 (kWh) diluar jangkauan ukur
+[66](15:49:41)ALARM: Data Titik 140 (KwH) diluar jangkauan ukur
+[67](15:49:41)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[68](15:49:41)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[69](15:49:41)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[70](15:49:41)192.168.1.39: Timeout
+[71](15:49:41)192.168.1.29: Timeout
+[72](15:49:41)192.168.1.32: Timeout
+[73](15:49:41)Stop logging data
+[74](15:49:42)[2]-- TIME:20081027-154942
+
+[75](15:58:49)Mulai logging data
+[76](15:58:51)[0]-- TIME:20081027-155851
+
+[77](15:58:52)[1]-- TIME:20081027-155852
+
+[78](15:58:53)[2]-- TIME:20081027-155853
+
+[79](15:58:54)[3]-- TIME:20081027-155854
+
+[80](15:58:54)192.168.1.110: Timeout
+[81](15:58:54)ALARM: Data Titik 140 (KwH) diluar jangkauan ukur
+[82](15:58:54)ALARM: Data Titik 127 (kWh) diluar jangkauan ukur
+[83](15:58:54)ALARM: Data Titik 113 (kWh) diluar jangkauan ukur
+[84](15:58:54)ALARM: Data Titik 101 (kwh) diluar jangkauan ukur
+[85](15:58:54)192.168.1.29: Timeout
+[86](15:58:54)192.168.1.32: Timeout
+[87](15:58:56)[0]-- TIME:20081027-155856
+
+[88](15:58:57)[1]-- TIME:20081027-155857
+
+[89](15:58:57)Stop logging data
+[90](15:58:58)[2]-- TIME:20081027-155858
+
+[91](15:59:08)======== MONITA APP CLOSING =========
+[92](15:59:08)============ BYE BYE ===============

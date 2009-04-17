@@ -1,0 +1,395 @@
+<?xml version="1.0"?>
+<gtodo>
+  <category title="Personal" place="4"/>
+  <category title="Business" place="5"/>
+  <category title="Unfiled" place="6"/>
+  <category title="Database" place="0">
+    <item>
+      <attribute id="1217842431" priority="1" done="1" start_date="733258" completed_date="733261" enddate="733258" notify="0" endtime="-60" last_edited="1218114272"/>
+      <summary>Buat 'waktu' di kolom data numerik lebih familier</summary>
+      <comment>20080802-214621 -&gt;tampilkan jam dan menitnya saja
+
+21:46 </comment>
+    </item>
+    <item>
+      <attribute id="1217867312" priority="2" done="1" start_date="733258" completed_date="733261" enddate="733259" notify="0" endtime="-60" last_edited="1218114275"/>
+      <summary>Hapus isi data_jaman setelah digunakan</summary>
+      <comment/>
+    </item>
+    <item>
+      <attribute id="1217629543" priority="1" done="0" start_date="733256" enddate="733286" notify="0" endtime="-60" last_edited="1220256373"/>
+      <summary>Bersihkan sisa DB connection</summary>
+      <comment>Dari cek db masih tampak kalau MYQMain[4] belum diputus.</comment>
+    </item>
+    <item>
+      <attribute id="1217817198" priority="1" done="0" start_date="733258" enddate="733286" notify="0" endtime="-60" last_edited="1220256378"/>
+      <summary>Buat Cek database on start-up</summary>
+      <comment>- Memeriksa database
+- Membuat database jika tidak ditemukan (dengan konfirmasi)
+- Memperbaiki/mengupgrade database versi sebelumnya (bisa menghapus ataupun menambah)
+- Memeriksa konektivitas antar entitas</comment>
+    </item>
+    <item>
+      <attribute id="1217943442" priority="1" done="0" start_date="733259" enddate="733286" notify="0" endtime="-60" last_edited="1220256383"/>
+      <summary>Buat Posting Data</summary>
+      <comment>Untuk mengirim data ke Modul Display</comment>
+    </item>
+    <item>
+      <attribute id="1218595965" priority="1" done="0" start_date="733267" enddate="733286" notify="0" endtime="-60" last_edited="1220256395"/>
+      <summary>Ping database</summary>
+      <comment>Setelah lama iddle, database akan membuang koneksi, jadi ketika mau dipakai lagi akan error.
+
+Jadi status MYQ.isConnected akan nggak berlaku lagi (kadaluarsa). 
+
+Perlu solusi: 
+- Di-ping tiap beberapa menit. Tapi ngapain, wong gak dipakai kok diping. 
+- Ya secara default coba konek ke database sahaja</comment>
+    </item>
+    <item>
+      <attribute id="1218257741" priority="1" done="0" start_date="733263" enddate="733286" notify="0" endtime="-60" last_edited="1220256407"/>
+      <summary>Data numerik diberi option per 10 menit/1 jam</summary>
+      <comment>Supaya lebih terlihat jelas,
+
+- Tambah option di bawah tanggalan</comment>
+    </item>
+    <item>
+      <attribute id="1218156703" priority="1" done="0" start_date="733262" enddate="733286" notify="0" endtime="-60" last_edited="1220256412"/>
+      <summary>Buat Fungsi untuk mengecek duplikat entry pada Kanal sumber_data</summary>
+      <comment>Supaya tidak terjadi titik ukur tidak terbaca karena duplikat entri</comment>
+    </item>
+    <item>
+      <attribute id="1219734384" priority="1" done="1" start_date="733280" completed_date="733287" enddate="733286" notify="0" endtime="-60" last_edited="1220323981"/>
+      <summary>Buat Dialog Edit Group</summary>
+      <comment>Group Titik ukur
+- Untuk nambah</comment>
+    </item>
+    <item>
+      <attribute id="1217584293" priority="1" done="1" start_date="733255" completed_date="733287" enddate="733286" notify="0" endtime="-60" last_edited="1220323994"/>
+      <summary>Tambahkan Range pada editor titik ukur</summary>
+      <comment>Range maks1, maks2, min 1 min 2
+
+Untuk keperluan Alarm</comment>
+    </item>
+    <item>
+      <attribute id="1220858662" priority="1" done="0" start_date="733293" enddate="733293" notify="0" endtime="-60" last_edited="1220858662"/>
+      <summary>Aktifkan opsi-opsi konfigurasi timing</summary>
+      <comment>Seperti yang tertulis di Form Konfigurasi. 
+
+Belum diaktifkan ke fungsi timeout_2
+</comment>
+    </item>
+    <item>
+      <attribute id="1218114963" priority="1" done="1" start_date="733261" completed_date="733294" enddate="733262" notify="0" endtime="-60" last_edited="1220928931"/>
+      <summary>Tambahkan popup menu di ListView Utama</summary>
+      <comment>Isi Popup Menu
+- Delete (Terutama : untuk menghapus data yang tidak valid)
+- </comment>
+    </item>
+    <item>
+      <attribute id="1217326963" priority="1" done="1" start_date="733252" completed_date="733294" enddate="733263" notify="0" endtime="-60" last_edited="1220945513"/>
+      <summary>Aktifkan kolom Sumber Data</summary>
+      <comment>Supaya bisa
+- Tambah
+- Hapus 
+- Kurang
+
+Tambahi kolom "sumber_aktif" supaya bisa dilihat mana yang aktif dan yang tidak</comment>
+    </item>
+    <item>
+      <attribute id="1218512399" priority="1" done="1" start_date="733266" completed_date="733300" enddate="733286" notify="0" endtime="-60" last_edited="1221495118"/>
+      <summary>Perbaiki tanggal/waktu di 'Status'</summary>
+      <comment/>
+    </item>
+    <item>
+      <attribute id="1217584211" priority="1" done="1" start_date="733255" completed_date="733308" enddate="733277" notify="0" endtime="-60" last_edited="1222158148"/>
+      <summary>Tambah Hapus di dialog Sumber Data</summary>
+      <comment>-Beri dialog tanya jawab
+-Hapus dulu semua koneksi ke sumber data ybs
+-Hapus sumber data
+</comment>
+    </item>
+    <item>
+      <attribute id="1218126709" priority="1" done="1" start_date="733261" completed_date="733308" enddate="733277" notify="0" endtime="-60" last_edited="1222158169"/>
+      <summary>Buat fungsi thread untuk menginsert data ke data_jaman </summary>
+      <comment>Kopi paste saja dari tabel data_harian (tabel temporer)</comment>
+    </item>
+    <item>
+      <attribute id="1220483999" priority="1" done="1" start_date="733289" completed_date="733308" enddate="733277" notify="0" endtime="-60" last_edited="1222158209"/>
+      <summary>Menu: Hapus titik ukur</summary>
+      <comment>Menghapus titik ukur dan semua data didalamnya</comment>
+    </item>
+    <item>
+      <attribute id="1217841503" priority="1" done="1" start_date="733258" completed_date="733308" enddate="733277" notify="0" endtime="-60" last_edited="1222158217"/>
+      <summary>Aktifkan Data harian/Data temporary</summary>
+      <comment>Tiap jam 12 tengah malam, simpan data tunggal ke database harian. Dan mulai databas harian yang baru. 
+
+Bisa dibuat untuk beberapa hari kedepan (tergantung setting)
+</comment>
+    </item>
+    <item>
+      <attribute id="1222320788" priority="1" done="0" start_date="733310" enddate="733310" notify="0" endtime="-60" last_edited="1222320788"/>
+      <summary>Tambah Tabel alarm_action</summary>
+      <comment>CREATE TABLE `monita_db`.`alarm_action` (
+  `id_action` INT  NOT NULL AUTO_INCREMENT,
+  `id_titik` INT  NOT NULL,
+  `aktif` BOOLEAN ,
+  `jenis_alarm` SHORT INT ,
+  `nama_action` VARCHAR(20) ,
+  `jenis_action` INT ,
+  `action_string` VARCHAR(64) ,
+  `keterangan` VARCHAR(64) ,
+  PRIMARY KEY (`id_action`)
+)
+ENGINE = InnoDB
+COMMENT = 'Action yang dilakukan saat alarm';
+</comment>
+    </item>
+    <item>
+      <attribute id="1222333696" priority="1" done="0" start_date="733310" enddate="733310" notify="0" endtime="-60" last_edited="1222333696"/>
+      <summary>Tambah alarm_setting di tabel titik_ukur</summary>
+      <comment>alam_setting: 
+
+alarm_min_min_enabled 	: 1 (0x01)
+alarm_min_enabled		: 2 (0x02)
+alarm_max_enabled		: 4 (0x04)
+alarm_max_max_enabled	: 8 (0x10)
+
+</comment>
+    </item>
+    <item>
+      <attribute id="1223959244" priority="1" done="0" start_date="733329" enddate="733329" notify="0" endtime="-60" last_edited="1223959244"/>
+      <summary>Perbaiki: Refresh data &gt; 7 hari nagging</summary>
+      <comment>Di tampilan grafik dan tabel, jika melihat data &gt; 7 hari, message box 7 hari sangat mengganggu dan tidak bisa distop. </comment>
+    </item>
+    <item>
+      <attribute id="1224982240" priority="1" done="0" start_date="733341" enddate="733341" notify="0" endtime="-60" last_edited="1224982240"/>
+      <summary>Periksa Koneksi Database yang tidak ditutup</summary>
+      <comment>Setelah mengedit-edit titik ukur, masih ada pertambahan koneksi database yang tidak ditutup. 
+
+Jika berlangsung lama, bisa mengakibatkan kegagalan koneksi database karena koneksi penuh.</comment>
+    </item>
+    <item>
+      <attribute id="1225073126" priority="2" done="0" start_date="733342" enddate="733342" notify="0" endtime="-60" last_edited="1225073126"/>
+      <summary>BUG: database hilang saat restart koneksi</summary>
+      <comment>Jika sudah berselang 1 hari, saat restart logging data ada pesan error:
+The database connection has gone away.
+
+Berarti ada 1/lebih koneksi database yang digunakan saat mulai logging data yang sudah kadaluarsa. 
+
+URGENT!</comment>
+    </item>
+    <item>
+      <attribute id="1239858373" priority="1" done="0" start_date="733513" enddate="733513" notify="0" endtime="-60" last_edited="1239858373"/>
+      <summary>Kalibrasi default titik ukur baru adalah 1,0</summary>
+      <comment>Sekarang masih 0,0 jadi harus diedit manual untuk masing-masing titik.</comment>
+    </item>
+  </category>
+  <category title="GUI" place="1">
+    <item>
+      <attribute id="1220245362" priority="1" done="1" start_date="733286" completed_date="733287" enddate="733286" notify="0" endtime="-60" last_edited="1220323601"/>
+      <summary>Buat list jadi belang-belang</summary>
+      <comment>Terutama Listview sehingga memudahkan saat melihat data</comment>
+    </item>
+    <item>
+      <attribute id="1220541496" priority="1" done="0" start_date="733289" enddate="733290" notify="0" endtime="-60" last_edited="1220541496"/>
+      <summary>Tambah Form Progress</summary>
+      <comment>Misalnya saat loading database </comment>
+    </item>
+    <item>
+      <attribute id="1220860506" priority="1" done="0" start_date="733293" enddate="733293" notify="0" endtime="-60" last_edited="1220860615"/>
+      <summary>Perbaiki Combo Sumber data di dialog_edit_titik_ukur</summary>
+      <comment>Karena secara default akan ditampilkan sumber data teratas. 
+
+Seharusnya yang tampil default "&lt;not connected&gt;" atau &lt;tidak tersambung&gt;</comment>
+    </item>
+    <item>
+      <attribute id="1220928920" priority="1" done="0" start_date="733294" enddate="733294" notify="0" endtime="-60" last_edited="1220928957"/>
+      <summary>Buat urutan data listview data bisa dibalik (by waktu)</summary>
+      <comment>Supaya bisa dilihat dengan lebih jelas.
+</comment>
+    </item>
+    <item>
+      <attribute id="1217585778" priority="1" done="0" start_date="733255" enddate="733294" notify="0" endtime="-60" last_edited="1220945462"/>
+      <summary>Tambah Handler untuk Sumber data GSM dan Lainnya</summary>
+      <comment>Di dialog Sumber Data, tipe GSM dan yang lain belum diberi handler</comment>
+    </item>
+    <item>
+      <attribute id="1218126610" priority="2" done="1" start_date="733261" completed_date="733297" enddate="733266" notify="0" endtime="-60" last_edited="1221235387"/>
+      <summary>Tambah Form Konfigurasi Software</summary>
+      <comment>Untuk mengeset 
+- periode penyimpanan data,
+- Periode database temporary
+dll
+</comment>
+    </item>
+    <item>
+      <attribute id="1221494236" priority="0" done="0" start_date="733300" enddate="733300" notify="0" endtime="-60" last_edited="1221494236"/>
+      <summary>Tambah Icon (pack icon) di Popup Menut</summary>
+      <comment>Untuk memudahkan, dan menghindari kesalahan klik</comment>
+    </item>
+    <item>
+      <attribute id="1220930489" priority="1" done="1" start_date="733294" completed_date="733300" enddate="733294" notify="0" endtime="-60" last_edited="1221495088"/>
+      <summary>Cari cara cancel close application</summary>
+      <comment>Supaya menghindari menutup aplikasi dengan tidak sengaja
+</comment>
+    </item>
+    <item>
+      <attribute id="1220930441" priority="1" done="1" start_date="733294" completed_date="733303" enddate="733294" notify="0" endtime="-60" last_edited="1221717110"/>
+      <summary>Cari cara meng-cancel event</summary>
+      <comment>Misalnya di klik OK, terus dicek gak valid terus dibatalkan responce Gtk::Response_OK-nya.
+</comment>
+    </item>
+    <item>
+      <attribute id="1218460113" priority="1" done="1" start_date="733265" completed_date="733303" enddate="733294" notify="0" endtime="-60" last_edited="1221717116"/>
+      <summary>Tambahi kolom 'port' pada dialog sumber_data</summary>
+      <comment>Soalnya beda port  beda sumber data gitu lho
+</comment>
+    </item>
+    <item>
+      <attribute id="1221439986" priority="1" done="1" start_date="733300" completed_date="733303" enddate="733300" notify="0" endtime="-60" last_edited="1221717126"/>
+      <summary>Isi default parameter saat pembuatan titik2 data baru (Autofill)</summary>
+      <comment>- Perusaahaan
+- Departemen
+- Equipment
+- Group
+- Titik ukur</comment>
+    </item>
+    <item>
+      <attribute id="1221473145" priority="1" done="1" start_date="733300" completed_date="733303" enddate="733300" notify="0" endtime="-60" last_edited="1221717132"/>
+      <summary>Perbaiki Urutan Treeview setelah menghapus suatu item</summary>
+      <comment>- Cari dulu id_parent dari item yang dihapus
+- Update_tree_view (id_parent-nya)</comment>
+    </item>
+    <item>
+      <attribute id="1218257635" priority="1" done="1" start_date="733263" completed_date="733303" enddate="733294" notify="0" endtime="-60" last_edited="1221717143"/>
+      <summary>Aktifkan fungsi hapus dan tambah pada posting data</summary>
+      <comment>Yang edit sudah sip (di recek juga boleh)</comment>
+    </item>
+    <item>
+      <attribute id="1219639410" priority="1" done="1" start_date="733279" completed_date="733303" enddate="733294" notify="0" endtime="-60" last_edited="1221717146"/>
+      <summary>Tambah View Log untuk melihat aktifitas software</summary>
+      <comment>Sehingga kelihatan apa yang sedang dilakukan software Monita
+- Tambahkan juga option Level 
+- Warning/Alarm ikut masuk kesini</comment>
+    </item>
+    <item>
+      <attribute id="1219734405" priority="1" done="1" start_date="733280" completed_date="733308" enddate="733277" notify="0" endtime="-60" last_edited="1222158186"/>
+      <summary>Buat dialog untuk add equipment</summary>
+      <comment>Add dan edit
+</comment>
+    </item>
+    <item>
+      <attribute id="1217841447" priority="1" done="1" start_date="733258" completed_date="733308" enddate="733277" notify="0" endtime="-60" last_edited="1222158222"/>
+      <summary>Tampilkan data numerik per menit saja</summary>
+      <comment>Supaya lebih terlihat jelas,
+
+atau bahkan dibuat per 10 menit atau 15 menit. </comment>
+    </item>
+    <item>
+      <attribute id="1220436373" priority="1" done="1" start_date="733288" completed_date="733308" enddate="733277" notify="0" endtime="-60" last_edited="1222158229"/>
+      <summary>Buat dialog untuk Hapus Titik Ukur</summary>
+      <comment/>
+    </item>
+    <item>
+      <attribute id="1221235337" priority="1" done="1" start_date="733297" completed_date="733340" enddate="733297" notify="0" endtime="-60" last_edited="1224936267"/>
+      <summary>Ganti ComboBoxEntry dengan ComboBox biasa</summary>
+      <comment>Caranya (ternyata) sederhana:
+- Ganti ComboBoxEntry di Glade
+- Ganti set_text_column dengan pack_start</comment>
+    </item>
+    <item>
+      <attribute id="1218594861" priority="0" done="1" start_date="733267" completed_date="733342" enddate="733294" notify="0" endtime="-60" last_edited="1225065718"/>
+      <summary>Sembunyikan status list (sebelah kanan)</summary>
+      <comment>Untuk mode monitoring, status list tidak perlu diperlihatkan, jadi sebainkya disingkirkan karena buang2 ruang</comment>
+    </item>
+  </category>
+  <category title="Jaringan/LAN/Socket" place="3">
+    <item>
+      <attribute id="1217725272" priority="1" done="0" start_date="733257" enddate="733286" notify="0" endtime="-60" last_edited="1220256351"/>
+      <summary>Periksa berapa maksimum Thread connection</summary>
+      <comment>Dan buat parameter2 di dalamnya safe kalau diberi thread diatas maksimum tersebut
+</comment>
+    </item>
+    <item>
+      <attribute id="1217329980" priority="2" done="1" start_date="733252" completed_date="733308" enddate="733277" notify="0" endtime="-60" last_edited="1222158200"/>
+      <summary>Beri time-out pada rekuest data</summary>
+      <comment>Misal sedang rekuest data ke 192.168.1.5-&gt; jika 5 detik tidak respons dianggap time-out. Soalnya sekarang sampai berjam-jam tidak dianggap timeout juga. 
+
+</comment>
+    </item>
+  </category>
+  <category title="CATATAN" place="7">
+    <item>
+      <attribute id="1218125202" priority="1" done="0" start_date="733261" enddate="733294" notify="0" endtime="-60" last_edited="1220945486"/>
+      <summary>Common Error: undefined reference to 'VTT</summary>
+      <comment>undefined Reference to "VTT on blabla"
+- Berarti ada fungsi yang sudah dideklarasikan tapi belum diimplementasikan
+misal kurang penulisan induk
+
+contoh
+void fungsi()
+{}
+seharusnya
+void main_window::fungsi() 
+{}</comment>
+    </item>
+  </category>
+  <category title="Sistem" place="2">
+    <item>
+      <attribute id="1220858555" priority="1" done="0" start_date="733293" enddate="733293" notify="0" endtime="-60" last_edited="1220858555"/>
+      <summary>Set Default Konfigurasi pada fungsi LoadKonfig</summary>
+      <comment>Sekarang belum diset.
+
+Jadi kalau data konfig kosong/rusak masih kosong saja. </comment>
+    </item>
+    <item>
+      <attribute id="1221032193" priority="1" done="0" start_date="733295" enddate="733295" notify="0" endtime="-60" last_edited="1221032206"/>
+      <summary>State Software</summary>
+      <comment>Buat definisi State software
+</comment>
+    </item>
+    <item>
+      <attribute id="1220928101" priority="1" done="1" start_date="733294" completed_date="733303" enddate="733294" notify="0" endtime="-60" last_edited="1221717108"/>
+      <summary>Setiap sore software mati mendadak tanpa diketahui sebabnya</summary>
+      <comment>Cari penyebabnya, buat log saja ya?</comment>
+    </item>
+    <item>
+      <attribute id="1222065621" priority="1" done="0" start_date="733307" enddate="733307" notify="0" endtime="-60" last_edited="1222309964"/>
+      <summary>Tambah ekspor ke CSV (excell)</summary>
+      <comment>Untuk LIPI
+- Sudah bisa, tapi belum diimplementasi ke titik/group</comment>
+    </item>
+    <item>
+      <attribute id="1223959382" priority="1" done="0" start_date="733329" enddate="733329" notify="0" endtime="-60" last_edited="1223959395"/>
+      <summary>Test Modem GSM</summary>
+      <comment>- SMS dan internet</comment>
+    </item>
+    <item>
+      <attribute id="1225019661" priority="1" done="0" start_date="733341" enddate="733341" notify="0" endtime="-60" last_edited="1225019661"/>
+      <summary>Log file salah tuh</summary>
+      <comment>Gagal membuka log file: ./log/2008-10-26 19:11:45 19:11:45-0.log</comment>
+    </item>
+    <item>
+      <attribute id="1225027810" priority="1" done="0" start_date="733341" enddate="733341" notify="0" endtime="-60" last_edited="1225027810"/>
+      <summary>Memory Leak</summary>
+      <comment>Terjadi memory leak besar-besaran saat logging data.
+
+- belum diketahui penyebabnya.</comment>
+    </item>
+    <item>
+      <attribute id="1225180526" priority="1" done="0" start_date="733343" enddate="733343" notify="0" endtime="-60" last_edited="1225181510"/>
+      <summary>Memory Leak hitung</summary>
+      <comment>Kira-kira 10MB/4jam
+
+kurang lebih 3328.812698413 byte/siklus. sekitar 3kilobyte? wah apa ya?</comment>
+    </item>
+    <item>
+      <attribute id="1225326364" priority="1" done="0" start_date="733345" enddate="733345" notify="0" endtime="-60" last_edited="1225326364"/>
+      <summary>Buat options "automatically start logging data"</summary>
+      <comment>- Edit konfigurasi_dialog, tambahkan options ini
+	- Tambahkan di struk konfigurasi 
+	- Buat update dan simpannya
+	- Tes</comment>
+    </item>
+  </category>
+</gtodo>
