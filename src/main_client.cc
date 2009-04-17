@@ -20,7 +20,7 @@ int main_client (std::string host,int port_num,char* buf)
 				std::string reply;
 
 				try
-				{
+				{ 
 					client_socket << "sampurasun";
 					//client_socket >> reply;
 					//printf("Baca buffer...");
