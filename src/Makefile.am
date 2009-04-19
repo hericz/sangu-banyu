@@ -59,10 +59,10 @@ monitaapp_SOURCES = \
 	dlg_report_glade.cc
 
 monitaapp_CXXFLAGS = \
-	-lmysqlclient \
 	-I/usr/include/mysql
 
-monitaapp_LDFLAGS = 
+monitaapp_LDFLAGS = \
+	-lmysqlclient
 
 monitaapp_LDADD = $(MONITAAPP_LIBS)
 
