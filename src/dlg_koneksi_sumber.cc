@@ -72,7 +72,8 @@ bool dlg_koneksi_sumber::ReloadList(int port)
 	bool ada_data_lho=false;
 	
 	//Query mencari jumlah kanal
-	jumlah_kanal=10; //default
+	//jumlah_kanal=10; //default
+	jumlah_kanal=20; //default
 	
 	//Query mengisi tabel
 	usQuery=Glib::ustring::compose(

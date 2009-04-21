@@ -588,8 +588,7 @@ int dialog_sumber::reload_list()
 
 void dialog_sumber::on_button_koneksi_clicked()
 {
-	
-	printf("Button koneksi\n");
+	printf("Button Lihat koneksi\n");
 	
 	int id_sumber;
 	
