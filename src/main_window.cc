@@ -291,7 +291,18 @@ main_window::main_window()
 	//progress_koneksi->set_height(200);
 	printf("LoadConfig ()\n");
 	this->add_log("Load file konfigurasi",0,0);
-	LoadConfig();
+	
+	if (LoadConfig() == 2)
+	{
+		// file konfigurasi rusak
+		strcpy(kfg.db_host, "192.168.1.13");
+		strcpy(kfg.db_username, "monita");
+		strcpy(kfg.db_pass, "diesel");
+		strcpy(kfg.db_port, "3306");
+		strcpy(kfg.nama_db, "monita_db");
+		
+		kfg.mode=20;	// sebagai server	
+	}
 	
 	//Init paramater treeview
 	tree_ada_kolom=false;	
@@ -2057,12 +2068,15 @@ int main_window::LoadConfig()
 	{
 		printf("File konfigurasi rusak. Set ke default");
 		add_log("Baca konfig: File konfigurasi rusak. Set ke default",0,0);
-		return 1;
+		
+		return 2;
 	} //0xAA55AA55
 	else
 	{
 		add_log("Baca konfig: OK",0,0);
 		printf("OK\n");
+		
+		return 1;
 	}
     return 0;
 }
