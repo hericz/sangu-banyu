@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<gtodo>
+  <category title="Personal" place="0"/>
+  <category title="Business" place="1"/>
+  <category title="Unfiled" place="2"/>
+  <category title="Komunikasi" place="3"/>
+  <category title="GUI" place="4">
+    <item>
+      <attribute id="1240712649" priority="1" done="0" start_date="733523" enddate="99999999" notify="0" endtime="-60" last_edited="1240712649"/>
+      <summary>Buat selektor kanal yang ditampilkan</summary>
+      <comment>Buat selektor nomer PM yang akan ditampilkan.</comment>
+    </item>
+  </category>
+</gtodo>

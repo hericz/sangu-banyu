@@ -1,0 +1,12 @@
+
+[Anjuta]
+Maximized=1
+Geometry=1268x717+6+52
+
+[File Loader]
+Files=file:///home/herry/program/pm_server/src/Makefile#265%%%file:///home/herry/program/pm_server/src/main_window.hh#70%%%file:///home/herry/program/pm_server/src/main_window.cc#467%%%file:///home/herry/program/pm_server/src/low_mod.c#23%%%file:///home/herry/program/pm_server/src/low_mod.h#228%%%file:///home/herry/program/pm_server/src/common.h#81%%%file:///home/herry/program/pm_server/src/mbcrc.h#36%%%file:///home/herry/program/pm_server/src/main.cc#42
+
+[Execution]
+Program arguments=
+Run in terminal=2
+Last selected uri=file:///home/herry/program/pm_server/src/pm_server

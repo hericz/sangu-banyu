@@ -1,0 +1,25 @@
+// generated 2009/4/28 3:05:50 EIT by herry@LancarJaya.(none)
+// using glademm V2.6.0
+//
+// newer (non customized) versions of this file go to main_window.hh_new
+
+// you might replace
+//    class foo : public foo_glade { ... };
+// by
+//    typedef foo_glade foo;
+// if you didn't make any modifications to the widget
+
+#ifndef _MAIN_WINDOW_HH
+#  include "main_window_glade.hh"
+#  define _MAIN_WINDOW_HH
+class main_window : public main_window_glade
+{  
+        
+        void on_button_connect_clicked();
+        void on_button_1_clicked();
+        void on_button_2_clicked();
+        void on_button_3_clicked();
+        void on_button_4_clicked();
+        void on_button_5_clicked();
+};
+#endif

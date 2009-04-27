@@ -1,0 +1,21 @@
+# generated 2009/4/28 3:05:50 EIT by herry@LancarJaya.(none)
+# using glademm V2.6.0
+
+SUBDIRS = po  
+
+EXTRA_DIST = AUTHORS TODO README configure 
+le.am_new
+bin_PROGRAMS = pm_server
+
+pm_server_SOURCES = \
+	pm_server.cc\
+	main_window_glade.cc \
+	main_window.cc 
+
+noinst_HEADERS = \
+	main_window_glade.hh \
+	main_window.hh 
+
+AM_CXXFLAGS = @GTKMM_CFLAGS@ 
+
+pm_server_LDADD = @LIBS@ @GTKMM_LIBS@ 

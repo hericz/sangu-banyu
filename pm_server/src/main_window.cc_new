@@ -1,0 +1,33 @@
+// generated 2009/4/28 3:05:50 EIT by herry@LancarJaya.(none)
+// using glademm V2.6.0
+//
+// newer (non customized) versions of this file go to main_window.cc_new
+
+// This file is for your program, I won't touch it again!
+
+#include "config.h"
+#include "main_window.hh"
+
+void main_window::on_button_connect_clicked()
+{  
+}
+
+void main_window::on_button_1_clicked()
+{  
+}
+
+void main_window::on_button_2_clicked()
+{  
+}
+
+void main_window::on_button_3_clicked()
+{  
+}
+
+void main_window::on_button_4_clicked()
+{  
+}
+
+void main_window::on_button_5_clicked()
+{  
+}
