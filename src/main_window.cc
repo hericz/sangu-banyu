@@ -104,6 +104,7 @@ Glib::ustring bulan[12]={"Januari",
 						"Maret",
 						"April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"};
 
+
 int max_tanggal[12]={31,28,31,30,31,30,31,31,30,31,30,31};
 
 //Alarm switch buffer
@@ -2031,21 +2032,21 @@ int main_window::LoadConfig()
 	//periksa file konfigurasi
 	printf("-db_host:%s\n",kfg.db_host);
     
-	/*if(!(strcmp(kfg.db_host,"")))
-        strcpy(kfg->db_host,"localhost");
-    if(!(strcmp(&kfg_file.db_port,"")))
-        strcpy(kfg_file.db_port,"3306");
-    if(!(strcmp(kfg_file.db_username,"")))
-        strcpy(&kfg_file.db_username[0],"herry");            
-    if(!(strcmp(kfg_file.db_pass,"")))
-        strcpy(&kfg_file.db_pass[0],"");
-    if(!(strcmp(kfg_file.nama_db,"")))
-        strcpy(&kfg_file.nama_db[0],"monita_db");
+	if(!(strcmp(kfg.db_host,"")))
+        strcpy(kfg.db_host,"localhost");
+    if(!(strcmp(kfg.db_port,"")))
+        strcpy(kfg.db_port,"3306");
+    if(!(strcmp(kfg.db_username,"")))
+        strcpy(&kfg.db_username[0],"monita");            
+    if(!(strcmp(kfg.db_pass,"")))
+        strcpy(&kfg.db_pass[0],"");
+    if(!(strcmp(kfg.nama_db,"diesel")))
+        strcpy(&kfg.nama_db[0],"monita_db");
 
-    if (kfg_file.data_ditampilkan == NULL) kfg_file.data_ditampilkan = 2000;
+    /*if (kfg_file.data_ditampilkan == NULL) kfg_file.data_ditampilkan = 2000;
 
     //cek jika mode tidak sama dengan nol atau 1 maka default adalah 1 (browsing & analisis)
-
+	/*
     //if (kf.mode != 0 || kf.mode != 1)
     if (kfg_file.mode == 0)
           kfg_file.mode = 20;       //browsing, 10 server, 20 browsing
@@ -2083,28 +2084,28 @@ int main_window::SimpanKonfig(konfig_file* kf)
 		add_log("Simpan konfig: Gagal membuka file",0,0);
 		return 1;
     }
-	
+	kf->cek_konf=2857740885; //0xAA55AA55
     fwrite(kf, sizeof(konfig_file), 1, stream);
 	
     fclose(stream);
 	
-	kf->cek_konf=2857740885; //0xAA55AA55
+	//kf->cek_konf=2857740885; //0xAA55AA55
 	
 	printf("OK\n");
 	add_log("Simpan konfig: OK",0,0);
-	
+	/*
 	//Simpan konfig dalam bentuk file conf standard
 	 GKeyFile *keyfile;
  	 GKeyFileFlags flags;
   	 GError *error = NULL;
   	 gsize length;
 	
-	   /* Create a new GKeyFile object and a bitwise list of flags. */
+	// Create a new GKeyFile object and a bitwise list of flags. 
 	keyfile = g_key_file_new ();
 	//flags = G_KEY_FILE_KEEP_COMMENTS | G_KEY_FILE_KEEP_TRANSLATIONS;
 	flags = G_KEY_FILE_KEEP_COMMENTS;// | G_KEY_FILE_KEEP_TRANSLATIONS;
 
-	/* Load the GKeyFile from keyfile.conf or return. */
+	// Load the GKeyFile from keyfile.conf or return.
 	//if (!g_key_file_load_from_file (keyfile, "keyfile.conf", flags, &error))
 	//{
 	//	g_error (error->message);
@@ -2131,8 +2132,8 @@ int main_window::SimpanKonfig(konfig_file* kf)
 			//add_log("Simpan konfig: Gagal membuka file",0,0);
 			return 1;
 		}
-  	fwrite(buffer, bufsize, 1, stream);
-  	fclose(stream);
+  	//fwrite(buffer, bufsize, 1, stream);
+  	//fclose(stream);*/
   
 	return 0;
 }
