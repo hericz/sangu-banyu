@@ -1,6 +1,17 @@
 <?xml version="1.0"?>
 <gtodo>
-  <category title="Personal" place="0"/>
+  <category title="Personal" place="0">
+    <item>
+      <attribute id="1240879559" priority="1" done="0" start_date="733525" enddate="99999999" notify="0" endtime="-60" last_edited="1240879559"/>
+      <summary>Buat peringatan saat menutup aplikasi</summary>
+      <comment/>
+    </item>
+    <item>
+      <attribute id="1240982515" priority="1" done="0" start_date="733526" enddate="99999999" notify="0" endtime="-60" last_edited="1240982515"/>
+      <summary>Tambahi auto restart</summary>
+      <comment>Setiap berapa ribu siklus, hentikan dulu terus dimulai lagi</comment>
+    </item>
+  </category>
   <category title="Business" place="1"/>
   <category title="Unfiled" place="2"/>
   <category title="Komunikasi" place="3"/>
@@ -9,6 +20,11 @@
       <attribute id="1240712649" priority="1" done="0" start_date="733523" enddate="99999999" notify="0" endtime="-60" last_edited="1240712649"/>
       <summary>Buat selektor kanal yang ditampilkan</summary>
       <comment>Buat selektor nomer PM yang akan ditampilkan.</comment>
+    </item>
+    <item>
+      <attribute id="1240879533" priority="1" done="0" start_date="733525" enddate="99999999" notify="0" endtime="-60" last_edited="1240879533"/>
+      <summary>Gedein font</summary>
+      <comment>Pake lingo script</comment>
     </item>
   </category>
 </gtodo>

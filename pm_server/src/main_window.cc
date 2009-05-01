@@ -30,6 +30,8 @@ unsigned int trm;
 unsigned int pool_wait;
 unsigned int loop_kirim=0;
 
+//int server_counter;
+
 Glib::ustring pm_parameter[33]={
 	"KWh", //1
 	"KVArh", //2
@@ -100,11 +102,11 @@ Glib::ustring pm_satuan[33]={
 	"PF",//32
 	"PF" //33
 	};
-
+static char status_teks[128];
 char ctemp[256];
 int t;
 
-long counter;
+long server_counter, loop_counter;
 struct f_PM710 asli_PM710[JUMLAH_PM];
 //int wait_flag;                    /* TRUE while no signal received */	
 
@@ -125,12 +127,12 @@ void *thread_server(void *arg)
     {
 		//Create the socket
 		ServerSocket server (5002);
-		counter=0;
+		server_counter=0;
 
 		while ( true )
 		{
 			ServerSocket new_sock;
-			printf("Accept koneksi\n");
+			printf("Terima koneksi\n");
 			server.accept ( new_sock );
 	
 	  		try
@@ -164,14 +166,14 @@ void *thread_server(void *arg)
 				
 				//Kirim data
 				new_sock.send_buffer((char*)&pm_eth,sizeof(pm_eth));
-				printf("\n |-- %d> kirim: %d bytes\n",counter, sizeof(pm_eth));
-				counter++;
+				printf("\n |-- %d> kirim: %d bytes\n",server_counter, sizeof(pm_eth));
+				server_counter++;
 				  
 				//printf(".");
-				if(counter%50==0)
-					printf("\n%d",counter);
-				if(counter>10000)
-				  	counter=0;
+				if(server_counter%50==0)
+					printf("\n%d",server_counter);
+				if(server_counter>1100)
+				  	server_counter=0;
 				}
 			}
 			catch ( SocketException& e) 
@@ -197,8 +199,43 @@ main_window::main_window()
 	serial_terbuka=FALSE;
 	timer_on=false;
 	jum_PM=3;
-	counter=0;
+	server_counter=0;
+	loop_counter=0;
 	tree_ada_kolom=false;
+	
+	server_counter=0;
+	m_context_id = statusbar1->get_context_id("Statusbar");
+	//init font
+	Glib::ustring font_desc;
+	font_desc="Arial 20";
+	
+	label_kw->modify_font(Pango::FontDescription(font_desc));
+	label_kva->modify_font(Pango::FontDescription(font_desc));
+	label_kvar->modify_font(Pango::FontDescription(font_desc));
+	
+	label_kwh->modify_font(Pango::FontDescription(font_desc));
+	label_kvah->modify_font(Pango::FontDescription(font_desc));
+	label_kvarh->modify_font(Pango::FontDescription(font_desc));
+	
+	label_cospi->modify_font(Pango::FontDescription(font_desc));
+	label_frek->modify_font(Pango::FontDescription(font_desc));
+	
+	label_vl1l2->modify_font(Pango::FontDescription(font_desc));
+	label_vl2l3->modify_font(Pango::FontDescription(font_desc));
+	label_vl1l3->modify_font(Pango::FontDescription(font_desc));
+	
+	label_voltl1n->modify_font(Pango::FontDescription(font_desc));
+	label_voltl2n->modify_font(Pango::FontDescription(font_desc));
+	label_voltl3n->modify_font(Pango::FontDescription(font_desc));
+	
+	label_ampl1->modify_font(Pango::FontDescription(font_desc));
+	label_ampl2->modify_font(Pango::FontDescription(font_desc));
+	label_ampl3->modify_font(Pango::FontDescription(font_desc));
+	label_ampn->modify_font(Pango::FontDescription(font_desc));
+	
+	label_vll->modify_font(Pango::FontDescription(font_desc));
+	label_vln->modify_font(Pango::FontDescription(font_desc));
+	label_ampr->modify_font(Pango::FontDescription(font_desc));
 	
 	id_tampilkan=1;
 	
@@ -328,13 +365,14 @@ bool main_window::saat_kerja()//GtkWidget *wg)
 	unsigned char *pc;
 	static char tek[128];
 	static char tek2[256];
+	
 	int i;
 	int res;
 	
 	float *pFloat;
 	float *pFloat2;
 	
-	//printf("[saat_kerja]wf: %d\n",wait_flag_serial);
+	printf("[saat_kerja]wf: %d\n",wait_flag_serial);
 	
 	if (lanjut == TRUE)
 	{
@@ -514,201 +552,35 @@ bool main_window::saat_kerja()//GtkWidget *wg)
 	
 //#endif
 	
+	//Restart server 
+	//sprintf(tek2, "Recv ke %2d [%2d]:", urutan, pool_wait);
 	
-	
-	/* cek request dari ethernet */
+
+	//server_counter++;
 	/*
-	int client;
-	memset(tek,0x00,sizeof(tek));
-	client_len = sizeof(client_address);
-	//client = accept(server_sockfd, (struct sockaddr *)&client_address, &client_len);
-	if (client)
+	if(server_counter==1000)
 	{
-		i = read(client, tek, 10);
-    	if (i > 7) // 10
-    	{
-    		printf(" > Request from Client: %s\n",tek);
-    		if (strncmp(tek, "stack_01", 10) == 0)
-    		{
-    			printf("Konek =%d\n", client);
-    			loop_kirim++;
-    			pm_eth.nomer = loop_kirim;
-   		      	pm_eth.flag = 30;
-
-				memcpy(pm_eth.buf, (char *) &asli_PM710[1], sizeof (asli_PM710[1]));
-     	        kontrol_PM[1].alamat = 1;
-     	        pm_eth.alamat = kontrol_PM[addr_PM710].alamat;
-     	        strcpy(pm_eth.mon, "monita1");
-								
-				printf(" < Kirim data\n");
-				printf(" <- mon= %s\n",pm_eth.mon);
-				printf(" <- nomer = %d\n",pm_eth.nomer);
-				printf(" <- pm_eth.buf = %s\n",pm_eth.buf);
-				
-				pFloat=(float*) &pm_eth.buf;
-				
-				for(i=0;i<30;i++)
-				{
-					printf("%d:%0.2f\t",i,*pFloat);
-					if((i%10)==9)
-						printf("\n");
-						
-					pFloat++;
-				}
-    			
-    			
-    			write(client, (char *) &pm_eth, sizeof (pm_eth));
-				
-				//close(client);
-    		}
-    		if (strncmp(tek, "stack_02", 10) == 0)
-    		{
-    			printf("Konek =%d\n", client);
-    			loop_kirim++;
-    			pm_eth.nomer = loop_kirim;
-   		      	pm_eth.flag = 30;
-				
-				memcpy(pm_eth.buf, (char *) &asli_PM710[2], sizeof (asli_PM710[2]));
-     	        kontrol_PM[1].alamat = 2;
-     	        pm_eth.alamat = kontrol_PM[addr_PM710].alamat;
-     	        strcpy(pm_eth.mon, "monita1");
-								
-				printf(" < Kirim data\n");
-				printf(" <- mon= %s\n",pm_eth.mon);
-				printf(" <- nomer = %d\n",pm_eth.nomer);
-				printf(" <- pm_eth.buf = %s\n",pm_eth.buf);
-				
-				pFloat=(float*) &pm_eth.buf;
-				
-				for(i=0;i<30;i++)
-				{
-					printf("%d:%0.2f\t",i,*pFloat);
-					if((i%10)==9)
-						printf("\n");
-						
-					pFloat++;
-				}
-    			
-    			
-    			write(client, (char *) &pm_eth, sizeof (pm_eth));
-				
-				//close(client);
-    		}
-    		if (strncmp(tek, "stack_03", 10) == 0)
-    		{
-    			printf("Konek =%d\n", client);
-    			loop_kirim++;
-    			pm_eth.nomer = loop_kirim;
-   		      	pm_eth.flag = 30;
-   		      	
-				
-				memcpy(pm_eth.buf, (char *) &asli_PM710[3], sizeof (asli_PM710[3]));
-     	        kontrol_PM[1].alamat = 3;
-     	        pm_eth.alamat = kontrol_PM[addr_PM710].alamat;
-     	        strcpy(pm_eth.mon, "monita1");
-								
-				printf(" < Kirim data\n");
-				printf(" <- mon= %s\n",pm_eth.mon);
-				printf(" <- nomer = %d\n",pm_eth.nomer);
-				printf(" <- pm_eth.buf = %s\n",pm_eth.buf);
-				
-				pFloat=(float*) &pm_eth.buf;
-				
-				for(i=0;i<30;i++)
-				{
-					printf("%d:%0.2f\t",i,*pFloat);
-					if((i%10)==9)
-						printf("\n");
-						
-					pFloat++;
-				}
-    		
-    			
-    			write(client, (char *) &pm_eth, sizeof (pm_eth));
-				
-				//close(client);
-    		}
-    		if (strncmp(tek, "stack_04", 10) == 0)
-    		{
-    			printf("Konek =%d\n", client);
-    			loop_kirim++;
-    			pm_eth.nomer = loop_kirim;
-   		      	pm_eth.flag = 30;
-   		      	
-
-				
-				memcpy(pm_eth.buf, (char *) &asli_PM710[4], sizeof (asli_PM710[4]));
-     	        kontrol_PM[1].alamat =4;
-     	        pm_eth.alamat = kontrol_PM[addr_PM710].alamat;
-     	        strcpy(pm_eth.mon, "monita1");
-								
-				printf(" < Kirim data\n");
-				printf(" <- mon= %s\n",pm_eth.mon);
-				printf(" <- nomer = %d\n",pm_eth.nomer);
-				printf(" <- pm_eth.buf = %s\n",pm_eth.buf);
-				
-				pFloat=(float*) &pm_eth.buf;
-				
-				for(i=0;i<30;i++)
-				{
-					printf("%d:%0.2f\t",i,*pFloat);
-					if((i%10)==9)
-						printf("\n");
-						
-					pFloat++;
-				}
-    		
-    			
-    			write(client, (char *) &pm_eth, sizeof (pm_eth));
-				
-				//close(client);
-    		}
-    		if (strncmp(tek, "stack_05", 10) == 0)
-    		{
-    			printf("Konek =%d\n", client);
-    			loop_kirim++;
-    			pm_eth.nomer = loop_kirim;
-   		      	pm_eth.flag = 30;
-				
-				memcpy(pm_eth.buf, (char *) &asli_PM710[5], sizeof (asli_PM710[5]));
-     	        kontrol_PM[1].alamat = 5;
-     	        pm_eth.alamat = kontrol_PM[addr_PM710].alamat;
-     	        strcpy(pm_eth.mon, "monita1");
-								
-				printf(" < Kirim data\n");
-				printf(" <- mon= %s\n",pm_eth.mon);
-				printf(" <- nomer = %d\n",pm_eth.nomer);
-				printf(" <- pm_eth.buf = %s\n",pm_eth.buf);
-				
-				pFloat=(float*) &pm_eth.buf;
-				
-				for(i=0;i<30;i++)
-				{
-					printf("%d:%0.2f\t",i,*pFloat);
-					if((i%10)==9)
-						printf("\n");
-						
-					pFloat++;
-				}
-    			
-    			
-    			write(client, (char *) &pm_eth, sizeof (pm_eth));
-				
-				//close(client);
-    		}
-    	}
-    	else
-    	{
-    		printf("Request Salah: [%s]\n",tek);
-    		
-    	}
-    	//close(client);	
+		server_aktif=false;
 	}
-	else
-		printf("stat = %d\n", client); */
+	else if(server_counter>1005)
+	{
+		server_aktif=true;
+		printf("server_counter mencapai %d. Reset ke 0\n",server_counter);
+		server_counter=0;
+	}
+	*/
+	loop_counter++;
+	//if(loop_counter>1000)
+	//{
+		
+	//	loop_counter=0;
+	//}
 	
 	if(timer_on==false)
+	{
+		printf("Timer dimatikan\n");
 		return false;
+	}
 }
 
 /*
@@ -1501,7 +1373,7 @@ bool main_window::update_tampilan()
 		
 		sprintf(tek, "%0.2f",*fTemp);	
 		row[m_Columns.m_nilai]=tek;
-		printf("%d->%0.2f \t",i,*fTemp);
+		//printf("%d->%0.2f \t",i,*fTemp);
 		fTemp++;
 	}
 	
@@ -1521,102 +1393,113 @@ bool main_window::update_tampilan()
 	//gtk_label_set_text((GtkLabel *) l_kwh, tek);
 	label_kwh->set_text(tek);
 		
-	sprintf(tek, "kVAh  = %.2f", asli_PM710[addr_PM710].kvah);	
+	sprintf(tek, "kVAh  = %.2f", asli_PM710[id_tampilkan].kvah);	
 	label_kvah->set_text(tek);
 	//printf("%s\n",tek);
 	//gtk_label_set_text((GtkLabel *) l_kvah, tek);
 	
-	sprintf(tek, "kVArh = %.2f", asli_PM710[addr_PM710].kvarh);	
+	//sprintf(tek, "<span foreground=\"blue\" size=\"20\">kVArh = %.2f</span>", asli_PM710[addr_PM710].kvarh);	
+	sprintf(tek, "kVArh = %.2f", asli_PM710[id_tampilkan].kvarh);	
+	
 	//printf("%s\n",tek);
 	label_kvarh->set_text(tek);
 	//gtk_label_set_text((GtkLabel *) l_kvarh, tek);
 	
-	sprintf(tek, "kW    = %.2f", asli_PM710[addr_PM710].kw);	
+	sprintf(tek, "kW    = %.2f", asli_PM710[id_tampilkan].kw);	
+	//sprintf(tek, "kW    = %.2f", asli_PM710[addr_PM710].kw);	
 	//printf("%s\n",tek);
+	
 	label_kw->set_text(tek);
+	//
 	//gtk_label_set_text((GtkLabel *) l_kw, tek);
 	
 	
 	
-	sprintf(tek, "kVA   = %.2f", asli_PM710[addr_PM710].kva);		
+	sprintf(tek, "kVA   = %.2f", asli_PM710[id_tampilkan].kva);		
 	//printf("%s\n",tek);
 	label_kva->set_text(tek);
 	//gtk_label_set_text((GtkLabel *) l_kva, tek);
 	
-	sprintf(tek, "kVAr  = %.2f", asli_PM710[addr_PM710].kvar);	
+	sprintf(tek, "kVAr  = %.2f", asli_PM710[id_tampilkan].kvar);	
 	label_kvar->set_text(tek);
 	//printf("%s\n",tek);
 	//gtk_label_set_text((GtkLabel *) l_kvar, tek);
 	
-	sprintf(tek, "pf    = %.2f", asli_PM710[addr_PM710].pf);	
+	sprintf(tek, "pf    = %.2f", asli_PM710[id_tampilkan].pf);	
 	//printf("%s\n",tek);
 	label_cospi->set_text(tek);
 	//gtk_label_set_text((GtkLabel *) l_pf, tek);
 	
-	sprintf(tek, "Volt1 = %.2f", asli_PM710[addr_PM710].volt1);	
+	sprintf(tek, "Volt1 = %.2f", asli_PM710[id_tampilkan].volt1);	
 	//printf("%s\n",tek);
 	label_vll->set_text(tek);
 	//gtk_label_set_text((GtkLabel *) l_volt1, tek);
 	
-	sprintf(tek, "Volt2 = %.2f", asli_PM710[addr_PM710].volt2);	
+	sprintf(tek, "Volt2 = %.2f", asli_PM710[id_tampilkan].volt2);	
 	//printf("%s\n",tek);
 	label_vln->set_text(tek);
 	//gtk_label_set_text((GtkLabel *) l_volt2, tek);
 	
-	sprintf(tek, "frek  = %.2f", asli_PM710[addr_PM710].frek);	
+	sprintf(tek, "Ampere = %.2f", asli_PM710[id_tampilkan].amp);	
+	//printf("%s\n",tek);
+	label_ampr->set_text(tek);
+	//gtk_label_set_text((GtkLabel *) l_volt2, tek);
+	
+	
+	sprintf(tek, "frek  = %.2f", asli_PM710[id_tampilkan].frek);	
 	//printf("%s\n",tek);
 	label_frek->set_text(tek);
 	//gtk_label_set_text((GtkLabel *) l_frek, tek);
 	
 	
-	sprintf(tek, "amp_A = %.2f", asli_PM710[addr_PM710].ampA);	
+	sprintf(tek, "amp_A = %.2f", asli_PM710[id_tampilkan].ampA);	
 	//printf("%s\n",tek);
 	label_ampl1->set_text(tek);
 	//gtk_label_set_text((GtkLabel *) l_ampa, tek);
 	
-	sprintf(tek, "amp_B = %.2f", asli_PM710[addr_PM710].ampB);	
+	sprintf(tek, "amp_B = %.2f", asli_PM710[id_tampilkan].ampB);	
 	//printf("%s\n",tek);
 	label_ampl2->set_text(tek);
 	//gtk_label_set_text((GtkLabel *) l_ampb, tek);
 	
-	sprintf(tek, "amp_C = %.2f", asli_PM710[addr_PM710].ampC);	
+	sprintf(tek, "amp_C = %.2f", asli_PM710[id_tampilkan].ampC);	
 	//printf("%s\n",tek);
 	label_ampl3->set_text(tek);
 	//gtk_label_set_text((GtkLabel *) l_ampc, tek);
 	
-	sprintf(tek, "amp_N = %.2f", asli_PM710[addr_PM710].ampN);	
+	sprintf(tek, "amp_N = %.2f", asli_PM710[id_tampilkan].ampN);	
 	//printf("%s\n",tek);
 	label_ampn->set_text(tek);
 	//gtk_label_set_text((GtkLabel *) l_ampn, tek);
 	
 	
-	sprintf(tek, "Volt_AB = %.2f", asli_PM710[addr_PM710].voltA_B);	
+	sprintf(tek, "Volt_AB = %.2f", asli_PM710[id_tampilkan].voltA_B);	
 	//printf("%s\n",tek);
 	label_vl1l2->set_text(tek);
 	//gtk_label_set_text((GtkLabel *) l_voltab, tek);
 
-	sprintf(tek, "Volt_BC = %.2f", asli_PM710[addr_PM710].voltB_C);	
+	sprintf(tek, "Volt_BC = %.2f", asli_PM710[id_tampilkan].voltB_C);	
 	//printf("%s\n",tek);
 	label_vl2l3->set_text(tek);
 	//gtk_label_set_text((GtkLabel *) l_voltbc, tek);
 
-	sprintf(tek, "Volt_AC = %.2f", asli_PM710[addr_PM710].voltA_C);	
+	sprintf(tek, "Volt_AC = %.2f", asli_PM710[id_tampilkan].voltA_C);	
 	//printf("%s\n",tek);
 	label_vl1l3->set_text(tek);
 	//gtk_label_set_text((GtkLabel *) l_voltac, tek);
 
 
-	sprintf(tek, "Volt_AN = %.2f", asli_PM710[addr_PM710].voltA_N);	
+	sprintf(tek, "Volt_AN = %.2f", asli_PM710[id_tampilkan].voltA_N);	
 	//printf("%s\n",tek);
 	label_voltl1n->set_text(tek);
 	//gtk_label_set_text((GtkLabel *) l_voltan_piye, tek);
 	
-	sprintf(tek, "Volt_BN = %.2f", asli_PM710[addr_PM710].voltB_N);	
+	sprintf(tek, "Volt_BN = %.2f", asli_PM710[id_tampilkan].voltB_N);	
 	//printf("%s\n",tek);
 	label_voltl2n->set_text(tek);
 	//gtk_label_set_text((GtkLabel *) l_voltbn, tek);
 
-	sprintf(tek, "Volt_CN = %.2f", asli_PM710[addr_PM710].voltC_N);	
+	sprintf(tek, "Volt_CN = %.2f", asli_PM710[id_tampilkan].voltC_N);	
 	//printf("%s\n",tek);
 	label_voltl3n->set_text(tek);
 	//gtk_label_set_text((GtkLabel *) l_voltcn, tek);
@@ -1624,8 +1507,14 @@ bool main_window::update_tampilan()
 	
 	// alamat yang sedang diambil
 	sprintf(tek, "Alamat = %2d\n", addr_PM710);	
-	//gtk_label_set_text((GtkLabel *) l_alamat, tek);
+
 	printf(tek);
+	
+	sprintf(tek,"server_counter: %d\n",server_counter);
+	printf(tek);
+	
+	sprintf(status_teks,"addrress: %d |eth counter: %d | loop: %d",addr_PM710, server_counter,loop_counter);
+	statusbar1->push(status_teks, 1);
 	
 	if(!timer_on)
 		return false;

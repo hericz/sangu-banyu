@@ -133,12 +133,14 @@ class main_window : public main_window_glade
 
 	//struct t_kontrol_PM kontrol_PM[JUMLAH_PM];
 
-	unsigned short wind_speed;
+	/*unsigned short wind_speed;
 	unsigned short wind_dir;
 	unsigned short wind_satuan;
 	unsigned short wind_speed_tr;		// retransmision value
 	unsigned short wind_dir_tr;
-	
+	*/
+		
+	unsigned int m_context_id;
 
 	int fd;
 	unsigned short reg_flag;	

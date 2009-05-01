@@ -4,6 +4,7 @@
 <glade-interface>
 
 <widget class="GtkWindow" id="main_window">
+  <property name="border_width">1</property>
   <property agent="glademm" name="cxx_visibility">public</property>
   <property name="visible">True</property>
   <property name="title" translatable="yes">PM Server</property>
@@ -325,6 +326,7 @@
 
 		      <child>
 			<widget class="GtkVBox" id="vbox3">
+			  <property name="border_width">5</property>
 			  <property name="visible">True</property>
 			  <property name="homogeneous">False</property>
 			  <property name="spacing">0</property>
@@ -335,7 +337,7 @@
 			      <property name="visible">True</property>
 			      <property name="label" translatable="yes">KW</property>
 			      <property name="use_underline">False</property>
-			      <property name="use_markup">False</property>
+			      <property name="use_markup">True</property>
 			      <property name="justify">GTK_JUSTIFY_LEFT</property>
 			      <property name="wrap">False</property>
 			      <property name="selectable">False</property>
@@ -465,6 +467,7 @@
 
 		      <child>
 			<widget class="GtkVBox" id="vbox4">
+			  <property name="border_width">5</property>
 			  <property name="visible">True</property>
 			  <property name="homogeneous">False</property>
 			  <property name="spacing">0</property>
@@ -605,6 +608,7 @@
 
 		      <child>
 			<widget class="GtkVBox" id="vbox5">
+			  <property name="border_width">5</property>
 			  <property name="visible">True</property>
 			  <property name="homogeneous">False</property>
 			  <property name="spacing">0</property>
@@ -771,6 +775,7 @@
 
 		      <child>
 			<widget class="GtkVBox" id="vbox6">
+			  <property name="border_width">5</property>
 			  <property name="visible">True</property>
 			  <property name="homogeneous">False</property>
 			  <property name="spacing">0</property>
@@ -912,6 +917,7 @@
 
 		      <child>
 			<widget class="GtkVBox" id="vbox7">
+			  <property name="border_width">5</property>
 			  <property name="visible">True</property>
 			  <property name="homogeneous">False</property>
 			  <property name="spacing">0</property>
@@ -1141,6 +1147,7 @@
 
 		      <child>
 			<widget class="GtkVBox" id="vbox8">
+			  <property name="border_width">5</property>
 			  <property name="visible">True</property>
 			  <property name="homogeneous">False</property>
 			  <property name="spacing">0</property>
@@ -1346,6 +1353,19 @@
 	  <property name="padding">0</property>
 	  <property name="expand">True</property>
 	  <property name="fill">True</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkStatusbar" id="statusbar1">
+	  <property agent="glademm" name="cxx_visibility">public</property>
+	  <property name="visible">True</property>
+	  <property name="has_resize_grip">True</property>
+	</widget>
+	<packing>
+	  <property name="padding">0</property>
+	  <property name="expand">False</property>
+	  <property name="fill">False</property>
 	</packing>
       </child>
     </widget>
