@@ -45,13 +45,13 @@ void printlog(Glib::ustring asLog,int mode)
        strftime(cwaktu,32,"%Y-%m-%d",log_tm_pointer);
 	   tanggal_log.assign(cwaktu);
 	   	
-	   strftime(cwaktu,32,"%H:%M:%S",log_tm_pointer);
+	   strftime(cwaktu,32,"%H-%M-%S",log_tm_pointer);
        waktu_start.assign(cwaktu); 
 	   
-	   nama_file="./log/" + tanggal_log+ " " + waktu_start + Glib::ustring::compose("-%1.log",monita_file_count);
+	   nama_file="./log/" + tanggal_log+ "_" + waktu_start + Glib::ustring::compose("-%1.log",monita_file_count);
    }
    //asTime=TimeToStr(Time());
-	strftime(cwaktu,32,"%H:%M:%S",log_tm_pointer);
+	strftime(cwaktu,32,"%H-%M-%S",log_tm_pointer);
 	asTime.assign(cwaktu);
 	//printf(" |--* Buka file log: %s\n",nama_file.c_str());
     if ((fLog = fopen(nama_file.c_str(), "a+t")) == NULL)
@@ -76,10 +76,10 @@ void printlog(Glib::ustring asLog,int mode)
        strftime(cwaktu,32,"%Y-%m-%d",log_tm_pointer); 
 	   tanggal_log.assign(cwaktu);
 	   	
-	   	strftime(cwaktu,32,"%H:%M:%S",log_tm_pointer); 
+	   	strftime(cwaktu,32,"%H-%M-%S",log_tm_pointer); 
        	waktu_start.assign(cwaktu); 
 		
-		nama_file="./log/" + tanggal_log+ " " + waktu_start + Glib::ustring::compose("-%1.log",monita_file_count);
+		nama_file="./log/" + tanggal_log+ "_" + waktu_start + Glib::ustring::compose("-%1.log",monita_file_count);
 		
         monita_log_count=0;
         monita_file_count=0;
@@ -88,8 +88,7 @@ void printlog(Glib::ustring asLog,int mode)
     if(monita_log_count>1000)
     {
         monita_file_count++;
-        nama_file="./log/" + tanggal_log+ Glib::ustring::compose("-%1.log",monita_file_count);
-
+        nama_file="./log/" + tanggal_log+ "_" + waktu_start + Glib::ustring::compose("-%1.log",monita_file_count);
         monita_log_count=0;
     }
 

@@ -532,6 +532,13 @@ main_window::main_window()
 		alarm_switch_buffer[i]=0;
 	}
 	//show_all_children();
+	
+	//if konfig-auto_start-> auto start
+	if(kfg.auto_start)
+	{
+		on_button_logging_data_clicked();
+	}
+	
 }
 bool main_window::on_timeout_2()
 {
@@ -1268,7 +1275,6 @@ int main_window::UpdateTreeView(int level,int id)//,const Gtk::TreeModel::iterat
 	//Create the Tree model:
 	Glib::RefPtr<Gtk::TreeStore> m_refTreeModel;
 	
-	
 	uPath="0";
 	
 	m_refTreeModel = Gtk::TreeStore::create(m_Columns);
@@ -1294,7 +1300,6 @@ int main_window::UpdateTreeView(int level,int id)//,const Gtk::TreeModel::iterat
 		
 		if(jum_pers>0)
 		{
-			
 			for(i=0;i<jum_pers;i++)
 			{
 				//Fill the TreeView's model
@@ -2031,7 +2036,8 @@ int main_window::LoadConfig()
     
 	//periksa file konfigurasi
 	printf("-db_host:%s\n",kfg.db_host);
-    
+	printf("-auto_start: %d\n",kfg.auto_start);
+	
 	if(!(strcmp(kfg.db_host,"")))
         strcpy(kfg.db_host,"localhost");
     if(!(strcmp(kfg.db_port,"")))
@@ -3630,20 +3636,15 @@ void main_window::on_konfigurasi1_activate()
 	if(kfg.auto_start==1)
 	{
 		printf("AutoStart enabled\n");
+		dlg_konfig->check_autostart->set_active(true);
 	}
 	else
 	{
 		printf("AutoStart disabled\n");
+		dlg_konfig->check_autostart->set_active(false);
 	}
 	
-	//if(dlg_konfig->check_autostart->get_active())
-	//{
-	//	kfg.auto_start=1;
-	//}
-	//else
-	//{
-	//	kfg.auto_start=0;
-//	}
+
 	//Timing data logging
 	dlg_konfig->spin_periode_logging->set_value((double)kfg.siklus_ambil_data);
 	dlg_konfig->spin_periode_simpan->set_value((double)kfg.waktu_simpan_data);
@@ -3688,6 +3689,17 @@ void main_window::on_konfigurasi1_activate()
 		
 		//Timing database
 		kfg.waktu_simpan_data_harian=(int)dlg_konfig->spin_periode_db_temp->get_value();	
+		
+		if(dlg_konfig->check_autostart->get_active())
+		{
+			kfg.auto_start=1;
+			
+		}
+		else
+		{
+			kfg.auto_start=0;
+		}
+	
 			
 		this->SimpanKonfig(&kfg);
 		dlg_konfig->hide();
@@ -3705,6 +3717,7 @@ void main_window::on_konfigurasi1_activate()
 	}
 	else
 		button_logging_data->set_sensitive(true);
+	
 	
 	delete dlg_konfig;
 }
