@@ -982,7 +982,7 @@ bool main_window::on_timeout_2()
 				//printf(" |  |--* Simpan data\n");
 				for(int k=0;k<=tsumber[index_sumber_d].jumlah_kanal;k++)
 				{
-					//printf(" |  |  |--* Kanal %d\n",k+1);
+					printf(" |  |  |--* Kanal %d\n",k+1);
 					try
 					{
 						//Kalibrasi disini
@@ -1051,35 +1051,6 @@ bool main_window::on_timeout_2()
 								alarm_teks.assign(sTemp);
 								add_log (alarm_teks,LOG_ALARM_1,1);
 								
-								//khusus pintu
-								/*if(tsumber[index_sumber_d].titik[k].alarm_setting & 0x20)  //alarm pintu
-								{
-									add_log("ALARM: Pintu terbuka",LOG_ALARM_1,0);
-									//sprintf (sTemp,"ls %s","/home");
-									if(buffer_counter>BUFFER_DELAY)
-										sprintf(sTemp,"alarmKeras hidup!","/home");
-									//else
-									//	sprintf(sTemp,"alarmKeras mati!","/home");
-									printf(" |-- Kirim command: %s\n",sTemp);
-									add_log (sTemp,LOG_INFO,0);
-									
-									fp = popen (sTemp,"r");	
-									fscanf (fp,"%s",sTemp);
-									printf(" |-- Hasil command: %s\n",sTemp);
-									
-									//add_log(sTemp,LOG_INFO,0);
-								}
-								else if(tsumber[index_sumber_d].titik[k].alarm_setting & 0x40) //tombol pembunuh alarm
-								{
-									add_log("SET: Alarm off",LOG_INFO,0);
-									//sprintf (sTemp,"ls %s","/home");
-									sprintf(sTemp,"alarmKeras mati!","/home");
-									fp = popen (sTemp,"r");
-									fscanf (fp,"%s",sTemp);
-									add_log(sTemp,LOG_INFO,0);
-									printf(" |--Hasil command: %s\n",sTemp);
-									buffer_counter=0;
-								}*/
 							} 
 							else if((fdata_tunggal_simpan>=tsumber[index_sumber_d].titik[k].alarm_high_high)&
 							   (tsumber[index_sumber_d].titik[k].alarm_setting & 0x08))
@@ -1088,32 +1059,6 @@ bool main_window::on_timeout_2()
 								//alarm_teks=Glib::ustring::compose("ALARM: Data Titik %1 (%s) sangat tinggi (0x%X)",id_titik_simpan,tsumber[index_sumber_d].titik[k].nama_titik);
 								add_log (sTemp,LOG_ALARM_1,2);
 							}
-							
-							
-							//Khusus switch alarm diperlakukan lain
-							/*if(tsumber[index_sumber_d].titik[k].alarm_setting & 0x40) //tombol pembunuh alarm
-							{
-								
-								if(alarm_switch_buffer[0]>tsumber[index_sumber_d].titik[k].alarm_high)
-								{
-									add_log("SET: Alarm off. Reset buffer alarm",LOG_INFO,0);
-									//sprintf (sTemp,"ls %s","/home");
-									sprintf(sTemp,"alarmKeras mati!","/home");
-									fp = popen (sTemp,"r");
-									fscanf (fp,"%s",sTemp);
-									
-									printf(" |--Hasil command: %s\n",sTemp);
-									
-									//reset buffer
-									buffer_counter=0;
-									for(int i=0;i<BUFFER_DELAY;i++)
-										alarm_switch_buffer[i]=0;
-								}
-								else
-									//buffer_counter++;
-									push_buffer_switch(1);
-									
-							} */
 							
 							if(saatnya_simpan)
 							{
@@ -1164,7 +1109,7 @@ bool main_window::on_timeout_2()
 					}
 					catch(...)
 					{
-						printf("ERROR saat input data ke database");
+						printf("ERROR saat input data ke database\n");
 					}
 				}
 			}
@@ -3122,7 +3067,7 @@ int main_window::UpdateStatusSumber()
 	
 	for(int i=0;i<jumlah_sumber;i++)
 	{
-		printf(" |  |  |--* %d: %d\n",i,tsumber[i].status_koneksi);
+		//printf(" |  |  |--* %d: %d\n",i,tsumber[i].status_koneksi);
 		row=*(m_refStatusModel->append());
 		
 		row[m_status_list.m_col_id]=tsumber[i].id_sumber;
