@@ -577,7 +577,7 @@ bool main_window::on_timeout_2()
 	strftime(cwaktu_tampil,64,"%d-%m-%Y\n%H:%M:%S",tm_ptr);
 	
 	//20080210-102346
-	printf("[%d]-- TIME:%s\n",time_counter,&waktu,waktu);
+	//printf("[%d]-- TIME:%s\n",time_counter,&waktu,waktu);
 	sprintf(sTemp,"[%d]-- TIME:%s\n",time_counter,&waktu,waktu);
 	printlog(sTemp,0);
 	
@@ -587,7 +587,7 @@ bool main_window::on_timeout_2()
 	{
 		progress_koneksi->set_fraction(0.0);
 		//start thread
-		printf(" |-- INIT THREAD SUMBER DATA\n");
+		//printf(" |-- INIT THREAD SUMBER DATA\n");
 		for(index_sumber_a=0;index_sumber_a<jumlah_sumber;index_sumber_a++)
 		{
 				//Inisialisasi variabel kontrol thread
@@ -597,7 +597,7 @@ bool main_window::on_timeout_2()
 			memset(&(buf_data[index_sumber_a]),0x00,512);
 			index_sumber[index_sumber_a]=index_sumber_a;
 			
-			printf(" |--* Start Thread %d (%s)",index_sumber_a,tsumber[index_sumber_a].ip_address.c_str());
+			//printf(" |--* Start Thread %d (%s)",index_sumber_a,tsumber[index_sumber_a].ip_address.c_str());
 			res = pthread_create(&(a_thread[index_sumber_a]), NULL, 
 								thread_function, (void*)&index_sumber[index_sumber_a]);
 			if (res != 0)
@@ -614,7 +614,7 @@ bool main_window::on_timeout_2()
 		}		
 		
 		//buat thread posting data disini saja
-		printf(" |-- INIT THREAD POST DATA\n");
+		//printf(" |-- INIT THREAD POST DATA\n");
 		for(index_post_a=0;index_post_a<jumlah_post;index_post_a++)
 		{
 			//Inisialisasi variabel kontrol thread
@@ -625,7 +625,7 @@ bool main_window::on_timeout_2()
 			memset(&(buf_data[index_post_a]),0x00,512);
 			index_post[index_post_a]=index_post_a;
 			
-			printf(" |--* Start Thread %d (%s)",index_post_a,tposting[index_post_a].ip_address.c_str());
+			//printf(" |--* Start Thread %d (%s)",index_post_a,tposting[index_post_a].ip_address.c_str());
 			res = pthread_create(&(post_thread[index_post_a]), NULL, 
 								thread_posting, (void*)&index_post[index_post_a]);
 			if (res != 0) 
@@ -638,7 +638,7 @@ bool main_window::on_timeout_2()
 				sisa_thread_post++;
 				//printf("-> %s OK\n",tsumber[index_sumber_a].ip_address.c_str());
 			}
-			printf ("\n");
+			//printf ("\n");
 		}
 		
 		progress_koneksi->set_fraction(0.25);
@@ -651,10 +651,10 @@ bool main_window::on_timeout_2()
 	{
 		progress_koneksi->set_fraction(0.30);
 		//cek thread
-		printf(" |-- CEK THREAD SUMBER DATA\n");
+		//printf(" |-- CEK THREAD SUMBER DATA\n");
 		for(index_sumber_b=0;index_sumber_b<jumlah_sumber;index_sumber_b++)
 		{
-			printf(" |--|-- [%d][%d]",th_selesai[index_sumber_b],th_joined[index_sumber_b]); 
+			//printf(" |--|-- [%d][%d]",th_selesai[index_sumber_b],th_joined[index_sumber_b]); 
 			if(th_selesai[index_sumber_b])
 			{
 				//printf(" Thread %d sudah selesai",index_sumber_b);
@@ -668,23 +668,23 @@ bool main_window::on_timeout_2()
 				{
 					sisa_thread--;
 					th_joined[index_sumber_b]=true;
-					printf(" ->Join OK\n");
+				//	printf(" ->Join OK\n");
 				}
 			}
 			else 
 			{
 				//thread belum selesai, lanjutkan timer
-				printf("->Wait\n");
+				//printf("->Wait\n");
 
 			}
 		}
-		printf(" |-- Sisa thread: %d\n",  sisa_thread);
+		//printf(" |-- Sisa thread: %d\n",  sisa_thread);
 		
 		//Cek progres koneksi Post data
-		printf(" |-- CEK THREAD POST DATA\n");
+		//printf(" |-- CEK THREAD POST DATA\n");
 		for(index_post_b=0;index_post_b<jumlah_post;index_post_b++)
 		{
-			printf(" |--|-- [%d][%d]",th_post_selesai[index_post_b],th_post_joined[index_post_b]); 
+			//printf(" |--|-- [%d][%d]",th_post_selesai[index_post_b],th_post_joined[index_post_b]); 
 			if(th_post_selesai[index_post_b])
 			{
 				//printf(" Thread %d sudah selesai",index_sumber_b);
@@ -698,17 +698,17 @@ bool main_window::on_timeout_2()
 				{
 					sisa_thread_post--;
 					th_post_joined[index_post_b]=true;
-					printf(" ->Join OK\n");
+				//	printf(" ->Join OK\n");
 				}
 			}
 			else 
 			{
 				//thread belum selesai, lanjutkan timer
-				printf("->Wait\n");
+				//printf("->Wait\n");
 
 			}
 		}
-		printf(" |-- Sisa thread post data: %d\n",  sisa_thread_post);
+		//printf(" |-- Sisa thread post data: %d\n",  sisa_thread_post);
 		
 		progress_koneksi->set_fraction(0.5);
 		time_counter++;
@@ -717,15 +717,15 @@ bool main_window::on_timeout_2()
 	else if(time_counter==2)
 	{
 		//cek sekaligus cancel thread
-		printf(" |-- CEK DAN CANCEL THREAD SUMBER DATA\n");
+		//printf(" |-- CEK DAN CANCEL THREAD SUMBER DATA\n");
 		progress_koneksi->set_fraction(0.55);
 		for(index_sumber_c=0;index_sumber_c<jumlah_sumber;index_sumber_c++)
 		{
-			printf(" |--|-- [%d][%d]",th_selesai[index_sumber_c],th_joined[index_sumber_c]); 
+			//printf(" |--|-- [%d][%d]",th_selesai[index_sumber_c],th_joined[index_sumber_c]); 
 			if((th_selesai[index_sumber_c]==true)&& (th_joined[index_sumber_c]==false)) //sudah selesai dan belum dijoin
 			{
 				//printf(" Thread %d SUDAH selesai BELUM Join",index_sumber_c);
-				printf(" %d Koneksi OK!",index_sumber_c);
+				//printf(" %d Koneksi OK!",index_sumber_c);
 				res = pthread_join(a_thread[index_sumber_c], &thread_result);
 				if (res != 0) {
 					
@@ -737,7 +737,7 @@ bool main_window::on_timeout_2()
 				{
 					th_joined[index_sumber_c]=true;
 					sisa_thread--;
-					printf("-> Join OK\n");
+					//printf("-> Join OK\n");
 					
 					//Not found dan OK sama menghentikan thread dengan baik. 
 					if(tsumber[index_sumber_c].status_koneksi!=STATUS_NOT_FOUND)
@@ -747,7 +747,7 @@ bool main_window::on_timeout_2()
 			else if((th_selesai[index_sumber_c]==false)&& (th_joined[index_sumber_c]==false)) //belum selesai dan belum dijoin
 			{
 				//printf(" Thread %d BELUM selesai -> Cancel paksa",index_sumber_c);
-				printf(" %d Timeout!",index_sumber_c);
+				//printf(" %d Timeout!",index_sumber_c);
 				tsumber[index_sumber_c].status_koneksi=STATUS_TIMEOUT;
 				//Yak waktu habis, bunuh threadnya
 				res = pthread_cancel(a_thread[index_sumber_c]);
@@ -782,7 +782,7 @@ bool main_window::on_timeout_2()
 			}
 			else
 			{
-				printf(" Selesai+Join OK\n");
+				//printf(" Selesai+Join OK\n");
 				//	   index_sumber_c,ukuran_terima2[index_sumber_c],&(tsumber[index_sumber_c].buf_terima));
 				
 				//Not found dan OK sama menghentikan thread dengan baik. 
@@ -790,17 +790,17 @@ bool main_window::on_timeout_2()
 					tsumber[index_sumber_c].status_koneksi=STATUS_OK;
 			}
 		}
-		printf(" |-- Sisa Thread: %d\n",sisa_thread);
+		//printf(" |-- Sisa Thread: %d\n",sisa_thread);
 		
 		//CEK POST DATA
 		printf(" |-- CEK DAN CANCEL THREAD POST DATA\n");
 		for(index_post_c=0;index_post_c<jumlah_post;index_post_c++)
 		{
-			printf(" |--|-- %d [%d][%d]",index_post_c, th_post_selesai[index_post_c],th_post_joined[index_post_c]); 
+			//printf(" |--|-- %d [%d][%d]",index_post_c, th_post_selesai[index_post_c],th_post_joined[index_post_c]); 
 			if((th_post_selesai[index_post_c]==true)&& (th_post_joined[index_post_c]==false)) //sudah selesai dan belum dijoin
 			{
 				//printf(" Thread %d SUDAH selesai BELUM Join",index_post_c);
-				printf("Koneksi OK!");
+				//printf("Koneksi OK!");
 				res = pthread_join(post_thread[index_post_c], &thread_result);
 				if (res != 0) {
 					
@@ -812,7 +812,7 @@ bool main_window::on_timeout_2()
 				{
 					th_post_joined[index_post_c]=true;
 					sisa_thread_post--;
-					printf("-> Join OK\n");
+					//printf("-> Join OK\n");
 					
 					//Not found dan OK sama menghentikan thread dengan baik. 
 					if(tposting[index_post_c].status_koneksi!=STATUS_NOT_FOUND)
@@ -839,7 +839,7 @@ bool main_window::on_timeout_2()
 				}
 				else
 				{
-					printf("->Cancel Paksa OK");
+					//printf("->Cancel Paksa OK");
 					//printf(" -> OK");
 				}
 				
@@ -862,7 +862,7 @@ bool main_window::on_timeout_2()
 			}
 			else
 			{
-				printf(" Selesai+Join OK\n");
+				//printf(" Selesai+Join OK\n");
 				//	   index_sumber_c,ukuran_terima2[index_sumber_c],&(tsumber[index_sumber_c].buf_terima));
 				
 				//Not found dan OK sama menghentikan thread dengan baik. 
@@ -871,7 +871,7 @@ bool main_window::on_timeout_2()
 			}
 		}
 		
-		printf(" |-- Reset Counter\n");
+		//printf(" |-- Reset Counter\n");
 		//reset counter
 		progress_koneksi->set_fraction(0.75);
 		time_counter++;
@@ -880,20 +880,20 @@ bool main_window::on_timeout_2()
 	else if(time_counter==3)
 	{
 		//simpan datanya
-		printf(" |--# Simpan data yang sudah terkumpul\n");
+		//printf(" |--# Simpan data yang sudah terkumpul\n");
 		progress_koneksi->set_fraction(0.8);
 		//Simpan Waktu
 		utemp_global="INSERT INTO waktu(waktu) VALUES('";
 		utemp_global.append(waktu);
 		utemp_global.append("')");
 		strcpy(MYQLog.Text,utemp_global.c_str());
-		printf(" |--* Query: %s\n",MYQLog.Text);
+		//printf(" |--* Query: %s\n",MYQLog.Text);
 		
 		try
 		{
-			printf(" |-- Insert data\n");
+			//printf(" |-- Insert data\n");
 			MYQLog.Insert();
-			printf(" |--|-- Selesai insert data waktu. Cari ID waktu\n");
+			//printf(" |--|-- Selesai insert data waktu. Cari ID waktu\n");
 		}
 		catch(...)
 		{
@@ -906,8 +906,8 @@ bool main_window::on_timeout_2()
 		
 		//tentukan pakah sekarang saatnya menyimpan data 
 		strftime(waktu_simpan_sekarang,32,"%Y%m%d-%H%M",tm_ptr);
-		printf(" |-- waktu sekarang: %s, simpan yang lalu: %s\n",
-			   waktu_simpan_sekarang,waktu_simpan_lalu);
+		//printf(" |-- waktu sekarang: %s, simpan yang lalu: %s\n",
+		//	   waktu_simpan_sekarang,waktu_simpan_lalu);
 		
 		if(strncmp(waktu_simpan_lalu,waktu_simpan_sekarang,sizeof(waktu_simpan_sekarang)))
 	   	{
@@ -922,18 +922,18 @@ bool main_window::on_timeout_2()
 		for(index_sumber_d=0;index_sumber_d<jumlah_sumber;index_sumber_d++)
 		{
 			asTemp=tsumber[index_sumber_d].ip_address;
-			printf(" |  |--* Simpan data sumber %d: (%s)\n",
-				   index_sumber_d,asTemp.c_str());
+			//printf(" |  |--* Simpan data sumber %d: (%s)\n",
+			//	   index_sumber_d,asTemp.c_str());
 			
 			if(tsumber[index_sumber_d].status_koneksi==STATUS_TIMEOUT)
 			{
 				printlog (asTemp + ": Timeout",0);
-				printf(" |  |--* Komunikasi Timeout\n");
+				//printf(" |  |--* Komunikasi Timeout\n");
 				continue;
 			}
 			if(tsumber[index_sumber_d].status_koneksi==STATUS_NOT_FOUND)
 			{
-				printf(" |  |--* Sumber tidak ditemukan\n");
+				//printf(" |  |--* Sumber tidak ditemukan\n");
 				continue;
 			}
 	
@@ -944,13 +944,13 @@ bool main_window::on_timeout_2()
 			}
 			else
 			{
-				printf(" |  |--* Koneksi OK");
+				//printf(" |  |--* Koneksi OK");
 
 				//cek ukuran apakah sama dengan ukuran struct x_data
 				if(sizeof(t_xdata)-ukuran_terima2[index_sumber_d])
 				{
 					//Ukuran berbeda
-					printf("->Ukuran data berbeda. Data dibuang.\n");
+					//printf("->Ukuran data berbeda. Data dibuang.\n");
 					tsumber[index_sumber_d].status_koneksi=STATUS_DATA_INVALID;
 					continue;
 					//return -2;
@@ -960,8 +960,8 @@ bool main_window::on_timeout_2()
 				if(strncmp((char*)&(tsumber[index_sumber_d].buf_terima),monita1_check_string,sizeof(monita1_check_string)))
 				{
 					//strncpy(cTemp,(const char*) &(buf_data[i]),sizeof(monita1_check_string));
-					printf("->Data check: header invalid [%s] seharusnya [%s]\n",
-						   &(tsumber[index_sumber_d].buf_terima),monita1_check_string);
+					//printf("->Data check: header invalid [%s] seharusnya [%s]\n",
+					//	   &(tsumber[index_sumber_d].buf_terima),monita1_check_string);
 					
 					tsumber[index_sumber_d].status_koneksi=STATUS_DATA_INVALID;
 					continue;
@@ -970,7 +970,7 @@ bool main_window::on_timeout_2()
 				else
 				{
 					tsumber[index_sumber_d].status_koneksi=STATUS_OK;
-					printf("->Data check: OK\n");
+					//printf("->Data check: OK\n");
 				}
 				//sampai disini seharusnya penomeran 
 				
@@ -979,156 +979,32 @@ bool main_window::on_timeout_2()
 				p_xdata=(t_xdata*) &(tsumber[index_sumber_d].buf_terima);
 				pdata_float=(t_data_float*) &p_xdata->buf;
 				
-				printf(" |  |--* Simpan data\n");
+				//printf(" |  |--* Simpan data\n");
 				for(int k=0;k<=tsumber[index_sumber_d].jumlah_kanal;k++)
 				{
-					printf(" |  |  |--* Kanal %d\n",k+1);
-					
-					//Kalibrasi disini
-					
-					//fdata_tunggal_simpan=pdata_float->data[k];
-					fdata_tunggal_simpan=pdata_float->data[k]*tsumber[index_sumber_d].titik[k].kalibrasi_a
-										+ tsumber[index_sumber_d].titik[k].kalibrasi_b;
-					
-					id_titik_simpan=tsumber[index_sumber_d].titik[k].id_titik;
-					printf(" |  |  |--* data:%0.2f ->id: %d ((%0.2f x %0.2f)+ %0.2f)\n",
-						   fdata_tunggal_simpan,id_titik_simpan,pdata_float->data[k],
-						   tsumber[index_sumber_d].titik[k].kalibrasi_a,
-							tsumber[index_sumber_d].titik[k].kalibrasi_b);
-					
-					if(id_titik_simpan)
+					//printf(" |  |  |--* Kanal %d\n",k+1);
+					try
 					{
-						//Tiap saat disimpan di data_jaman
-						sprintf(sTemp,"INSERT DELAYED INTO data_jaman (id_titik, data, waktu) ");
-                    	sprintf(sTemp,"%s VALUES('%d','%f','%s')",sTemp,id_titik_simpan,fdata_tunggal_simpan,waktu);
-						//printf(" |  |  |  |--* Query: %s\n",sTemp);
-						printf(" |  |  |  |--* Simpan data jaman: ");
-					
-						strcpy(MYQLog.Text,sTemp);
-						if(MYQLog.Insert())
-						{
-							printf("ERROR\n");
-							continue;
-						}
-						else
-							printf("OK\n");
-		
-						//CEK ALARM
-						if(fdata_tunggal_simpan<tsumber[index_sumber_d].titik[k].range_min)
-						{
-							sprintf(sTemp,"ALARM: Data Titik %d (%s) diluar jangkauan ukur",id_titik_simpan,tsumber[index_sumber_d].titik[k].nama_titik);
-							add_log (sTemp,LOG_ALARM_2,-1);
-						}
-						else if(fdata_tunggal_simpan>tsumber[index_sumber_d].titik[k].range_max)
-						{
-							sprintf(sTemp,"ALARM: Data Titik %d (%s) diluar jangkauan ukur",id_titik_simpan,tsumber[index_sumber_d].titik[k].nama_titik);
-							//alarm_teks=Glib::ustring::compose("ALARM: Data Titik %1 (%s) diluar jangkauan ukur",id_titik_simpan,tsumber[index_sumber_d].titik[k].nama_titik);
-							add_log (sTemp,LOG_ALARM_2,-1);
-						}
-						else if((fdata_tunggal_simpan<tsumber[index_sumber_d].titik[k].alarm_low)&&
-						   (tsumber[index_sumber_d].titik[k].alarm_setting & 0x01))
-						{
-							sprintf(sTemp,"ALARM: Data Titik %d (%s) rendah",id_titik_simpan,tsumber[index_sumber_d].titik[k].nama_titik);
-							//alarm_teks=Glib::ustring::compose("ALARM: Data Titik %1 (%s) rendah",id_titik_simpan,tsumber[index_sumber_d].titik[k].nama_titik);
-							add_log (sTemp,LOG_ALARM_1,1);
-						}
-						else if((fdata_tunggal_simpan<tsumber[index_sumber_d].titik[k].alarm_low)&&
-						   (tsumber[index_sumber_d].titik[k].alarm_setting & 0x02))
-						{
-							sprintf(sTemp,"ALARM: Data Titik %d (%s) sangat rendah",id_titik_simpan,tsumber[index_sumber_d].titik[k].nama_titik);
-							//alarm_teks=Glib::ustring::compose("ALARM: Data Titik %1 (%s) sangat rendah",id_titik_simpan,tsumber[index_sumber_d].titik[k].nama_titik);
-							add_log (sTemp,0,2);
-						}
-						else if((fdata_tunggal_simpan>=tsumber[index_sumber_d].titik[k].alarm_high)&&
-						   (tsumber[index_sumber_d].titik[k].alarm_setting& 0x04))
-						{
-							sprintf(sTemp,"ALARM: Data Titik %d (%s) tinggi (0x%X)",
-									id_titik_simpan,
-									tsumber[index_sumber_d].titik[k].nama_titik,
-									tsumber[index_sumber_d].titik[k].alarm_setting);
-							
-							alarm_teks.assign(sTemp);
-							add_log (alarm_teks,LOG_ALARM_1,1);
-							
-							//khusus pintu
-							/*if(tsumber[index_sumber_d].titik[k].alarm_setting & 0x20)  //alarm pintu
-							{
-								add_log("ALARM: Pintu terbuka",LOG_ALARM_1,0);
-								//sprintf (sTemp,"ls %s","/home");
-								if(buffer_counter>BUFFER_DELAY)
-									sprintf(sTemp,"alarmKeras hidup!","/home");
-								//else
-								//	sprintf(sTemp,"alarmKeras mati!","/home");
-								printf(" |-- Kirim command: %s\n",sTemp);
-								add_log (sTemp,LOG_INFO,0);
-								
-								fp = popen (sTemp,"r");	
-								fscanf (fp,"%s",sTemp);
-								printf(" |-- Hasil command: %s\n",sTemp);
-								
-								//add_log(sTemp,LOG_INFO,0);
-							}
-							else if(tsumber[index_sumber_d].titik[k].alarm_setting & 0x40) //tombol pembunuh alarm
-							{
-								add_log("SET: Alarm off",LOG_INFO,0);
-								//sprintf (sTemp,"ls %s","/home");
-								sprintf(sTemp,"alarmKeras mati!","/home");
-								fp = popen (sTemp,"r");
-								fscanf (fp,"%s",sTemp);
-								add_log(sTemp,LOG_INFO,0);
-								printf(" |--Hasil command: %s\n",sTemp);
-								buffer_counter=0;
-							}*/
-						}
-						else if((fdata_tunggal_simpan>=tsumber[index_sumber_d].titik[k].alarm_high_high)&
-						   (tsumber[index_sumber_d].titik[k].alarm_setting & 0x08))
-						{
-							sprintf(sTemp,"ALARM: Data Titik %d (%s) sangat tinggi (0x%X)",id_titik_simpan,tsumber[index_sumber_d].titik[k].nama_titik);
-							//alarm_teks=Glib::ustring::compose("ALARM: Data Titik %1 (%s) sangat tinggi (0x%X)",id_titik_simpan,tsumber[index_sumber_d].titik[k].nama_titik);
-							add_log (sTemp,LOG_ALARM_1,2);
-						}
+						//Kalibrasi disini
 						
+						//fdata_tunggal_simpan=pdata_float->data[k];
+						fdata_tunggal_simpan=pdata_float->data[k]*tsumber[index_sumber_d].titik[k].kalibrasi_a
+											+ tsumber[index_sumber_d].titik[k].kalibrasi_b;
 						
-						//Khusus switch alarm diperlakukan lain
-						if(tsumber[index_sumber_d].titik[k].alarm_setting & 0x40) //tombol pembunuh alarm
-						{
-							
-							if(alarm_switch_buffer[0]>tsumber[index_sumber_d].titik[k].alarm_high)
-							{
-								add_log("SET: Alarm off. Reset buffer alarm",LOG_INFO,0);
-								//sprintf (sTemp,"ls %s","/home");
-								sprintf(sTemp,"alarmKeras mati!","/home");
-								fp = popen (sTemp,"r");
-								fscanf (fp,"%s",sTemp);
-								
-								printf(" |--Hasil command: %s\n",sTemp);
-								
-								//reset buffer
-								buffer_counter=0;
-								for(int i=0;i<BUFFER_DELAY;i++)
-									alarm_switch_buffer[i]=0;
-							}
-							else
-								//buffer_counter++;
-								push_buffer_switch(1);
-								
-						}
+						id_titik_simpan=tsumber[index_sumber_d].titik[k].id_titik;
+						//printf(" |  |  |--* data:%0.2f ->id: %d ((%0.2f x %0.2f)+ %0.2f)\n",
+						//	   fdata_tunggal_simpan,id_titik_simpan,pdata_float->data[k],
+						//	   tsumber[index_sumber_d].titik[k].kalibrasi_a,
+						//		tsumber[index_sumber_d].titik[k].kalibrasi_b);
 						
-						if(saatnya_simpan)
+						if(id_titik_simpan)
 						{
-							printf(" |  |  |  |--* Simpan data tunggal\n"); 
-							//Tiap Menit simpan data ke database
-							//5 Agustus -> pindah data ke data_harian
-							//sprintf(sTemp,
-							//	"INSERT INTO data_harian(id_titik_ukur,id_waktu,data_tunggal) VALUES('%d','%d','%f')",
-							//	id_titik_simpan,id_waktu_simpan,fdata_tunggal_simpan);	
-							sprintf(sTemp,
-								"INSERT INTO data_tunggal(id_titik_ukur,id_waktu,data_tunggal) VALUES('%d','%d','%f')",
-								id_titik_simpan,id_waktu_simpan,fdata_tunggal_simpan);	
-							
-							
-							printf(" |  |  |  |--* QUERY: %s\n",sTemp);
-							printf(" |  |  |  |--* Simpan data tunggal: ");
+							//Tiap saat disimpan di data_jaman
+							sprintf(sTemp,"INSERT DELAYED INTO data_jaman (id_titik, data, waktu) ");
+							sprintf(sTemp,"%s VALUES('%d','%f','%s')",sTemp,id_titik_simpan,fdata_tunggal_simpan,waktu);
+							//printf(" |  |  |  |--* Query: %s\n",sTemp);
+							//printf(" |  |  |  |--* Simpan data jaman: ");
+						
 							strcpy(MYQLog.Text,sTemp);
 							if(MYQLog.Insert())
 							{
@@ -1136,35 +1012,166 @@ bool main_window::on_timeout_2()
 								continue;
 							}
 							else
-								printf("OK\n");
-							
-							//Tiap menit disimpan di data_harian
-							sprintf(sTemp,"INSERT INTO data_harian(id_titik_ukur,id_waktu,data_tunggal)");
-							sprintf(sTemp,"%s VALUES('%d','%d','%f')",sTemp,id_titik_simpan,id_waktu_simpan,fdata_tunggal_simpan);
-							//printf(" |  |  |  |--* Query: %s\n",sTemp);
-							printf(" |  |  |  |--* Simpan data temporary: ");
-						
-							strcpy(MYQLog.Text,sTemp);
-							if(MYQLog.Insert())
+								//printf("OK\n");
+			
+							//CEK ALARM
+							if(fdata_tunggal_simpan<tsumber[index_sumber_d].titik[k].range_min)
 							{
-								printf("ERROR\n");						
-								continue;
+								sprintf(sTemp,"ALARM: Data Titik %d (%s) diluar jangkauan ukur",id_titik_simpan,tsumber[index_sumber_d].titik[k].nama_titik);
+								add_log (sTemp,LOG_ALARM_2,-1);
+							}
+							else if(fdata_tunggal_simpan>tsumber[index_sumber_d].titik[k].range_max)
+							{
+								sprintf(sTemp,"ALARM: Data Titik %d (%s) diluar jangkauan ukur",id_titik_simpan,tsumber[index_sumber_d].titik[k].nama_titik);
+								//alarm_teks=Glib::ustring::compose("ALARM: Data Titik %1 (%s) diluar jangkauan ukur",id_titik_simpan,tsumber[index_sumber_d].titik[k].nama_titik);
+								add_log (sTemp,LOG_ALARM_2,-1);
+							}
+							else if((fdata_tunggal_simpan<tsumber[index_sumber_d].titik[k].alarm_low)&&
+							   (tsumber[index_sumber_d].titik[k].alarm_setting & 0x01))
+							{
+								sprintf(sTemp,"ALARM: Data Titik %d (%s) rendah",id_titik_simpan,tsumber[index_sumber_d].titik[k].nama_titik);
+								//alarm_teks=Glib::ustring::compose("ALARM: Data Titik %1 (%s) rendah",id_titik_simpan,tsumber[index_sumber_d].titik[k].nama_titik);
+								add_log (sTemp,LOG_ALARM_1,1);
+							}
+							else if((fdata_tunggal_simpan<tsumber[index_sumber_d].titik[k].alarm_low)&&
+							   (tsumber[index_sumber_d].titik[k].alarm_setting & 0x02))
+							{
+								sprintf(sTemp,"ALARM: Data Titik %d (%s) sangat rendah",id_titik_simpan,tsumber[index_sumber_d].titik[k].nama_titik);
+								//alarm_teks=Glib::ustring::compose("ALARM: Data Titik %1 (%s) sangat rendah",id_titik_simpan,tsumber[index_sumber_d].titik[k].nama_titik);
+								add_log (sTemp,0,2);
+							}
+							else if((fdata_tunggal_simpan>=tsumber[index_sumber_d].titik[k].alarm_high)&&
+							   (tsumber[index_sumber_d].titik[k].alarm_setting& 0x04))
+							{
+								sprintf(sTemp,"ALARM: Data Titik %d (%s) tinggi (0x%X)",
+										id_titik_simpan,
+										tsumber[index_sumber_d].titik[k].nama_titik,
+										tsumber[index_sumber_d].titik[k].alarm_setting);
+								
+								alarm_teks.assign(sTemp);
+								add_log (alarm_teks,LOG_ALARM_1,1);
+								
+								//khusus pintu
+								/*if(tsumber[index_sumber_d].titik[k].alarm_setting & 0x20)  //alarm pintu
+								{
+									add_log("ALARM: Pintu terbuka",LOG_ALARM_1,0);
+									//sprintf (sTemp,"ls %s","/home");
+									if(buffer_counter>BUFFER_DELAY)
+										sprintf(sTemp,"alarmKeras hidup!","/home");
+									//else
+									//	sprintf(sTemp,"alarmKeras mati!","/home");
+									printf(" |-- Kirim command: %s\n",sTemp);
+									add_log (sTemp,LOG_INFO,0);
+									
+									fp = popen (sTemp,"r");	
+									fscanf (fp,"%s",sTemp);
+									printf(" |-- Hasil command: %s\n",sTemp);
+									
+									//add_log(sTemp,LOG_INFO,0);
+								}
+								else if(tsumber[index_sumber_d].titik[k].alarm_setting & 0x40) //tombol pembunuh alarm
+								{
+									add_log("SET: Alarm off",LOG_INFO,0);
+									//sprintf (sTemp,"ls %s","/home");
+									sprintf(sTemp,"alarmKeras mati!","/home");
+									fp = popen (sTemp,"r");
+									fscanf (fp,"%s",sTemp);
+									add_log(sTemp,LOG_INFO,0);
+									printf(" |--Hasil command: %s\n",sTemp);
+									buffer_counter=0;
+								}*/
+							} 
+							else if((fdata_tunggal_simpan>=tsumber[index_sumber_d].titik[k].alarm_high_high)&
+							   (tsumber[index_sumber_d].titik[k].alarm_setting & 0x08))
+							{
+								sprintf(sTemp,"ALARM: Data Titik %d (%s) sangat tinggi (0x%X)",id_titik_simpan,tsumber[index_sumber_d].titik[k].nama_titik);
+								//alarm_teks=Glib::ustring::compose("ALARM: Data Titik %1 (%s) sangat tinggi (0x%X)",id_titik_simpan,tsumber[index_sumber_d].titik[k].nama_titik);
+								add_log (sTemp,LOG_ALARM_1,2);
+							}
+							
+							
+							//Khusus switch alarm diperlakukan lain
+							/*if(tsumber[index_sumber_d].titik[k].alarm_setting & 0x40) //tombol pembunuh alarm
+							{
+								
+								if(alarm_switch_buffer[0]>tsumber[index_sumber_d].titik[k].alarm_high)
+								{
+									add_log("SET: Alarm off. Reset buffer alarm",LOG_INFO,0);
+									//sprintf (sTemp,"ls %s","/home");
+									sprintf(sTemp,"alarmKeras mati!","/home");
+									fp = popen (sTemp,"r");
+									fscanf (fp,"%s",sTemp);
+									
+									printf(" |--Hasil command: %s\n",sTemp);
+									
+									//reset buffer
+									buffer_counter=0;
+									for(int i=0;i<BUFFER_DELAY;i++)
+										alarm_switch_buffer[i]=0;
+								}
+								else
+									//buffer_counter++;
+									push_buffer_switch(1);
+									
+							} */
+							
+							if(saatnya_simpan)
+							{
+								printf(" |  |  |  |--* Simpan data tunggal\n"); 
+								//Tiap Menit simpan data ke database
+								//5 Agustus -> pindah data ke data_harian
+								//sprintf(sTemp,
+								//	"INSERT INTO data_harian(id_titik_ukur,id_waktu,data_tunggal) VALUES('%d','%d','%f')",
+								//	id_titik_simpan,id_waktu_simpan,fdata_tunggal_simpan);	
+								sprintf(sTemp,
+									"INSERT INTO data_tunggal(id_titik_ukur,id_waktu,data_tunggal) VALUES('%d','%d','%f')",
+									id_titik_simpan,id_waktu_simpan,fdata_tunggal_simpan);	
+								
+								
+								//printf(" |  |  |  |--* QUERY: %s\n",sTemp);
+								//printf(" |  |  |  |--* Simpan data tunggal: ");
+								strcpy(MYQLog.Text,sTemp);
+								if(MYQLog.Insert())
+								{
+									printf("ERROR\n");
+									continue;
+								}
+								//else
+									//printf("OK\n");
+								
+								//Tiap menit disimpan di data_harian
+								sprintf(sTemp,"INSERT INTO data_harian(id_titik_ukur,id_waktu,data_tunggal)");
+								sprintf(sTemp,"%s VALUES('%d','%d','%f')",sTemp,id_titik_simpan,id_waktu_simpan,fdata_tunggal_simpan);
+								//printf(" |  |  |  |--* Query: %s\n",sTemp);
+								//printf(" |  |  |  |--* Simpan data temporary: ");
+							
+								strcpy(MYQLog.Text,sTemp);
+								if(MYQLog.Insert())
+								{
+									printf("ERROR\n");						
+									continue;
+								}
+								//else
+									//printf("OK\n");
+								
+								//if(depth_level_sekarang==5)
+								//	this->UpdateListView(depth_level_sekarang,id_titik_tampil_sekarang);
 							}
 							else
-								printf("OK\n");
-							
-							//if(depth_level_sekarang==5)
-							//	this->UpdateListView(depth_level_sekarang,id_titik_tampil_sekarang);
+								printf(" |  |--*(tidak simpan data harian (id:%d))\n",id_titik_simpan);
 						}
-						else
-							printf(" |  |--*(tidak simpan data harian)\n");
-					}
 					
+					}
+					catch(...)
+					{
+						printf("ERROR saat input data ke database");
+					}
 				}
 			}
 		}
 		
 		//Buat data untuk POSTING DATA
+		/*
 		giliran_lokal=0;
 		
 		strcpy(eth_loc_data.mon, "monita2");
@@ -1172,7 +1179,7 @@ bool main_window::on_timeout_2()
 		eth_loc_data.nomer = long_tick;
 		strcpy(eth_loc_data.waktu, waktu);
 		memcpy((char *) eth_loc_data.buf, (char *) &loc_data[giliran_lokal], sizeof (loc_data[0]));
-		
+		*/
 		//Hapus file data_harian yang sudah kadaluarsa
 		//jika ganti hari saja							
 		strftime(tanggal_sekarang,32,"%Y%m%d",tm_ptr);
@@ -1202,10 +1209,10 @@ bool main_window::on_timeout_2()
 	
 	//MONITOR DIRECTORY EMAIL
 	//if(ada sumber directory)
-	for(int i=0;i<jumlah_sumber_email;i++)
-	{
-		cek_mail_dir("/home/herry/mail-archive/");
-	}	
+	//for(int i=0;i<jumlah_sumber_email;i++)
+	//{
+	//	cek_mail_dir("/home/herry/mail-archive/");
+	//}	
 	return true;
 }
 

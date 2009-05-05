@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 #Comand untuk merestart monitaapp, dipanggil via cron
 #herry@daunbiru.com
@@ -9,8 +9,9 @@
 #dir_path: path direktori monitaapp
 #log_path: path untuk menaruh log file
 
-dir_path=/home/herry/Monita/src/
+mon_path=/home/herry/Monita/src/
 log_path=/home/herry/Monita/cron_log.txt
+pm_path=/home/herry/program/pm_server/src/
 
 #Panduan setting cron
 # -Ketik 'crontab -e', lalu kopi paste teks berikut ke cron editor 
@@ -43,8 +44,9 @@ pkill monitaapp
 #pause 2 detik
 `sleep 2`
 
+
 #pindah ke direktori path
-cd $dir_path  >> $log_path
+cd $mon_path  >> $log_path
 
 pwd >> $log_path
 
