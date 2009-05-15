@@ -15,7 +15,9 @@
 #include <pthread.h>
 #include <math.h>
 #include <gtkextra/gtkplot.h>
+//#include <gtkextra-2.0/gtkplot.h>
 #include <dirent.h> 
+#include <string.h>
 
 #include "main_window_glade.hh"
 #include "db_setting.hh"

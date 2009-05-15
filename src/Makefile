@@ -184,12 +184,12 @@ LIBS =
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LN_S = ln -s
 LTLIBOBJS = 
-MAINT = 
+MAINT = #
 MAKEINFO = ${SHELL} /home/herry/Monita/missing --run makeinfo
 MKDIR_P = /bin/mkdir -p
 MKINSTALLDIRS = ./mkinstalldirs
-MONITAAPP_CFLAGS = -I/usr/include/gtkmm-2.4 -I/usr/lib/gtkmm-2.4/include -I/usr/include/glibmm-2.4 -I/usr/lib/glibmm-2.4/include -I/usr/include/gdkmm-2.4 -I/usr/lib/gdkmm-2.4/include -I/usr/include/pangomm-1.4 -I/usr/include/atkmm-1.6 -I/usr/include/gtk-2.0 -I/usr/include/sigc++-2.0 -I/usr/lib/sigc++-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/lib/gtk-2.0/include -I/usr/include/cairomm-1.0 -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng12 -I/usr/include/pixman-1 -I/usr/include/atk-1.0 -I/usr/include/libglademm-2.4 -I/usr/lib/libglademm-2.4/include -I/usr/include/libglade-2.0 -I/usr/include/libxml2  
-MONITAAPP_LIBS = -lglademm-2.4 -lgtkmm-2.4 -lglade-2.0 -lgdkmm-2.4 -latkmm-1.6 -lpangomm-1.4 -lcairomm-1.0 -lglibmm-2.4 -lsigc-2.0 -lgtk-x11-2.0 -lxml2 -lgdk-x11-2.0 -latk-1.0 -lgdk_pixbuf-2.0 -lm -lpangocairo-1.0 -lpango-1.0 -lcairo -lgobject-2.0 -lgmodule-2.0 -ldl -lglib-2.0  
+MONITAAPP_CFLAGS = -D_REENTRANT -I/usr/include/gtkmm-2.4 -I/usr/lib/gtkmm-2.4/include -I/usr/include/glibmm-2.4 -I/usr/lib/glibmm-2.4/include -I/usr/include/giomm-2.4 -I/usr/lib/giomm-2.4/include -I/usr/include/gdkmm-2.4 -I/usr/lib/gdkmm-2.4/include -I/usr/include/pangomm-1.4 -I/usr/include/atkmm-1.6 -I/usr/include/gtk-2.0 -I/usr/include/sigc++-2.0 -I/usr/lib/sigc++-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/lib/gtk-2.0/include -I/usr/include/cairomm-1.0 -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/directfb -I/usr/include/libpng12 -I/usr/include/atk-1.0 -I/usr/include/libglademm-2.4 -I/usr/lib/libglademm-2.4/include -I/usr/include/libglade-2.0 -I/usr/include/libxml2  
+MONITAAPP_LIBS = -lglademm-2.4 -lgtkmm-2.4 -lglade-2.0 -lgiomm-2.4 -lgdkmm-2.4 -latkmm-1.6 -lpangomm-1.4 -lcairomm-1.0 -lglibmm-2.4 -lsigc-2.0 -lgtk-x11-2.0 -lxml2 -lgdk-x11-2.0 -latk-1.0 -lpangoft2-1.0 -lgdk_pixbuf-2.0 -lm -lpangocairo-1.0 -lgio-2.0 -lcairo -lpango-1.0 -lfreetype -lfontconfig -lgobject-2.0 -lgmodule-2.0 -lglib-2.0  
 MSGFMT = /usr/bin/msgfmt
 MSGFMT_OPTS = -c
 MSGMERGE = /usr/bin/msgmerge
@@ -321,10 +321,11 @@ monitaapp_SOURCES = \
 	dlg_report_glade.cc
 
 monitaapp_CXXFLAGS = \
-	-lmysqlclient \
 	-I/usr/include/mysql
 
-monitaapp_LDFLAGS = 
+monitaapp_LDFLAGS = \
+	-lmysqlclient
+	
 monitaapp_LDADD = $(MONITAAPP_LIBS)
 EXTRA_DIST = $(glade_DATA)
 INCLUDES = /usr/include/mysql
@@ -332,7 +333,7 @@ all: all-am
 
 .SUFFIXES:
 .SUFFIXES: .cc .lo .o .obj
-$(srcdir)/Makefile.in:  $(srcdir)/Makefile.am  $(am__configure_deps)
+$(srcdir)/Makefile.in: # $(srcdir)/Makefile.am  $(am__configure_deps)
 	@for dep in $?; do \
 	  case '$(am__configure_deps)' in \
 	    *$$dep*) \
@@ -357,9 +358,9 @@ Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
 $(top_builddir)/config.status: $(top_srcdir)/configure $(CONFIG_STATUS_DEPENDENCIES)
 	cd $(top_builddir) && $(MAKE) $(AM_MAKEFLAGS) am--refresh
 
-$(top_srcdir)/configure:  $(am__configure_deps)
+$(top_srcdir)/configure: # $(am__configure_deps)
 	cd $(top_builddir) && $(MAKE) $(AM_MAKEFLAGS) am--refresh
-$(ACLOCAL_M4):  $(am__aclocal_m4_deps)
+$(ACLOCAL_M4): # $(am__aclocal_m4_deps)
 	cd $(top_builddir) && $(MAKE) $(AM_MAKEFLAGS) am--refresh
 install-binPROGRAMS: $(bin_PROGRAMS)
 	@$(NORMAL_INSTALL)

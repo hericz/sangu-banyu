@@ -996,7 +996,18 @@ bool main_window::on_timeout_2()
 						//	   fdata_tunggal_simpan,id_titik_simpan,pdata_float->data[k],
 						//	   tsumber[index_sumber_d].titik[k].kalibrasi_a,
 						//		tsumber[index_sumber_d].titik[k].kalibrasi_b);
-						
+					}
+					catch(...)
+					{
+						//printf(" |  |  |--* data:%0.2f ->id: %d ((%0.2f x %0.2f)+ %0.2f)\n",
+						//	   fdata_tunggal_simpan,id_titik_simpan,pdata_float->data[k],
+						//	   tsumber[index_sumber_d].titik[k].kalibrasi_a,
+						//		tsumber[index_sumber_d].titik[k].kalibrasi_b);
+						printf("Error saat parsing data dari sumber untuk titik: %d\n", id_titik_simpan);
+						continue;
+					}
+					try
+						{
 						if(id_titik_simpan)
 						{
 							//Tiap saat disimpan di data_jaman
