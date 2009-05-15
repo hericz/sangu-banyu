@@ -9,6 +9,7 @@
 #include <iostream>
 #include <gtkmm.h>
 #include <gtk/gtk.h>
+#include <string.h>
 
 #include "config.h"
 

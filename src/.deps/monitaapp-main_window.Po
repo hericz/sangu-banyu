@@ -866,12 +866,12 @@ monitaapp-main_window.o: main_window.cc /usr/include/pthread.h \
   /usr/include/gtkmm-2.4/gtkmm/treestore.h \
   /usr/include/gtkmm-2.4/gtkmm/uimanager.h \
   /usr/include/gtkmm-2.4/gtkmm/actiongroup.h \
-  /usr/include/gtkmm-2.4/gtkmm/viewport.h main_window.hh \
+  /usr/include/gtkmm-2.4/gtkmm/viewport.h /usr/include/string.h \
+  /usr/include/bits/string3.h main_window.hh \
   /usr/include/gtkextra/gtkplot.h /usr/include/gtkextra/gtkplotpc.h \
   /usr/include/gtkextra/gtkpsfont.h /usr/include/gtkextra/gtkplotarray.h \
-  /usr/include/dirent.h /usr/include/bits/dirent.h /usr/include/string.h \
-  /usr/include/bits/string3.h main_window_glade.hh db_setting.hh \
-  db_setting_glade.hh sql_routine.h \
+  /usr/include/dirent.h /usr/include/bits/dirent.h main_window_glade.hh \
+  db_setting.hh db_setting_glade.hh sql_routine.h \
   /usr/include/libglademm-2.4/libglademm.h \
   /usr/include/libglademm-2.4/libglademm/xml.h /usr/include/mysql/mysql.h \
   /usr/include/mysql/mysql_version.h /usr/include/mysql/mysql_com.h \
@@ -2835,6 +2835,10 @@ common.hh:
 
 /usr/include/gtkmm-2.4/gtkmm/viewport.h:
 
+/usr/include/string.h:
+
+/usr/include/bits/string3.h:
+
 main_window.hh:
 
 /usr/include/gtkextra/gtkplot.h:
@@ -2848,10 +2852,6 @@ main_window.hh:
 /usr/include/dirent.h:
 
 /usr/include/bits/dirent.h:
-
-/usr/include/string.h:
-
-/usr/include/bits/string3.h:
 
 main_window_glade.hh:
 
