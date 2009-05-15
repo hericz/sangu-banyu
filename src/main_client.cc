@@ -7,7 +7,7 @@
 #include "SocketException.hh"
 #include "main_client.hh"
 #include <iostream>
-#include <string> 
+#include <string.h> 
 
 char data_terima[1024];
 

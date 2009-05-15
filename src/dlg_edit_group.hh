@@ -15,6 +15,7 @@
 
 #include <gtkmm.h>
 #include "sql_routine.h"
+#include <string.h>
 
 class ModelJenis: public Gtk::TreeModel::ColumnRecord
 {

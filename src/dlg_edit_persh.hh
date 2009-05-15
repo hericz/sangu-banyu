@@ -15,6 +15,7 @@
 
 #include "sql_routine.h"
 
+
 class dlg_edit_persh : public dlg_edit_persh_glade
 {  
 	public:

@@ -4,6 +4,7 @@
 
 #include <libglademm.h>
 #include <gtkmm.h>
+#include <string.h>
 //#include "Unit1.h"
 //#include "UnitLog.h"
 #include "mysql.h"
@@ -79,7 +80,7 @@ class MyQuery
    unsigned int Ping(void);
    bool isConnected;
 		
-   unsigned int query_count;	
+   unsigned int query_count;
 };
 
 #endif //SQL_ROUTINE_H
