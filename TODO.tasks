@@ -302,6 +302,12 @@ atau bahkan dibuat per 10 menit atau 15 menit. </comment>
       <summary>Sembunyikan status list (sebelah kanan)</summary>
       <comment>Untuk mode monitoring, status list tidak perlu diperlihatkan, jadi sebainkya disingkirkan karena buang2 ruang</comment>
     </item>
+    <item>
+      <attribute id="1242372878" priority="1" done="0" start_date="733542" enddate="99999999" notify="0" endtime="-60" last_edited="1242372878"/>
+      <summary>Close di about</summary>
+      <comment>Dibenerin
+</comment>
+    </item>
   </category>
   <category title="Jaringan/LAN/Socket" place="3">
     <item>

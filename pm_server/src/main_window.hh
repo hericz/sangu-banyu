@@ -83,14 +83,27 @@ class ModelColumns : public Gtk::TreeModel::ColumnRecord
 	Gtk::TreeModelColumn<bool> use_icon;
 };
 
+//Combo box untuk ComPort
+class ModelKombo: public Gtk::TreeModel::ColumnRecord
+{
+	public:
+
+	ModelKombo()
+	{ 
+		add(m_col_id); 
+		add(m_nama); 
+	}
+	
+	Gtk::TreeModelColumn<int> m_col_id;
+	Gtk::TreeModelColumn<Glib::ustring> m_nama;	
+};
+
+//Class utama
 class main_window : public main_window_glade
 {  
 	public:
 	main_window();
-	
-	//Inisisasi Serial
-		
-		
+
 	//EVENT HANDLERNYA
 	void on_button_connect_clicked();
 	void on_button_1_clicked();
@@ -98,7 +111,7 @@ class main_window : public main_window_glade
 	void on_button_3_clicked();
 	void on_button_4_clicked();
 	void on_button_5_clicked();
-		
+	bool on_main_window_delete_event(GdkEventAny *ev);	
 	
 		
 	//Fungsi lain
@@ -109,16 +122,21 @@ class main_window : public main_window_glade
 		
 	void taruh_data_PM810(int pm_dibaca, int urt);
 	bool update_tampilan();
-
+	
+	int isi_form();
 		
 	//Variabel
 		
 	//List
-
 	ModelColumns m_Columns;
 	Glib::RefPtr<Gtk::TreeStore> m_refTreeModel;
 	bool tree_ada_kolom;
 	
+	//Com selektor
+	ModelKombo m_kolom;
+	Glib::RefPtr<Gtk::TreeStore> m_refCombo;
+	bool combo_ada_kolom;
+		
 	//char MODEMDEVICE[];
 	unsigned int jum_PM;	
 	unsigned short jum_PM710_masuk;

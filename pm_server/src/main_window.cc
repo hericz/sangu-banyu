@@ -126,7 +126,7 @@ void *thread_server(void *arg)
 	try
     {
 		//Create the socket
-		ServerSocket server (5002);
+		ServerSocket server (5001);
 		server_counter=0;
 
 		while ( true )
@@ -154,16 +154,49 @@ void *thread_server(void *arg)
 					no_pm=4;
 				else if(!strncmp(data.c_str(),"stack_05",8))
 					no_pm=5;
+				//Yang baru yang bawah
+				else if(!strncmp(data.c_str(),"sampurasun1",11))
+					no_pm=1;
+				else if(!strncmp(data.c_str(),"sampurasun2",11))
+					no_pm=2;
+				else if(!strncmp(data.c_str(),"sampurasun3",11))
+					no_pm=3;
+				else if(!strncmp(data.c_str(),"sampurasun4",11))
+					no_pm=4;
+				else if(!strncmp(data.c_str(),"sampurasun5",11))
+					no_pm=5;
 				else
+					no_pm=0;
 						
-					
 				//sprintf(ctemp,"%d",counter);
 				printf("Nomer rekues: %d\n",no_pm);
-				memcpy(pm_eth.buf, (char *) &asli_PM710[no_pm], sizeof (asli_PM710[1]));
-				kontrol_PM[no_pm].alamat = no_pm;
-				pm_eth.alamat = kontrol_PM[no_pm].alamat;
-				strcpy(pm_eth.mon, "monita1");
 				
+				//DATA ASLI	
+				bool data_asli=false;
+				if(data_asli)
+				{
+					memcpy(pm_eth.buf, (char *) &asli_PM710[no_pm], sizeof (asli_PM710[1]));
+					kontrol_PM[no_pm].alamat = no_pm;
+					pm_eth.alamat = kontrol_PM[no_pm].alamat;
+					strcpy(pm_eth.mon, "monita1");
+				}
+				else
+				//DATA DUMMY
+				{
+					float data_dummy[31];
+					//memcpy(pm_eth.buf, (char *) &asli_PM710[no_pm], sizeof (asli_PM710[1]));
+					for(int i=0;i<31;i++)
+					{
+						data_dummy[i]=(float) no_pm*100+i;
+					}
+					memcpy(pm_eth.buf,(char*) &data_dummy,sizeof(asli_PM710[1]));
+					kontrol_PM[no_pm].alamat = no_pm;
+					pm_eth.alamat = no_pm;
+					strcpy(pm_eth.mon, "monita1");
+					
+					printf("Dummy data: alamat: %d\n",no_pm);
+				}	
+					
 				//Kirim data
 				new_sock.send_buffer((char*)&pm_eth,sizeof(pm_eth));
 				printf("\n |-- %d> kirim: %d bytes\n",server_counter, sizeof(pm_eth));
@@ -180,6 +213,8 @@ void *thread_server(void *arg)
 			{
 				//printf("ERROR: %s\n",e.description().c_str());
 			}
+			
+
 		}
 	}  
 	catch ( SocketException& e )
@@ -372,7 +407,7 @@ bool main_window::saat_kerja()//GtkWidget *wg)
 	float *pFloat;
 	float *pFloat2;
 	
-	printf("[saat_kerja]wf: %d\n",wait_flag_serial);
+	//printf("[saat_kerja]wf: %d\n",wait_flag_serial);
 	
 	if (lanjut == TRUE)
 	{
@@ -1414,7 +1449,6 @@ bool main_window::update_tampilan()
 	//gtk_label_set_text((GtkLabel *) l_kw, tek);
 	
 	
-	
 	sprintf(tek, "kVA   = %.2f", asli_PM710[id_tampilkan].kva);		
 	//printf("%s\n",tek);
 	label_kva->set_text(tek);
@@ -1513,7 +1547,7 @@ bool main_window::update_tampilan()
 	sprintf(tek,"server_counter: %d\n",server_counter);
 	printf(tek);
 	
-	sprintf(status_teks,"addrress: %d |eth counter: %d | loop: %d",addr_PM710, server_counter,loop_counter);
+	sprintf(status_teks,"address: %d |eth counter: %d | loop: %d",addr_PM710, server_counter,loop_counter);
 	statusbar1->push(status_teks, 1);
 	
 	if(!timer_on)
@@ -1566,4 +1600,31 @@ void signal_handler_IO (int status)
 }
 
 //---------------------------------------------------------------------------
+bool main_window::on_main_window_delete_event(GdkEventAny *ev)
+{
+	Glib::ustring sTemp="Tutup Power Meter Server?";
+	Gtk::MessageDialog dialog(*this,sTemp,
+	true /*use markup*/, Gtk::MESSAGE_QUESTION,Gtk::BUTTONS_OK_CANCEL);
 
+	dialog.set_secondary_text("Peringatan: Menutup aplikasi juga akan menghentikan\n proses pengambilan data yang sedang berlangsung");
+	
+	int result=dialog.run();
+	switch(result)
+	{
+		case(Gtk::RESPONSE_OK):
+			return false;
+			break;
+		default:
+		return true;
+	}
+}
+//---------------------------------------------------------------------------
+
+int main_window::isi_form()
+{
+	
+	//m_refTreeModel = Gtk::ListStore::create(m_kolom);
+	//combo_com->set_model(m_refTreeModel);
+	m_refCombo=Gtk::TreeStore::create(m_kolom);
+	
+}

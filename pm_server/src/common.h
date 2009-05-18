@@ -37,7 +37,7 @@ struct t_serv {
 #include <fcntl.h>
 #include <sys/signal.h>
 #include <sys/types.h>
-#include <curses.h>
+//#include <curses.h>
 
 #define JUMLAH_PM    10
 //#define TIPE_PM710
