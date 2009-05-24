@@ -22,11 +22,12 @@
 #include <gtkmm.h>
 #include "low_mod.h"
 #include "mbcrc.h"
+
 //#include "serial.h"
 
 #include "ServerSocket.h"
 #include "SocketException.h"
-
+//#include "common.h"
 
 #define TIPE_PM810
 
@@ -58,6 +59,8 @@
 
 void signal_handler_IO (int status);
 void set_awal_serial(int fd);
+
+void printlog(Glib::ustring asLog,int mode);
 
 //Tree model columns:
 class ModelColumns : public Gtk::TreeModel::ColumnRecord
@@ -124,7 +127,12 @@ class main_window : public main_window_glade
 	bool update_tampilan();
 	
 	int isi_form();
-		
+	int baca_konfig();
+	int simpan_konfig();	
+	int set_server(int state);
+
+	
+	         
 	//Variabel
 		
 	//List

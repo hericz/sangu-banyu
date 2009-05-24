@@ -109,6 +109,7 @@
 
 		  <child>
 		    <widget class="GtkComboBox" id="combo_com">
+		      <property agent="glademm" name="cxx_visibility">public</property>
 		      <property name="visible">True</property>
 		      <property name="items" translatable="yes">/dev/ttyS0
 /dev/ttyS1
@@ -116,7 +117,7 @@
 /dev/ttyUSB0
 /dev/ttyUSB1
 /dev/ttyUSB2</property>
-		      <property name="add_tearoffs">False</property>
+		      <property name="add_tearoffs">True</property>
 		      <property name="focus_on_click">True</property>
 		    </widget>
 		    <packing>

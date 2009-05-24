@@ -1,4 +1,4 @@
-# generated 2009/5/4 12:41:01 EIT by herry@LancarJaya.(none)
+# generated 2009/5/22 18:31:21 EIT by herry@LancarJaya.(none)
 # using glademm V2.6.0
 
 AC_PREREQ(2.50)
@@ -39,7 +39,7 @@ fi
 
 AC_LANG_CPLUSPLUS
 
-PKG_CHECK_MODULES(GTKMM,[gtkmm-2.4 >= 2.12.5],,
+PKG_CHECK_MODULES(GTKMM,[gtkmm-2.4 >= 2.16.0],,
 	[PKG_CHECK_MODULES(GTKMM,[gtkmm-2.0 >= 2.0.0])])
 AC_SUBST(GTKMM_CFLAGS)
 AC_SUBST(GTKMM_LIBS)

@@ -24,7 +24,7 @@ pm_server_SOURCES = \
 	low_mod.c    \
 	mbcrc.c    \
 	ServerSocket.cpp    \
-	Socket.cpp
+	Socket.cpp    
 
 pm_server_LDFLAGS = 
 

@@ -9,7 +9,7 @@
 #include "main_window.hh"
 
 
-#include "common.h"
+#include "common.hh"
 //#include "serial.h"
 //#include "low_mod.h"
 #include "mbcrc.c"
@@ -30,8 +30,21 @@ unsigned int trm;
 unsigned int pool_wait;
 unsigned int loop_kirim=0;
 
-//int server_counter;
+//LOG
+#define DEBUG_LOG
+Glib::ustring tanggal_log,tanggal_temp,usLog;
+Glib::ustring nama_file;
+Glib::ustring waktu_start;
+Glib::ustring time_start;
+FILE *fLog;
+struct tm *log_tm_pointer;
+int pm_log_count;
+int pm_file_count;
 
+
+
+//int server_counter;
+//---------------------------------------------------------------------------
 Glib::ustring pm_parameter[33]={
 	"KWh", //1
 	"KVArh", //2
@@ -67,6 +80,7 @@ Glib::ustring pm_parameter[33]={
 	"PF L2",//32
 	"PF L3" //33
 	};
+
 Glib::ustring pm_satuan[33]={
 	"KWh", //1
 	"KVArh", //2
@@ -102,6 +116,7 @@ Glib::ustring pm_satuan[33]={
 	"PF",//32
 	"PF" //33
 	};
+
 static char status_teks[128];
 char ctemp[256];
 int t;
@@ -118,11 +133,16 @@ pthread_t a_thread;
 int result;
 int no_pm;
 bool server_aktif;
+bool data_asli=true;
+
+//---------------------------------------------------------------------------
 void *thread_server(void *arg)
 {
 	/*MULAINYA OF SERVER ETHERNET*/
 	std::string data;
-	printf("Buat socket baru\n");
+	Glib::ustring ustemp;
+	//printf("Buat socket baru\n");
+	printlog ("Buat socket baru",0);
 	try
     {
 		//Create the socket
@@ -132,7 +152,8 @@ void *thread_server(void *arg)
 		while ( true )
 		{
 			ServerSocket new_sock;
-			printf("Terima koneksi\n");
+			//printf("Terima koneksi\n");
+			printlog ("Siap terima koneksi",0);
 			server.accept ( new_sock );
 	
 	  		try
@@ -142,8 +163,11 @@ void *thread_server(void *arg)
 			  	
 				new_sock >> data;
 					  	
-				printf("\nData masuk: %s\n",data.c_str());
-			  	
+				//sprintf(ctemp,"|-- Data masuk: %s\n",data.c_str());
+				//ustemp=Glib::ustring::compose("|-- Data masuk: %s\n",data.c_str());
+				sprintf(ctemp,"|-- Data masuk: %s\n",data.c_str());
+				printlog (ctemp,0);
+					
 				if(!strncmp(data.c_str(),"stack_01",8))
 					no_pm=1;
 				else if(!strncmp(data.c_str(),"stack_02",8))
@@ -168,17 +192,30 @@ void *thread_server(void *arg)
 				else
 					no_pm=0;
 						
-				//sprintf(ctemp,"%d",counter);
-				printf("Nomer rekues: %d\n",no_pm);
-				
+				printf("|-- Nomer rekues: %d\n",no_pm);
+				sprintf(ctemp,"|-- Nomer rekues: %d",no_pm);
+				printlog (ctemp,0);
 				//DATA ASLI	
-				bool data_asli=false;
+				
 				if(data_asli)
 				{
-					memcpy(pm_eth.buf, (char *) &asli_PM710[no_pm], sizeof (asli_PM710[1]));
-					kontrol_PM[no_pm].alamat = no_pm;
-					pm_eth.alamat = kontrol_PM[no_pm].alamat;
-					strcpy(pm_eth.mon, "monita1");
+					//printlog ("1",0);
+					try
+					{
+						//printlog("2",0);
+						memcpy(pm_eth.buf, (char *) &asli_PM710[no_pm], sizeof (asli_PM710[1]));
+						//printlog("3",0);
+						kontrol_PM[no_pm].alamat = no_pm;
+						//printlog ("4",0);
+						pm_eth.alamat = kontrol_PM[no_pm].alamat;
+						printlog ("5",0);
+						strcpy(pm_eth.mon, "monita1");
+						printlog ("6",0);
+					}
+					catch(...)
+					{
+						printlog ("Error saat mengkopi memory",0);
+					}
 				}
 				else
 				//DATA DUMMY
@@ -194,19 +231,25 @@ void *thread_server(void *arg)
 					pm_eth.alamat = no_pm;
 					strcpy(pm_eth.mon, "monita1");
 					
-					printf("Dummy data: alamat: %d\n",no_pm);
+					printf("|-- Buat dummy data: alamat: %d\n",no_pm);
 				}	
 					
 				//Kirim data
+				sprintf(ctemp,"|-- %d> kirim: %d bytes",server_counter, sizeof(pm_eth));
+				printlog (ctemp,0);
+				
 				new_sock.send_buffer((char*)&pm_eth,sizeof(pm_eth));
-				printf("\n |-- %d> kirim: %d bytes\n",server_counter, sizeof(pm_eth));
+				printlog ("Kirim selesai",0);
+				
+				//printf("|-- %d> kirim: %d bytes\n",server_counter, sizeof(pm_eth));
+					
 				server_counter++;
 				  
 				//printf(".");
 				if(server_counter%50==0)
-					printf("\n%d",server_counter);
-				if(server_counter>1100)
-				  	server_counter=0;
+					printf("|-- server_counter: %d\n",server_counter);
+				//if(server_counter>1100)
+				//  	server_counter=0;
 				}
 			}
 			catch ( SocketException& e) 
@@ -221,24 +264,27 @@ void *thread_server(void *arg)
     {
       std::cout << "Exception was caught:" << e.description() << "\nExiting.\n";
     }
-	
+
+	sprintf(ctemp,"THREAD SERVER ENDED (server_aktif=%d,server_counter=%d)\n",server_aktif,server_counter);
+	printlog (ctemp,0);
+	server_aktif=0; 
 	/*END OF pthread_t a_thread ETHERNET*/
 	pthread_exit(NULL);
 }
 
 main_window::main_window()
 {
-	printf("[main_window]\n");
+	//printf("[main_window]\n");
+	printlog ("Mulai pm_server",0);
 	
 	wait_flag_serial=TRUE;
 	serial_terbuka=FALSE;
 	timer_on=false;
-	jum_PM=3;
+	jum_PM=5;
 	server_counter=0;
 	loop_counter=0;
 	tree_ada_kolom=false;
 	
-	server_counter=0;
 	m_context_id = statusbar1->get_context_id("Statusbar");
 	//init font
 	Glib::ustring font_desc;
@@ -273,66 +319,58 @@ main_window::main_window()
 	label_ampr->modify_font(Pango::FontDescription(font_desc));
 	
 	id_tampilkan=1;
+
+	isi_form ();
 	
 	on_button_connect_clicked ();
 }
 
+//---------------------------------------------------------------------------
 void main_window::on_button_connect_clicked()
 {
-	printf("on_button_connect_clicked\n");
-	
+	//printf("on_button_connect_clicked\n");
+	printlog ("on_button_connect_clicked\n",0);
 	//buka port serial dan aktifkan timer
 	if(!serial_terbuka)
 	{
 	//#if 1	
-	printf("Mencoba membuka serial port: %s\n",MODEMDEVICE);
+	//printf("Mencoba membuka serial port: %s\n",MODEMDEVICE);
+	sprintf(ctemp,"Mencoba membuka serial port: %s\n",MODEMDEVICE);
+	printlog (ctemp,0);
+		
 	fd = open(MODEMDEVICE, O_RDWR | O_NOCTTY | O_NONBLOCK);
     if (fd <0) {
 		/* buat error message */
 		//err = gtk_message_dialog_new((GtkWindow *)window1, GTK_DIALOG_MODAL , GTK_MESSAGE_ERROR, \
 		//	GTK_BUTTONS_OK, "Open device %s gagal !", MODEMDEVICE); 
-		printf("ERROR: Gagal membuka serial port: %s\n",MODEMDEVICE);
-		
+		//printf("ERROR: Gagal membuka serial port: %s\n",MODEMDEVICE);
+		printlog("ERROR: Gagal membuka serial port",0);
 		//gtk_dialog_run(GTK_DIALOG(err));
 		//gtk_widget_destroy(err);
 		
-		printf("Open dev %s gagal\n", MODEMDEVICE);
+		//printf("Open dev %s gagal\n", MODEMDEVICE);
 		perror(MODEMDEVICE); 
 		//exit(-1); 	
 	}
 	else
 	{
-		printf("Berhasil membuka serial port [%s]\n",MODEMDEVICE);
+		//printf("Berhasil membuka serial port [%s]\n",MODEMDEVICE);
+		printlog ("Berhasil membuka serial port",0);
 		serial_terbuka=true;
 		
-		printf("set_awal_serial\n");
+		//printf("set_awal_serial\n");
 		set_awal_serial(fd);
 
-		printf("Mulai timer\n");
+		//printf("Mulai timer\n");
+		printlog ("Mulai timer",0);
 		//#endif	
 		lanjut = TRUE;
 		trm = 0;
 
 		//Hidupkan server socket
 		//printf("Hidupkan server ethernet\n");
-		//server =new ServerSocket(5002);
-		//counter=0;
-		int parameter_server=0;
-		server_aktif=true;
+		set_server(1);
 		
-		result = pthread_create(&a_thread, NULL, 
-								thread_server, (void*)&parameter_server);
-		if (result != 0)
-		{
-			perror(" -> Thread creation failed\n");
-			exit(EXIT_FAILURE);
-		}
-		else
-		{
-			
-			printf("Server diaktifkan\n");
-		}
-		//t_saat = g_timeout_add(50, (GSourceFunc) saat_kerja, main_window);
 		timer_on=true;
 		
 		t_saat = Glib::signal_timeout().connect(sigc::mem_fun(*this,&main_window::saat_kerja),50 );
@@ -347,54 +385,61 @@ void main_window::on_button_connect_clicked()
 	else
 	{
 		//tutup serial_port
-		printf("Matikan timer\n");
+		//printf("Matikan timer\n");
+		printlog ("Matikan timer",0);
 		timer_on=false;
 		server_aktif=false;
-		printf("Tutup serial port\n");
+		printlog("Tutul serial port",0);
+		//printf("Tutup serial port\n");
 		
 		serial_terbuka=false;
 		button_connect->set_label("MULAI");
 	}
 }
-
+//---------------------------------------------------------------------------
 void main_window::on_button_1_clicked()
 {
-	printf("on_button_1_clicked\n");
+	//printf("on_button_1_clicked\n");
 	
 	id_tampilkan=1;
 	update_tampilan();
 	//button_2->set_active(false);	
 }
 
+//---------------------------------------------------------------------------
 void main_window::on_button_2_clicked()
 {
-	printf("on_button_2_clicked\n");
+	//printf("on_button_2_clicked\n");
 	id_tampilkan=2;
 	update_tampilan();
 	//button_1->set_active(false);
 }
 
+//---------------------------------------------------------------------------
 void main_window::on_button_3_clicked()
 {
-	printf("on_button_3_clicked\n");
+	//printf("on_button_3_clicked\n");
 	id_tampilkan=3;
 	update_tampilan();
 }
 
+//---------------------------------------------------------------------------
 void main_window::on_button_4_clicked()
 {
-	printf("on_button_4_clicked\n");
+	//printf("on_button_4_clicked\n");
 	id_tampilkan=4;
 	update_tampilan();
 }
 
+//---------------------------------------------------------------------------
 void main_window::on_button_5_clicked()
 {
-	printf("on_button_5_clicked\n");
+	//printf("on_button_5_clicked\n");
 	id_tampilkan=5;
 	update_tampilan();
 }
 
+//---------------------------------------------------------------------------
 bool main_window::saat_kerja()//GtkWidget *wg)
 {
 	unsigned char *pc;
@@ -407,7 +452,8 @@ bool main_window::saat_kerja()//GtkWidget *wg)
 	float *pFloat;
 	float *pFloat2;
 	
-	//printf("[saat_kerja]wf: %d\n",wait_flag_serial);
+	//sprintf(ctemp,"[saat_kerja]wf: %d\n",wait_flag_serial);
+	//printlog (ctemp,0);
 	
 	if (lanjut == TRUE)
 	{
@@ -447,7 +493,10 @@ bool main_window::saat_kerja()//GtkWidget *wg)
 		}
 #endif
 
+		
 #ifdef TIPE_PM810
+	try
+	{		
 		if (urutan == 1)
    	    {
    	    	jum_balik = get_PM710(reg_satuan, 6);
@@ -482,7 +531,12 @@ bool main_window::saat_kerja()//GtkWidget *wg)
    		{
    		   jum_balik = get_PM710(meter_energi_vah, 8);
    		}
-
+	}
+	catch(...)
+	{
+		printf("Error saat membaca serial\n");
+		printlog("Error saat membaca serial",0);
+	}		
 #endif
 		
      	// kirim lewat serial	
@@ -512,7 +566,7 @@ bool main_window::saat_kerja()//GtkWidget *wg)
 		
 		sprintf(tek, "Timeout dari alamat = %d !", addr_PM710);
 		//gtk_label_set_text((GtkLabel *) tout, tek);
-			
+		printlog (tek,0);	
 		urutan++;
         //if (urutan > MAKS_URUT)
 		if (urutan > 2) // supaya tidak terlalu lama pooling yang timeout 
@@ -583,6 +637,8 @@ bool main_window::saat_kerja()//GtkWidget *wg)
 		}
 	}
 	else
+	{
+	}
 		//printf("wait_flag = TRUE\n");
 	
 //#endif
@@ -614,6 +670,7 @@ bool main_window::saat_kerja()//GtkWidget *wg)
 	if(timer_on==false)
 	{
 		printf("Timer dimatikan\n");
+		printlog ("Timer dimatikan",0);
 		return false;
 	}
 }
@@ -624,8 +681,6 @@ bool main_window::saat_kerja()//GtkWidget *wg)
 
    return adalah jumlah byte yang seharusnya diterima
 */
-
-
 unsigned short main_window::get_PM710(unsigned short reg, unsigned char uk)
 {
    unsigned short dcrc;
@@ -650,6 +705,7 @@ unsigned short main_window::get_PM710(unsigned short reg, unsigned char uk)
    	return (1 + 1 + 1 + (uk * 2) + 2);
 }
 
+//---------------------------------------------------------------------------
 unsigned short main_window::cek_PM()
 {
 	unsigned short dcrc;
@@ -672,7 +728,7 @@ unsigned short main_window::cek_PM()
 	return 7;	// respon harusnya 7 byte
 	//return (1 + 1 + 1 + (uk * 2) + 2);		
 }
-
+//---------------------------------------------------------------------------
 #ifdef TIPE_PM710
 //void taruh_data(int no_slave, int urt, char *buf)
 void taruh_data(int no_slave, int urt)
@@ -928,6 +984,7 @@ void taruh_data(int no_slave, int urt)
 	
 }
 
+//---------------------------------------------------------------------------
 // 22 Jan 09
 unsigned short main_window::get_KTA(unsigned short reg, unsigned char uk)
 {
@@ -954,11 +1011,11 @@ unsigned short main_window::get_KTA(unsigned short reg, unsigned char uk)
 }
 #endif
 
+//---------------------------------------------------------------------------
 /* 
  * 24 Februari 2009
  * taruh data untuk PM810
  */
-
 
 void main_window::taruh_data_PM810(int pm_dibaca, int urt)
 {
@@ -967,423 +1024,433 @@ void main_window::taruh_data_PM810(int pm_dibaca, int urt)
 	unsigned int temp;
    	unsigned int temp2;
    
-	printf("Taruh data pm810 [%d] urut[%d]\n",pm_dibaca,urt);
-	if (urt == 1)
+	//sprintf(ctemp,"Taruh data pm810 [%d] urut[%d]\n",pm_dibaca,urt);
+	//printlog (ctemp,0);
+	try
 	{
-		// amper
-		satuan_t = buf[3];
-		satuan_t = (satuan_t << 8) + buf[4];
+		if (urt == 1)
+		{
+			// amper
+			satuan_t = buf[3];
+			satuan_t = (satuan_t << 8) + buf[4];
 
-		if (satuan_t == -4) satuan_amp[pm_dibaca] = 0.0001;
-		else if (satuan_t == -3) satuan_amp[pm_dibaca] = 0.001;
-		else if (satuan_t == -2) satuan_amp[pm_dibaca] = 0.01;
-		else if (satuan_t == -1) satuan_amp[pm_dibaca] = 0.1;
-		else if (satuan_t == 0) satuan_amp[pm_dibaca] = 1.0;
-		else if (satuan_t == 1) satuan_amp[pm_dibaca] = 10.0;
-		else if (satuan_t == 2) satuan_amp[pm_dibaca] = 100.0;
-		else if (satuan_t == 3) satuan_amp[pm_dibaca] = 1000.0;
-		else if (satuan_t == 4) satuan_amp[pm_dibaca] = 10000.0;
+			if (satuan_t == -4) satuan_amp[pm_dibaca] = 0.0001;
+			else if (satuan_t == -3) satuan_amp[pm_dibaca] = 0.001;
+			else if (satuan_t == -2) satuan_amp[pm_dibaca] = 0.01;
+			else if (satuan_t == -1) satuan_amp[pm_dibaca] = 0.1;
+			else if (satuan_t == 0) satuan_amp[pm_dibaca] = 1.0;
+			else if (satuan_t == 1) satuan_amp[pm_dibaca] = 10.0;
+			else if (satuan_t == 2) satuan_amp[pm_dibaca] = 100.0;
+			else if (satuan_t == 3) satuan_amp[pm_dibaca] = 1000.0;
+			else if (satuan_t == 4) satuan_amp[pm_dibaca] = 10000.0;
 
-		//ampere2 (L-N)
-		satuan_t = buf[5];
-		satuan_t = (satuan_t << 8) + buf[6];
+			//ampere2 (L-N)
+			satuan_t = buf[5];
+			satuan_t = (satuan_t << 8) + buf[6];
 
-		if (satuan_t == -4) satuan_amp2[pm_dibaca] = 0.0001;
-		else if (satuan_t == -3) satuan_amp2[pm_dibaca] = 0.001;
-		else if (satuan_t == -2) satuan_amp2[pm_dibaca] = 0.01;
-		else if (satuan_t == -1) satuan_amp2[pm_dibaca] = 0.1;
-		else if (satuan_t == 0) satuan_amp2[pm_dibaca] = 1.0;
-		else if (satuan_t == 1) satuan_amp2[pm_dibaca] = 10.0;
-		else if (satuan_t == 2) satuan_amp2[pm_dibaca] = 100.0;
-		else if (satuan_t == 3) satuan_amp2[pm_dibaca] = 1000.0;
-		else if (satuan_t == 4) satuan_amp2[pm_dibaca] = 10000.0;
-		// buf[7] & [8] kosong
+			if (satuan_t == -4) satuan_amp2[pm_dibaca] = 0.0001;
+			else if (satuan_t == -3) satuan_amp2[pm_dibaca] = 0.001;
+			else if (satuan_t == -2) satuan_amp2[pm_dibaca] = 0.01;
+			else if (satuan_t == -1) satuan_amp2[pm_dibaca] = 0.1;
+			else if (satuan_t == 0) satuan_amp2[pm_dibaca] = 1.0;
+			else if (satuan_t == 1) satuan_amp2[pm_dibaca] = 10.0;
+			else if (satuan_t == 2) satuan_amp2[pm_dibaca] = 100.0;
+			else if (satuan_t == 3) satuan_amp2[pm_dibaca] = 1000.0;
+			else if (satuan_t == 4) satuan_amp2[pm_dibaca] = 10000.0;
+			// buf[7] & [8] kosong
 
-		// volt (L - L)
-		satuan_t = buf[9];
-		satuan_t = (satuan_t << 8) + buf[10];
+			// volt (L - L)
+			satuan_t = buf[9];
+			satuan_t = (satuan_t << 8) + buf[10];
 
-		if (satuan_t == -4) satuan_volt[pm_dibaca] = 0.0001;
-		else if (satuan_t == -3) satuan_volt[pm_dibaca] = 0.001;
-		else if (satuan_t == -2) satuan_volt[pm_dibaca] = 0.01;
-		else if (satuan_t == -1) satuan_volt[pm_dibaca] = 0.1;
-		else if (satuan_t == 0) satuan_volt[pm_dibaca] = 1.0;
-		else if (satuan_t == 1) satuan_volt[pm_dibaca] = 10.0;
-		else if (satuan_t == 2) satuan_volt[pm_dibaca] = 100.0;
-		else if (satuan_t == 3) satuan_volt[pm_dibaca] = 1000.0;
-		else if (satuan_t == 4) satuan_volt[pm_dibaca] = 10000.0;
+			if (satuan_t == -4) satuan_volt[pm_dibaca] = 0.0001;
+			else if (satuan_t == -3) satuan_volt[pm_dibaca] = 0.001;
+			else if (satuan_t == -2) satuan_volt[pm_dibaca] = 0.01;
+			else if (satuan_t == -1) satuan_volt[pm_dibaca] = 0.1;
+			else if (satuan_t == 0) satuan_volt[pm_dibaca] = 1.0;
+			else if (satuan_t == 1) satuan_volt[pm_dibaca] = 10.0;
+			else if (satuan_t == 2) satuan_volt[pm_dibaca] = 100.0;
+			else if (satuan_t == 3) satuan_volt[pm_dibaca] = 1000.0;
+			else if (satuan_t == 4) satuan_volt[pm_dibaca] = 10000.0;
 
-		// volt2 (L - N)
-		satuan_t = buf[11];
-		satuan_t = (satuan_t << 8) + buf[12];
+			// volt2 (L - N)
+			satuan_t = buf[11];
+			satuan_t = (satuan_t << 8) + buf[12];
 
-		if (satuan_t == -4) satuan_volt2[pm_dibaca] = 0.0001;
-		else if (satuan_t == -3) satuan_volt2[pm_dibaca] = 0.001;
-		else if (satuan_t == -2) satuan_volt2[pm_dibaca] = 0.01;
-		else if (satuan_t == -1) satuan_volt2[pm_dibaca] = 0.1;
-		else if (satuan_t == 0) satuan_volt2[pm_dibaca] = 1.0;
-		else if (satuan_t == 1) satuan_volt2[pm_dibaca] = 10.0;
-		else if (satuan_t == 2) satuan_volt2[pm_dibaca] = 100.0;
-		else if (satuan_t == 3) satuan_volt2[pm_dibaca] = 1000.0;
-		else if (satuan_t == 4) satuan_volt2[pm_dibaca] = 10000.0;
+			if (satuan_t == -4) satuan_volt2[pm_dibaca] = 0.0001;
+			else if (satuan_t == -3) satuan_volt2[pm_dibaca] = 0.001;
+			else if (satuan_t == -2) satuan_volt2[pm_dibaca] = 0.01;
+			else if (satuan_t == -1) satuan_volt2[pm_dibaca] = 0.1;
+			else if (satuan_t == 0) satuan_volt2[pm_dibaca] = 1.0;
+			else if (satuan_t == 1) satuan_volt2[pm_dibaca] = 10.0;
+			else if (satuan_t == 2) satuan_volt2[pm_dibaca] = 100.0;
+			else if (satuan_t == 3) satuan_volt2[pm_dibaca] = 1000.0;
+			else if (satuan_t == 4) satuan_volt2[pm_dibaca] = 10000.0;
 
-		//power
-		satuan_t = buf[13];
-		satuan_t = (satuan_t << 8) + buf[14];
+			//power
+			satuan_t = buf[13];
+			satuan_t = (satuan_t << 8) + buf[14];
 
-		if (satuan_t == -4) satuan_kw[pm_dibaca] = 0.0001;
-		else if (satuan_t == -3) satuan_kw[pm_dibaca] = 0.001;
-		else if (satuan_t == -2) satuan_kw[pm_dibaca] = 0.01;
-		else if (satuan_t == -1) satuan_kw[pm_dibaca] = 0.1;
-		else if (satuan_t == 0) satuan_kw[pm_dibaca] = 1.0;
-		else if (satuan_t == 1) satuan_kw[pm_dibaca] = 10.0;
-		else if (satuan_t == 2) satuan_kw[pm_dibaca] = 100.0;
-		else if (satuan_t == 3) satuan_kw[pm_dibaca] = 1000.0;
-		else if (satuan_t == 4) satuan_kw[pm_dibaca] = 10000.0;
+			if (satuan_t == -4) satuan_kw[pm_dibaca] = 0.0001;
+			else if (satuan_t == -3) satuan_kw[pm_dibaca] = 0.001;
+			else if (satuan_t == -2) satuan_kw[pm_dibaca] = 0.01;
+			else if (satuan_t == -1) satuan_kw[pm_dibaca] = 0.1;
+			else if (satuan_t == 0) satuan_kw[pm_dibaca] = 1.0;
+			else if (satuan_t == 1) satuan_kw[pm_dibaca] = 10.0;
+			else if (satuan_t == 2) satuan_kw[pm_dibaca] = 100.0;
+			else if (satuan_t == 3) satuan_kw[pm_dibaca] = 1000.0;
+			else if (satuan_t == 4) satuan_kw[pm_dibaca] = 10000.0;
 
-		//energy
-		/*
-		satuan_t = buf[9];
-		satuan_t = (satuan_t << 8) + buf[10];
+			//energy
+			/*
+			satuan_t = buf[9];
+			satuan_t = (satuan_t << 8) + buf[10];
 
-		if (satuan_t == -4) satuan_kwh = 0.0001;
-		else if (satuan_t == -3) satuan_kwh = 0.001;
-		else if (satuan_t == -2) satuan_kwh = 0.01;
-		else if (satuan_t == -1) satuan_kwh = 0.1;
-		else if (satuan_t == 0) satuan_kwh = 1.0;
-		else if (satuan_t == 1) satuan_kwh = 10.0;
-		else if (satuan_t == 2) satuan_kwh = 100.0;
-		else if (satuan_t == 3) satuan_kwh = 1000.0;
-		else if (satuan_t == 4) satuan_kwh = 10000.0;
-		*/
-		satuan_kwh[pm_dibaca] = 10;	
-	}	
-	else if (urt == 2)
+			if (satuan_t == -4) satuan_kwh = 0.0001;
+			else if (satuan_t == -3) satuan_kwh = 0.001;
+			else if (satuan_t == -2) satuan_kwh = 0.01;
+			else if (satuan_t == -1) satuan_kwh = 0.1;
+			else if (satuan_t == 0) satuan_kwh = 1.0;
+			else if (satuan_t == 1) satuan_kwh = 10.0;
+			else if (satuan_t == 2) satuan_kwh = 100.0;
+			else if (satuan_t == 3) satuan_kwh = 1000.0;
+			else if (satuan_t == 4) satuan_kwh = 10000.0;
+			*/
+			satuan_kwh[pm_dibaca] = 10;	
+		}	
+		else if (urt == 2)
+		{
+			// current_metering
+			data_PM710[pm_dibaca].ampA = buf[3];
+			data_PM710[pm_dibaca].ampA = (data_PM710[pm_dibaca].ampA << 8) + buf[4];
+
+			asli_PM710[pm_dibaca].ampA = data_PM710[pm_dibaca].ampA * satuan_amp[pm_dibaca];
+
+			#ifndef MOD_SERVER
+			f = data_PM710[pm_dibaca].ampA * 10;
+			//Label45->Caption = FloatToStrF(f, ffGeneral, 8, 2);
+			#endif
+
+			// ampere B
+			data_PM710[pm_dibaca].ampB = buf[5];
+			data_PM710[pm_dibaca].ampB  = (data_PM710[pm_dibaca].ampB  << 8) + buf[6];
+			//asli_PM710[pm_dibaca].ampB = data_PM710[pm_dibaca].ampB * satuan_amp[pm_dibaca];
+			if (data_PM710[pm_dibaca].ampB == 32768)
+				asli_PM710[pm_dibaca].ampB = 0;
+			else
+				asli_PM710[pm_dibaca].ampB = data_PM710[pm_dibaca].ampB * satuan_amp[pm_dibaca];
+
+
+			#ifndef MOD_SERVER
+			f = data_PM710[pm_dibaca].ampB  * 10;
+			//Label46->Caption = FloatToStrF(f, ffGeneral, 8, 2);
+			#endif
+
+			// ampere C
+			data_PM710[pm_dibaca].ampC = buf[7];
+			data_PM710[pm_dibaca].ampC = (data_PM710[pm_dibaca].ampC << 8) + buf[8];
+			//asli_PM710[pm_dibaca].ampC = data_PM710[pm_dibaca].ampC * satuan_amp[pm_dibaca];
+			if (data_PM710[pm_dibaca].ampC == 32768)
+				asli_PM710[pm_dibaca].ampC = 0;
+			else
+				asli_PM710[pm_dibaca].ampC = data_PM710[pm_dibaca].ampC * satuan_amp[pm_dibaca];
+
+			#ifndef MOD_SERVER
+			f = data_PM710[pm_dibaca].ampC  * 10;
+			//Label47->Caption = FloatToStrF(f, ffGeneral, 8, 2);
+			#endif
+
+			// ampere N
+			data_PM710[pm_dibaca].ampN = buf[9];
+			data_PM710[pm_dibaca].ampN = (data_PM710[pm_dibaca].ampN << 8) + buf[10];
+			//asli_PM710[pm_dibaca].ampN = data_PM710[pm_dibaca].ampN * satuan_amp[pm_dibaca];
+			if (data_PM710[pm_dibaca].ampN == 32768)
+				asli_PM710[pm_dibaca].ampN = 0;
+			else
+				asli_PM710[pm_dibaca].ampN = data_PM710[pm_dibaca].ampN * satuan_amp[pm_dibaca];
+			#ifndef MOD_SERVER
+			f = data_PM710[pm_dibaca].ampN  * 10;
+			//Label48->Caption = FloatToStrF(f, ffGeneral, 8, 2);
+			#endif
+
+			// ampere average
+			data_PM710[pm_dibaca].amp = buf[13];
+			data_PM710[pm_dibaca].amp = (data_PM710[pm_dibaca].amp << 8) + buf[14];
+			asli_PM710[pm_dibaca].amp = data_PM710[pm_dibaca].amp * satuan_amp[pm_dibaca];
+
+			#ifndef MOD_SERVER
+			f = data_PM710[pm_dibaca].amp  * 10;
+			//Label21->Caption = FloatToStrF(f, ffGeneral, 8, 2);
+			#endif
+
+		 }
+		 else if (urt == 3)
+		 {
+			//voltA_B, B_C, A_C, A_N, B_N & C_N
+			data_PM710[pm_dibaca].voltA_B = buf[3];
+			data_PM710[pm_dibaca].voltA_B = (data_PM710[pm_dibaca].voltA_B << 8) + buf[4];
+			//asli_PM710[pm_dibaca].voltA_B = data_PM710[pm_dibaca].voltA_B * satuan_volt[pm_dibaca];
+			if (data_PM710[pm_dibaca].voltA_B == 32768)
+				asli_PM710[pm_dibaca].voltA_B = 0;
+			else
+				asli_PM710[pm_dibaca].voltA_B = data_PM710[pm_dibaca].voltA_B * satuan_volt[pm_dibaca];
+
+
+			data_PM710[pm_dibaca].voltB_C = buf[5];
+			data_PM710[pm_dibaca].voltB_C = (data_PM710[pm_dibaca].voltB_C << 8) + buf[6];
+			//asli_PM710[pm_dibaca].voltB_C = data_PM710[pm_dibaca].voltB_C * satuan_volt[pm_dibaca];
+			if (data_PM710[pm_dibaca].voltB_C == 32768)
+				asli_PM710[pm_dibaca].voltB_C = 0;
+			else
+				asli_PM710[pm_dibaca].voltB_C = data_PM710[pm_dibaca].voltB_C * satuan_volt[pm_dibaca];
+
+			data_PM710[pm_dibaca].voltA_C = buf[7];
+			data_PM710[pm_dibaca].voltA_C = (data_PM710[pm_dibaca].voltA_C << 8) + buf[8];
+			//asli_PM710[pm_dibaca].voltA_C = data_PM710[pm_dibaca].voltA_C * satuan_volt[pm_dibaca];
+			if (data_PM710[pm_dibaca].voltA_C == 32768)
+				asli_PM710[pm_dibaca].voltA_C = 0;
+			else
+				asli_PM710[pm_dibaca].voltA_C = data_PM710[pm_dibaca].voltA_C * satuan_volt[pm_dibaca];
+
+			// L-L average
+			data_PM710[pm_dibaca].volt1 = buf[9];
+			data_PM710[pm_dibaca].volt1 = (data_PM710[pm_dibaca].volt1 << 8) + buf[10];
+			//asli_PM710[pm_dibaca].volt1 = data_PM710[pm_dibaca].volt1 * satuan_volt[pm_dibaca];
+			if (data_PM710[pm_dibaca].volt1 == 32768)
+				asli_PM710[pm_dibaca].volt1 = 0;
+			else
+				asli_PM710[pm_dibaca].volt1 = data_PM710[pm_dibaca].volt1 * satuan_volt[pm_dibaca];
+
+			data_PM710[pm_dibaca].voltA_N = buf[11];
+			data_PM710[pm_dibaca].voltA_N = (data_PM710[pm_dibaca].voltA_N << 8) + buf[12];
+			//asli_PM710[pm_dibaca].voltA_N = data_PM710[pm_dibaca].voltA_N * satuan_volt[pm_dibaca];
+			if (data_PM710[pm_dibaca].voltA_N == 32768)
+				asli_PM710[pm_dibaca].voltA_N = 0;
+			else
+				asli_PM710[pm_dibaca].voltA_N = data_PM710[pm_dibaca].voltA_N * satuan_volt[pm_dibaca];
+
+
+			data_PM710[pm_dibaca].voltB_N = buf[13];
+			data_PM710[pm_dibaca].voltB_N = (data_PM710[pm_dibaca].voltB_N << 8) + buf[14];
+			//asli_PM710[pm_dibaca].voltB_N = data_PM710[pm_dibaca].voltB_N * satuan_volt[pm_dibaca];
+			if (data_PM710[pm_dibaca].voltB_N == 32768)
+				asli_PM710[pm_dibaca].voltB_N = 0;
+			else
+				asli_PM710[pm_dibaca].voltB_N = data_PM710[pm_dibaca].voltB_N * satuan_volt[pm_dibaca];
+
+
+			data_PM710[pm_dibaca].voltC_N = buf[15];
+			data_PM710[pm_dibaca].voltC_N = (data_PM710[pm_dibaca].voltC_N << 8) + buf[16];
+			//asli_PM710[pm_dibaca].voltC_N = data_PM710[pm_dibaca].voltC_N * satuan_volt[pm_dibaca];
+			if (data_PM710[pm_dibaca].voltC_N == 32768)
+				asli_PM710[pm_dibaca].voltC_N = 0;
+			else
+				asli_PM710[pm_dibaca].voltC_N = data_PM710[pm_dibaca].voltC_N * satuan_volt[pm_dibaca];
+
+
+			// fasa - netral average
+			data_PM710[pm_dibaca].volt2 = buf[19];
+			data_PM710[pm_dibaca].volt2 = (data_PM710[pm_dibaca].volt2 << 8) + buf[20];
+			//asli_PM710[pm_dibaca].volt2 = data_PM710[pm_dibaca].volt2 * satuan_volt[pm_dibaca];
+			if (data_PM710[pm_dibaca].volt2 == 32768)
+				asli_PM710[pm_dibaca].volt2 = 0;
+			else
+				asli_PM710[pm_dibaca].volt2 = data_PM710[pm_dibaca].volt2 * satuan_volt[pm_dibaca];
+
+		 }
+		 else if (urt == 4)
+		 {
+			// kwA, kwB, kwC, kw
+			data_PM710[pm_dibaca].kwA = buf[3];
+			data_PM710[pm_dibaca].kwA = (data_PM710[pm_dibaca].kwA << 8) + buf[4];
+			asli_PM710[pm_dibaca].kwA = data_PM710[pm_dibaca].kwA * satuan_kw[pm_dibaca];
+
+			data_PM710[pm_dibaca].kwB = buf[5];
+			data_PM710[pm_dibaca].kwB = (data_PM710[pm_dibaca].kwB << 8) + buf[6];
+			asli_PM710[pm_dibaca].kwB = data_PM710[pm_dibaca].kwB * satuan_kw[pm_dibaca];
+
+			data_PM710[pm_dibaca].kwC = buf[7];
+			data_PM710[pm_dibaca].kwC = (data_PM710[pm_dibaca].kwC << 8) + buf[8];
+			asli_PM710[pm_dibaca].kwC = data_PM710[pm_dibaca].kwC * satuan_kw[pm_dibaca];
+
+			data_PM710[pm_dibaca].kw = buf[9];
+			data_PM710[pm_dibaca].kw = (data_PM710[pm_dibaca].kw << 8) + buf[10];
+			asli_PM710[pm_dibaca].kw = data_PM710[pm_dibaca].kw * satuan_kw[pm_dibaca];
+
+			// kvarA, kvarB, kvarC, kvar
+			data_PM710[pm_dibaca].kvarA = buf[11];
+			data_PM710[pm_dibaca].kvarA = (data_PM710[pm_dibaca].kvarA << 8) + buf[12];
+			asli_PM710[pm_dibaca].kvarA = data_PM710[pm_dibaca].kvarA * satuan_kw[pm_dibaca];
+
+			data_PM710[pm_dibaca].kvarB = buf[13];
+			data_PM710[pm_dibaca].kvarB = (data_PM710[pm_dibaca].kvarB << 8) + buf[14];
+			asli_PM710[pm_dibaca].kvarB = data_PM710[pm_dibaca].kvarB * satuan_kw[pm_dibaca];
+
+			data_PM710[pm_dibaca].kvarC = buf[15];
+			data_PM710[pm_dibaca].kvarC = (data_PM710[pm_dibaca].kvarC << 8) + buf[16];
+			asli_PM710[pm_dibaca].kvarC = data_PM710[pm_dibaca].kvarC * satuan_kw[pm_dibaca];
+
+			data_PM710[pm_dibaca].kvar = buf[17];
+			data_PM710[pm_dibaca].kvar = (data_PM710[pm_dibaca].kvar << 8) + buf[18];
+			asli_PM710[pm_dibaca].kvar = data_PM710[pm_dibaca].kvar * satuan_kw[pm_dibaca];
+
+			// kvaA, kvaB, kvaC, kva
+			data_PM710[pm_dibaca].kvaA = buf[19];
+			data_PM710[pm_dibaca].kvaA = (data_PM710[pm_dibaca].kvaA << 8) + buf[20];
+			asli_PM710[pm_dibaca].kvaA = data_PM710[pm_dibaca].kvaA * satuan_kw[pm_dibaca];
+
+			data_PM710[pm_dibaca].kvaB = buf[21];
+			data_PM710[pm_dibaca].kvaB = (data_PM710[pm_dibaca].kvaB << 8) + buf[22];
+			asli_PM710[pm_dibaca].kvaB = data_PM710[pm_dibaca].kvaB * satuan_kw[pm_dibaca];
+
+			data_PM710[pm_dibaca].kvaC = buf[23];
+			data_PM710[pm_dibaca].kvaC = (data_PM710[pm_dibaca].kvaC << 8) + buf[24];
+			asli_PM710[pm_dibaca].kvaC = data_PM710[pm_dibaca].kvaC * satuan_kw[pm_dibaca];
+
+			data_PM710[pm_dibaca].kva = buf[25];
+			data_PM710[pm_dibaca].kva = (data_PM710[pm_dibaca].kva << 8) + buf[26];
+			asli_PM710[pm_dibaca].kva = data_PM710[pm_dibaca].kva * satuan_kw[pm_dibaca];
+
+		 }
+		 else if (urt == 5)
+		 {
+			//pfA, pfB, pfC, pf
+			data_PM710[pm_dibaca].pfA = buf[3];
+			data_PM710[pm_dibaca].pfA = (data_PM710[pm_dibaca].pfA << 8) + buf[4];
+			if (data_PM710[pm_dibaca].pfA == 0x8000) asli_PM710[pm_dibaca].pfA = 1.00;
+			else
+			{
+			   if (data_PM710[pm_dibaca].pfA > 0x8000)
+					data_PM710[pm_dibaca].pfA = data_PM710[pm_dibaca].pfA + 0x8000;
+
+			   asli_PM710[pm_dibaca].pfA = data_PM710[pm_dibaca].pfA * 0.001;
+			}
+
+			data_PM710[pm_dibaca].pfB = buf[5];
+			data_PM710[pm_dibaca].pfB = (data_PM710[pm_dibaca].pfB << 8) + buf[6];
+			if (data_PM710[pm_dibaca].pfB == 0x8000) asli_PM710[pm_dibaca].pfB = 1.00;
+			else
+			{
+			   if (data_PM710[pm_dibaca].pfB > 0x8000)
+					data_PM710[pm_dibaca].pfB = data_PM710[pm_dibaca].pfB + 0x8000;
+
+			   asli_PM710[pm_dibaca].pfB = data_PM710[pm_dibaca].pfB * 0.001;
+			}
+
+			data_PM710[pm_dibaca].pfC = buf[7];
+			data_PM710[pm_dibaca].pfC = (data_PM710[pm_dibaca].pfC << 8) + buf[8];
+			//Memo1->Lines->Add(IntToStr( data_PM710[pm_dibaca].pfC));
+			if (data_PM710[pm_dibaca].pfC == 0x8000) asli_PM710[pm_dibaca].pfC = 1.00;
+			else
+			{
+			   if (data_PM710[pm_dibaca].pfC > 0x8000)
+					data_PM710[pm_dibaca].pfC = data_PM710[pm_dibaca].pfC + 0x8000;
+			   
+			   asli_PM710[pm_dibaca].pfC = data_PM710[pm_dibaca].pfC * 0.001;
+			}
+
+			data_PM710[pm_dibaca].pf = buf[9];
+			data_PM710[pm_dibaca].pf = (data_PM710[pm_dibaca].pf << 8) + buf[10];
+			if (data_PM710[pm_dibaca].pf == 0x8000) asli_PM710[pm_dibaca].pf = 1.00;
+			else
+			{
+			   if (data_PM710[pm_dibaca].pf > 0x8000)
+					data_PM710[pm_dibaca].pf = data_PM710[pm_dibaca].pf + 0x8000;
+
+			   asli_PM710[pm_dibaca].pf = data_PM710[pm_dibaca].pf * 0.001;
+			}
+
+		 }
+		 else if (urt == 6)
+		 {
+			//frekuensi thok
+			data_PM710[pm_dibaca].frek = buf[3];
+			data_PM710[pm_dibaca].frek = (data_PM710[pm_dibaca].frek << 8) + buf[4];
+
+			if (data_PM710[pm_dibaca].frek == 32768) data_PM710[pm_dibaca].frek = 0;
+			asli_PM710[pm_dibaca].frek = data_PM710[pm_dibaca].frek * 0.01;
+
+			#ifndef MOD_SERVER
+			f = data_PM710[pm_dibaca].frek * 0.01;
+			//Label22->Caption = FloatToStrF(f, ffGeneral, 4, 3);
+			#endif
+
+		 }
+		 else if (urt == 7)
+		 {
+			//ENERGI
+			// kwh, kvarh
+			temp2 = buf[7];
+			temp2 = (temp2 << 8) + buf[8];
+			temp2 = temp2 * 10000;
+
+			temp = buf[5];
+			temp = (temp << 8) + buf[6];
+			temp = (temp+temp2) * 10000;
+
+			data_PM710[pm_dibaca].kwh = buf[3];
+			data_PM710[pm_dibaca].kwh = (data_PM710[pm_dibaca].kwh << 8) + buf[4];
+			data_PM710[pm_dibaca].kwh = data_PM710[pm_dibaca].kwh + temp;
+			asli_PM710[pm_dibaca].kwh = data_PM710[pm_dibaca].kwh * satuan_kwh[pm_dibaca];
+
+			//
+			temp2 = buf[15];
+			temp2 = (temp2 << 8) + buf[16];
+			temp2 = temp2 * 10000;
+
+			temp = buf[13];
+			temp = (temp << 8) + buf[14];
+			temp = (temp+temp2) * 10000;
+
+			data_PM710[pm_dibaca].kvarh = buf[11];
+			data_PM710[pm_dibaca].kvarh = (data_PM710[pm_dibaca].kvarh << 8) + buf[12];
+			data_PM710[pm_dibaca].kvarh = data_PM710[pm_dibaca].kvarh + temp;
+			asli_PM710[pm_dibaca].kvarh = data_PM710[pm_dibaca].kvarh * satuan_kwh[pm_dibaca];
+
+		 }
+
+		 else if (urt == 8)
+		 {
+			//ENERGI KVAH
+			// kvah
+			temp2 = buf[7];
+			temp2 = (temp2 << 8) + buf[8];
+			temp2 = temp2 * 10000;
+
+			temp = buf[5];
+			temp = (temp << 8) + buf[6];
+			temp = (temp+temp2) * 10000;
+
+			data_PM710[pm_dibaca].kvah = buf[3];
+			data_PM710[pm_dibaca].kvah = (data_PM710[pm_dibaca].kvah << 8) + buf[4];
+			data_PM710[pm_dibaca].kvah = data_PM710[pm_dibaca].kvah + temp;
+			asli_PM710[pm_dibaca].kvah = data_PM710[pm_dibaca].kvah * satuan_kwh[pm_dibaca];
+
+			kontrol_PM[pm_dibaca].alamat = addr_PM710;
+			kontrol_PM[pm_dibaca].konek = 1;             // tersambung
+			kontrol_PM[pm_dibaca].baru = 1;              // data baru
+
+			//cek jika Volt = 0, maka mesin mati
+			if (asli_PM710[pm_dibaca].volt1 == 0)
+			{
+			   kontrol_PM[pm_dibaca].baru = 0;           // supaya tidak dikirim ethernet
+			}
+
+			//NEXT PM
+		 }
+	}
+	catch(...)
 	{
-		// current_metering
-		data_PM710[pm_dibaca].ampA = buf[3];
-		data_PM710[pm_dibaca].ampA = (data_PM710[pm_dibaca].ampA << 8) + buf[4];
-
-		asli_PM710[pm_dibaca].ampA = data_PM710[pm_dibaca].ampA * satuan_amp[pm_dibaca];
-
-		#ifndef MOD_SERVER
-		f = data_PM710[pm_dibaca].ampA * 10;
-		//Label45->Caption = FloatToStrF(f, ffGeneral, 8, 2);
-		#endif
-
-		// ampere B
-		data_PM710[pm_dibaca].ampB = buf[5];
-		data_PM710[pm_dibaca].ampB  = (data_PM710[pm_dibaca].ampB  << 8) + buf[6];
-		//asli_PM710[pm_dibaca].ampB = data_PM710[pm_dibaca].ampB * satuan_amp[pm_dibaca];
-		if (data_PM710[pm_dibaca].ampB == 32768)
-			asli_PM710[pm_dibaca].ampB = 0;
-		else
-			asli_PM710[pm_dibaca].ampB = data_PM710[pm_dibaca].ampB * satuan_amp[pm_dibaca];
-
-
-		#ifndef MOD_SERVER
-		f = data_PM710[pm_dibaca].ampB  * 10;
-		//Label46->Caption = FloatToStrF(f, ffGeneral, 8, 2);
-		#endif
-
-		// ampere C
-		data_PM710[pm_dibaca].ampC = buf[7];
-		data_PM710[pm_dibaca].ampC = (data_PM710[pm_dibaca].ampC << 8) + buf[8];
-		//asli_PM710[pm_dibaca].ampC = data_PM710[pm_dibaca].ampC * satuan_amp[pm_dibaca];
-		if (data_PM710[pm_dibaca].ampC == 32768)
-			asli_PM710[pm_dibaca].ampC = 0;
-		else
-			asli_PM710[pm_dibaca].ampC = data_PM710[pm_dibaca].ampC * satuan_amp[pm_dibaca];
-
-		#ifndef MOD_SERVER
-		f = data_PM710[pm_dibaca].ampC  * 10;
-		//Label47->Caption = FloatToStrF(f, ffGeneral, 8, 2);
-		#endif
-
-		// ampere N
-		data_PM710[pm_dibaca].ampN = buf[9];
-		data_PM710[pm_dibaca].ampN = (data_PM710[pm_dibaca].ampN << 8) + buf[10];
-		//asli_PM710[pm_dibaca].ampN = data_PM710[pm_dibaca].ampN * satuan_amp[pm_dibaca];
-		if (data_PM710[pm_dibaca].ampN == 32768)
-			asli_PM710[pm_dibaca].ampN = 0;
-		else
-			asli_PM710[pm_dibaca].ampN = data_PM710[pm_dibaca].ampN * satuan_amp[pm_dibaca];
-		#ifndef MOD_SERVER
-		f = data_PM710[pm_dibaca].ampN  * 10;
-		//Label48->Caption = FloatToStrF(f, ffGeneral, 8, 2);
-		#endif
-
-		// ampere average
-		data_PM710[pm_dibaca].amp = buf[13];
-		data_PM710[pm_dibaca].amp = (data_PM710[pm_dibaca].amp << 8) + buf[14];
-		asli_PM710[pm_dibaca].amp = data_PM710[pm_dibaca].amp * satuan_amp[pm_dibaca];
-
-		#ifndef MOD_SERVER
-		f = data_PM710[pm_dibaca].amp  * 10;
-		//Label21->Caption = FloatToStrF(f, ffGeneral, 8, 2);
-		#endif
-
-	 }
-	 else if (urt == 3)
-	 {
-		//voltA_B, B_C, A_C, A_N, B_N & C_N
-		data_PM710[pm_dibaca].voltA_B = buf[3];
-		data_PM710[pm_dibaca].voltA_B = (data_PM710[pm_dibaca].voltA_B << 8) + buf[4];
-		//asli_PM710[pm_dibaca].voltA_B = data_PM710[pm_dibaca].voltA_B * satuan_volt[pm_dibaca];
-		if (data_PM710[pm_dibaca].voltA_B == 32768)
-			asli_PM710[pm_dibaca].voltA_B = 0;
-		else
-			asli_PM710[pm_dibaca].voltA_B = data_PM710[pm_dibaca].voltA_B * satuan_volt[pm_dibaca];
-
-
-		data_PM710[pm_dibaca].voltB_C = buf[5];
-		data_PM710[pm_dibaca].voltB_C = (data_PM710[pm_dibaca].voltB_C << 8) + buf[6];
-		//asli_PM710[pm_dibaca].voltB_C = data_PM710[pm_dibaca].voltB_C * satuan_volt[pm_dibaca];
-		if (data_PM710[pm_dibaca].voltB_C == 32768)
-			asli_PM710[pm_dibaca].voltB_C = 0;
-		else
-			asli_PM710[pm_dibaca].voltB_C = data_PM710[pm_dibaca].voltB_C * satuan_volt[pm_dibaca];
-
-		data_PM710[pm_dibaca].voltA_C = buf[7];
-		data_PM710[pm_dibaca].voltA_C = (data_PM710[pm_dibaca].voltA_C << 8) + buf[8];
-		//asli_PM710[pm_dibaca].voltA_C = data_PM710[pm_dibaca].voltA_C * satuan_volt[pm_dibaca];
-		if (data_PM710[pm_dibaca].voltA_C == 32768)
-			asli_PM710[pm_dibaca].voltA_C = 0;
-		else
-			asli_PM710[pm_dibaca].voltA_C = data_PM710[pm_dibaca].voltA_C * satuan_volt[pm_dibaca];
-
-		// L-L average
-		data_PM710[pm_dibaca].volt1 = buf[9];
-		data_PM710[pm_dibaca].volt1 = (data_PM710[pm_dibaca].volt1 << 8) + buf[10];
-		//asli_PM710[pm_dibaca].volt1 = data_PM710[pm_dibaca].volt1 * satuan_volt[pm_dibaca];
-		if (data_PM710[pm_dibaca].volt1 == 32768)
-			asli_PM710[pm_dibaca].volt1 = 0;
-		else
-			asli_PM710[pm_dibaca].volt1 = data_PM710[pm_dibaca].volt1 * satuan_volt[pm_dibaca];
-
-		data_PM710[pm_dibaca].voltA_N = buf[11];
-		data_PM710[pm_dibaca].voltA_N = (data_PM710[pm_dibaca].voltA_N << 8) + buf[12];
-		//asli_PM710[pm_dibaca].voltA_N = data_PM710[pm_dibaca].voltA_N * satuan_volt[pm_dibaca];
-		if (data_PM710[pm_dibaca].voltA_N == 32768)
-			asli_PM710[pm_dibaca].voltA_N = 0;
-		else
-			asli_PM710[pm_dibaca].voltA_N = data_PM710[pm_dibaca].voltA_N * satuan_volt[pm_dibaca];
-
-
-		data_PM710[pm_dibaca].voltB_N = buf[13];
-		data_PM710[pm_dibaca].voltB_N = (data_PM710[pm_dibaca].voltB_N << 8) + buf[14];
-		//asli_PM710[pm_dibaca].voltB_N = data_PM710[pm_dibaca].voltB_N * satuan_volt[pm_dibaca];
-		if (data_PM710[pm_dibaca].voltB_N == 32768)
-			asli_PM710[pm_dibaca].voltB_N = 0;
-		else
-			asli_PM710[pm_dibaca].voltB_N = data_PM710[pm_dibaca].voltB_N * satuan_volt[pm_dibaca];
-
-
-		data_PM710[pm_dibaca].voltC_N = buf[15];
-		data_PM710[pm_dibaca].voltC_N = (data_PM710[pm_dibaca].voltC_N << 8) + buf[16];
-		//asli_PM710[pm_dibaca].voltC_N = data_PM710[pm_dibaca].voltC_N * satuan_volt[pm_dibaca];
-		if (data_PM710[pm_dibaca].voltC_N == 32768)
-			asli_PM710[pm_dibaca].voltC_N = 0;
-		else
-			asli_PM710[pm_dibaca].voltC_N = data_PM710[pm_dibaca].voltC_N * satuan_volt[pm_dibaca];
-
-
-		// fasa - netral average
-		data_PM710[pm_dibaca].volt2 = buf[19];
-		data_PM710[pm_dibaca].volt2 = (data_PM710[pm_dibaca].volt2 << 8) + buf[20];
-		//asli_PM710[pm_dibaca].volt2 = data_PM710[pm_dibaca].volt2 * satuan_volt[pm_dibaca];
-		if (data_PM710[pm_dibaca].volt2 == 32768)
-			asli_PM710[pm_dibaca].volt2 = 0;
-		else
-			asli_PM710[pm_dibaca].volt2 = data_PM710[pm_dibaca].volt2 * satuan_volt[pm_dibaca];
-
-	 }
-	 else if (urt == 4)
-	 {
-		// kwA, kwB, kwC, kw
-		data_PM710[pm_dibaca].kwA = buf[3];
-		data_PM710[pm_dibaca].kwA = (data_PM710[pm_dibaca].kwA << 8) + buf[4];
-		asli_PM710[pm_dibaca].kwA = data_PM710[pm_dibaca].kwA * satuan_kw[pm_dibaca];
-
-		data_PM710[pm_dibaca].kwB = buf[5];
-		data_PM710[pm_dibaca].kwB = (data_PM710[pm_dibaca].kwB << 8) + buf[6];
-		asli_PM710[pm_dibaca].kwB = data_PM710[pm_dibaca].kwB * satuan_kw[pm_dibaca];
-
-		data_PM710[pm_dibaca].kwC = buf[7];
-		data_PM710[pm_dibaca].kwC = (data_PM710[pm_dibaca].kwC << 8) + buf[8];
-		asli_PM710[pm_dibaca].kwC = data_PM710[pm_dibaca].kwC * satuan_kw[pm_dibaca];
-
-		data_PM710[pm_dibaca].kw = buf[9];
-		data_PM710[pm_dibaca].kw = (data_PM710[pm_dibaca].kw << 8) + buf[10];
-		asli_PM710[pm_dibaca].kw = data_PM710[pm_dibaca].kw * satuan_kw[pm_dibaca];
-
-		// kvarA, kvarB, kvarC, kvar
-		data_PM710[pm_dibaca].kvarA = buf[11];
-		data_PM710[pm_dibaca].kvarA = (data_PM710[pm_dibaca].kvarA << 8) + buf[12];
-		asli_PM710[pm_dibaca].kvarA = data_PM710[pm_dibaca].kvarA * satuan_kw[pm_dibaca];
-
-		data_PM710[pm_dibaca].kvarB = buf[13];
-		data_PM710[pm_dibaca].kvarB = (data_PM710[pm_dibaca].kvarB << 8) + buf[14];
-		asli_PM710[pm_dibaca].kvarB = data_PM710[pm_dibaca].kvarB * satuan_kw[pm_dibaca];
-
-		data_PM710[pm_dibaca].kvarC = buf[15];
-		data_PM710[pm_dibaca].kvarC = (data_PM710[pm_dibaca].kvarC << 8) + buf[16];
-		asli_PM710[pm_dibaca].kvarC = data_PM710[pm_dibaca].kvarC * satuan_kw[pm_dibaca];
-
-		data_PM710[pm_dibaca].kvar = buf[17];
-		data_PM710[pm_dibaca].kvar = (data_PM710[pm_dibaca].kvar << 8) + buf[18];
-		asli_PM710[pm_dibaca].kvar = data_PM710[pm_dibaca].kvar * satuan_kw[pm_dibaca];
-
-		// kvaA, kvaB, kvaC, kva
-		data_PM710[pm_dibaca].kvaA = buf[19];
-		data_PM710[pm_dibaca].kvaA = (data_PM710[pm_dibaca].kvaA << 8) + buf[20];
-		asli_PM710[pm_dibaca].kvaA = data_PM710[pm_dibaca].kvaA * satuan_kw[pm_dibaca];
-
-		data_PM710[pm_dibaca].kvaB = buf[21];
-		data_PM710[pm_dibaca].kvaB = (data_PM710[pm_dibaca].kvaB << 8) + buf[22];
-		asli_PM710[pm_dibaca].kvaB = data_PM710[pm_dibaca].kvaB * satuan_kw[pm_dibaca];
-
-		data_PM710[pm_dibaca].kvaC = buf[23];
-		data_PM710[pm_dibaca].kvaC = (data_PM710[pm_dibaca].kvaC << 8) + buf[24];
-		asli_PM710[pm_dibaca].kvaC = data_PM710[pm_dibaca].kvaC * satuan_kw[pm_dibaca];
-
-		data_PM710[pm_dibaca].kva = buf[25];
-		data_PM710[pm_dibaca].kva = (data_PM710[pm_dibaca].kva << 8) + buf[26];
-		asli_PM710[pm_dibaca].kva = data_PM710[pm_dibaca].kva * satuan_kw[pm_dibaca];
-
-	 }
-	 else if (urt == 5)
-	 {
-		//pfA, pfB, pfC, pf
-		data_PM710[pm_dibaca].pfA = buf[3];
-		data_PM710[pm_dibaca].pfA = (data_PM710[pm_dibaca].pfA << 8) + buf[4];
-		if (data_PM710[pm_dibaca].pfA == 0x8000) asli_PM710[pm_dibaca].pfA = 1.00;
-		else
-		{
-		   if (data_PM710[pm_dibaca].pfA > 0x8000)
-				data_PM710[pm_dibaca].pfA = data_PM710[pm_dibaca].pfA + 0x8000;
-
-		   asli_PM710[pm_dibaca].pfA = data_PM710[pm_dibaca].pfA * 0.001;
-		}
-
-		data_PM710[pm_dibaca].pfB = buf[5];
-		data_PM710[pm_dibaca].pfB = (data_PM710[pm_dibaca].pfB << 8) + buf[6];
-		if (data_PM710[pm_dibaca].pfB == 0x8000) asli_PM710[pm_dibaca].pfB = 1.00;
-		else
-		{
-		   if (data_PM710[pm_dibaca].pfB > 0x8000)
-				data_PM710[pm_dibaca].pfB = data_PM710[pm_dibaca].pfB + 0x8000;
-
-		   asli_PM710[pm_dibaca].pfB = data_PM710[pm_dibaca].pfB * 0.001;
-		}
-
-		data_PM710[pm_dibaca].pfC = buf[7];
-		data_PM710[pm_dibaca].pfC = (data_PM710[pm_dibaca].pfC << 8) + buf[8];
-		//Memo1->Lines->Add(IntToStr( data_PM710[pm_dibaca].pfC));
-		if (data_PM710[pm_dibaca].pfC == 0x8000) asli_PM710[pm_dibaca].pfC = 1.00;
-		else
-		{
-		   if (data_PM710[pm_dibaca].pfC > 0x8000)
-				data_PM710[pm_dibaca].pfC = data_PM710[pm_dibaca].pfC + 0x8000;
-		   
-		   asli_PM710[pm_dibaca].pfC = data_PM710[pm_dibaca].pfC * 0.001;
-		}
-
-		data_PM710[pm_dibaca].pf = buf[9];
-		data_PM710[pm_dibaca].pf = (data_PM710[pm_dibaca].pf << 8) + buf[10];
-		if (data_PM710[pm_dibaca].pf == 0x8000) asli_PM710[pm_dibaca].pf = 1.00;
-		else
-		{
-		   if (data_PM710[pm_dibaca].pf > 0x8000)
-				data_PM710[pm_dibaca].pf = data_PM710[pm_dibaca].pf + 0x8000;
-
-		   asli_PM710[pm_dibaca].pf = data_PM710[pm_dibaca].pf * 0.001;
-		}
-
-	 }
-	 else if (urt == 6)
-	 {
-		//frekuensi thok
-		data_PM710[pm_dibaca].frek = buf[3];
-		data_PM710[pm_dibaca].frek = (data_PM710[pm_dibaca].frek << 8) + buf[4];
-
-		if (data_PM710[pm_dibaca].frek == 32768) data_PM710[pm_dibaca].frek = 0;
-		asli_PM710[pm_dibaca].frek = data_PM710[pm_dibaca].frek * 0.01;
-
-		#ifndef MOD_SERVER
-		f = data_PM710[pm_dibaca].frek * 0.01;
-		//Label22->Caption = FloatToStrF(f, ffGeneral, 4, 3);
-		#endif
-
-	 }
-	 else if (urt == 7)
-	 {
-		//ENERGI
-		// kwh, kvarh
-		temp2 = buf[7];
-		temp2 = (temp2 << 8) + buf[8];
-		temp2 = temp2 * 10000;
-
-		temp = buf[5];
-		temp = (temp << 8) + buf[6];
-		temp = (temp+temp2) * 10000;
-
-		data_PM710[pm_dibaca].kwh = buf[3];
-		data_PM710[pm_dibaca].kwh = (data_PM710[pm_dibaca].kwh << 8) + buf[4];
-		data_PM710[pm_dibaca].kwh = data_PM710[pm_dibaca].kwh + temp;
-		asli_PM710[pm_dibaca].kwh = data_PM710[pm_dibaca].kwh * satuan_kwh[pm_dibaca];
-
-		//
-		temp2 = buf[15];
-		temp2 = (temp2 << 8) + buf[16];
-		temp2 = temp2 * 10000;
-
-		temp = buf[13];
-		temp = (temp << 8) + buf[14];
-		temp = (temp+temp2) * 10000;
-
-		data_PM710[pm_dibaca].kvarh = buf[11];
-		data_PM710[pm_dibaca].kvarh = (data_PM710[pm_dibaca].kvarh << 8) + buf[12];
-		data_PM710[pm_dibaca].kvarh = data_PM710[pm_dibaca].kvarh + temp;
-		asli_PM710[pm_dibaca].kvarh = data_PM710[pm_dibaca].kvarh * satuan_kwh[pm_dibaca];
-
-	 }
-
-	 else if (urt == 8)
-	 {
-		//ENERGI KVAH
-		// kvah
-		temp2 = buf[7];
-		temp2 = (temp2 << 8) + buf[8];
-		temp2 = temp2 * 10000;
-
-		temp = buf[5];
-		temp = (temp << 8) + buf[6];
-		temp = (temp+temp2) * 10000;
-
-		data_PM710[pm_dibaca].kvah = buf[3];
-		data_PM710[pm_dibaca].kvah = (data_PM710[pm_dibaca].kvah << 8) + buf[4];
-		data_PM710[pm_dibaca].kvah = data_PM710[pm_dibaca].kvah + temp;
-		asli_PM710[pm_dibaca].kvah = data_PM710[pm_dibaca].kvah * satuan_kwh[pm_dibaca];
-
-		kontrol_PM[pm_dibaca].alamat = addr_PM710;
-		kontrol_PM[pm_dibaca].konek = 1;             // tersambung
-		kontrol_PM[pm_dibaca].baru = 1;              // data baru
-
-		//cek jika Volt = 0, maka mesin mati
-		if (asli_PM710[pm_dibaca].volt1 == 0)
-		{
-		   kontrol_PM[pm_dibaca].baru = 0;           // supaya tidak dikirim ethernet
-		}
-
-		//NEXT PM
-	 }
+		printf("ERROR saat menaruh data ke struct\n");
+		printlog("ERROR saat menaruh data ke struct\n",0);
+	}
 }
 
+//---------------------------------------------------------------------------
 bool main_window::update_tampilan()
 {
-	printf("\nTAMPILAN\n");
-	
+	//printf("\nTAMPILAN\n");
+	//printlog ("UPDATE TAMPILAN",0);
 	static char tek[128];	
 	int i;
 	int jumlah_titik=30;
@@ -1540,19 +1607,24 @@ bool main_window::update_tampilan()
 	/**/
 	
 	// alamat yang sedang diambil
-	sprintf(tek, "Alamat = %2d\n", addr_PM710);	
+	//sprintf(tek, "Alamat = %2d\n", addr_PM710);	
 
-	printf(tek);
+	//printf(tek);
 	
-	sprintf(tek,"server_counter: %d\n",server_counter);
-	printf(tek);
+	//sprintf(tek,"server_counter: %d\n",server_counter);
+	//printf(tek);
 	
-	sprintf(status_teks,"address: %d |eth counter: %d | loop: %d",addr_PM710, server_counter,loop_counter);
+	sprintf(status_teks,"address: %d |eth counter: %d| loop: %d",addr_PM710, server_counter,loop_counter);
 	statusbar1->push(status_teks, 1);
+
+	//cek server
+	if(server_aktif==false)
+		set_server(1);
 	
 	if(!timer_on)
 		return false;
 }
+//---------------------------------------------------------------------------
 void set_awal_serial(int fd)
 {
 	struct termios oldtio,newtio;
@@ -1590,7 +1662,7 @@ void set_awal_serial(int fd)
 	printf("[set_awal_serial]\n");
 }
 
-
+//---------------------------------------------------------------------------
 void signal_handler_IO (int status)
 {
 	//printf("received SIGIO signal.\n");
@@ -1622,9 +1694,211 @@ bool main_window::on_main_window_delete_event(GdkEventAny *ev)
 
 int main_window::isi_form()
 {
+
+	Gtk::TreeModel::Row row,row_tampil;
+	Gtk::TreeModel::iterator iter;
 	
 	//m_refTreeModel = Gtk::ListStore::create(m_kolom);
 	//combo_com->set_model(m_refTreeModel);
 	m_refCombo=Gtk::TreeStore::create(m_kolom);
+
+	//isikan ke list
+	combo_com->set_model(m_refCombo);
 	
+	//baris pertama adalah: "<pilih sumber data>"
+	row=*(m_refCombo->append());
+	row[m_kolom.m_col_id]=0;
+	row[m_kolom.m_nama]="<Pilih Port>";
+	row_tampil=row;
+	
+	int jum_com=6;
+	Glib::ustring com_device[6]={"/dev/ttyS0",
+					"/dev/ttyS1",
+					"/dev/ttyS1",
+					"/dev/ttyUSB0",
+					"/dev/ttyUSB1",
+					"/dev/ttyUSB2"};
+	
+	
+	for(int i=0;i<jum_com;i++)
+	{
+		row=*(m_refCombo->append());
+		row[m_kolom.m_col_id]=i+1;
+		row[m_kolom.m_nama]=com_device[i];		
+	}
+		
+	iter=row_tampil;
+	combo_com->pack_start(m_kolom.m_nama);
+	combo_com->set_active(iter);
+
+	show_all_children();
 }
+
+int main_window::baca_konfig()
+{
+	printf("[Baca konfig]\n");
+	
+
+	return 0;
+}
+
+int main_window::simpan_konfig()
+{
+	/*
+	printf("[simpan_konfig]\n");
+
+	//Simpan konfig dalam bentuk file conf standard
+	 GKeyFile *keyfile;
+ 	 GKeyFileFlags flags;
+  	 GError *error = NULL;
+  	 gsize length;
+	
+	// Create a new GKeyFile object and a bitwise list of flags. 
+	keyfile = g_key_file_new ();
+	//flags = G_KEY_FILE_KEEP_COMMENTS | G_KEY_FILE_KEEP_TRANSLATIONS;
+	flags = G_KEY_FILE_KEEP_COMMENTS;// | G_KEY_FILE_KEEP_TRANSLATIONS;
+
+	// Load the GKeyFile from keyfile.conf or return.
+	//if (!g_key_file_load_from_file (keyfile, "keyfile.conf", flags, &error))
+	//{
+	//	g_error (error->message);
+	//	return -1;
+	//}
+	
+	  conf = g_slice_new (konfig_file);
+	  g_key_file_set_string(keyfile,"database","db_host",kf->db_host);
+  
+	  //conf->angka = g_key_file_get_integer(keyfile,"username","Angka",NULL);
+	  printf("Angka: %d\n",conf->db_host);
+	  
+	  int bufsize;
+	  gchar *buffer = g_key_file_to_data(keyfile,(gsize*) &bufsize, NULL);
+		
+	  g_key_file_free(keyfile);
+	  
+	  printf("Buffer ==============n%s\n ==============\n",buffer);
+	  //simpan filenya
+		if ((stream = fopen(asFilePath.c_str(), "wb"))== NULL)
+		{
+			fprintf(stderr, "Cannot open output file.\n");
+			printf("Gagal membuka file\n");
+			//add_log("Simpan konfig: Gagal membuka file",0,0);
+			return 1;
+		}
+  	//fwrite(buffer, bufsize, 1, stream);
+  	//fclose(stream);*/
+	return 0;
+}
+
+/*Untuk menghidupkan atau mematikan server
+/ parameter: state
+ 			- 0: matikan
+ 			- 1: hidupkan
+ 			- 2: restart
+/
+ */
+int main_window::set_server(int state)
+{
+	if(state==1) //menghidupkan
+	{
+		int parameter_server=0;
+		server_aktif=true;
+		
+		result = pthread_create(&a_thread, NULL, 
+								thread_server, (void*)&parameter_server);
+		if (result != 0)
+		{
+			perror(" -> Thread creation failed\n");
+			//exit(EXIT_FAILURE);
+			return 1;//error saat membuat thread
+		}
+		else
+		{
+			
+			printf("Server diaktifkan\n");
+		}
+	}
+	if(state==0) //mematikan
+	{
+		server_aktif=false; 
+	}
+
+	return 0;
+}
+
+void printlog(Glib::ustring asLog,int mode)
+{
+
+#ifdef DEBUG_LOG
+   Glib::ustring  asTime;
+   Glib::ustring  asTemp;
+
+	
+	//Inisialisasi tanggal
+	int itanggal,ibulan,itahun;
+	int ijam,imenit,idetik;
+
+	char cwaktu[32];
+	time_t the_timelist;
+
+	(void) time(&the_timelist);
+	log_tm_pointer = localtime(&the_timelist);
+
+   if(nama_file=="")
+   {
+       strftime(cwaktu,32,"%Y-%m-%d",log_tm_pointer);
+	   tanggal_log.assign(cwaktu);
+	   	
+	   strftime(cwaktu,32,"%H-%M-%S",log_tm_pointer);
+       waktu_start.assign(cwaktu); 
+	   
+	   nama_file="./log/" + tanggal_log+ "_" + waktu_start + Glib::ustring::compose("-%1.log",pm_file_count);
+   }
+   //asTime=TimeToStr(Time());
+	strftime(cwaktu,32,"%H-%M-%S",log_tm_pointer);
+	asTime.assign(cwaktu);
+	//printf(" |--* Buka file log: %s\n",nama_file.c_str());
+    if ((fLog = fopen(nama_file.c_str(), "a+t")) == NULL)
+    {
+	   printf(" |-- Gagal membuka file log: %s\n",nama_file.c_str());
+   }
+   else
+   {
+    asTemp="";
+	asTemp=Glib::ustring::compose("\n[%1]",pm_log_count);
+    asTemp+="(" + asTime + ")" + asLog;
+    fprintf(fLog,asTemp.c_str());
+    
+    pm_log_count++;
+
+    //Ganti hari-ganti log
+	strftime(cwaktu,32,"%Y-%m-%d",log_tm_pointer);
+	tanggal_temp.assign(cwaktu);
+
+    if(tanggal_log!=tanggal_temp)
+    {
+       strftime(cwaktu,32,"%Y-%m-%d",log_tm_pointer); 
+	   tanggal_log.assign(cwaktu);
+	   	
+	   	strftime(cwaktu,32,"%H-%M-%S",log_tm_pointer); 
+       	waktu_start.assign(cwaktu); 
+		
+		nama_file="./log/" + tanggal_log+ "_" + waktu_start + Glib::ustring::compose("-%1.log",pm_file_count);
+		
+        pm_log_count=0;
+        pm_file_count=0;
+    }
+
+    if(pm_log_count>10000)
+    {
+        pm_file_count++;
+        nama_file="./log/" + tanggal_log+ "_" + waktu_start + Glib::ustring::compose("-%1.log",pm_file_count);
+        pm_log_count=0;
+    }
+
+    fclose(fLog);
+   }
+#endif
+
+}
+

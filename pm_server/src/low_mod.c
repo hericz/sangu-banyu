@@ -11,7 +11,7 @@
 #pragma package(smart_init)
 
 #include "low_mod.h"
-#include "common.h"
+//#include "common.h"
 
 /*struct d_PM710 data_PM710[JUMLAH_PM];
 #ifndef _ASLI_PM710_

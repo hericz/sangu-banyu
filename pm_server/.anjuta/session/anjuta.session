@@ -1,12 +1,22 @@
 
 [Anjuta]
 Maximized=1
-Geometry=1268x717+6+52
+Geometry=1280x728+0+25
 
 [File Loader]
-Files=file:///home/herry/program/pm_server/src/Makefile#265%%%file:///home/herry/program/pm_server/src/main_window.hh#70%%%file:///home/herry/program/pm_server/src/main_window.cc#467%%%file:///home/herry/program/pm_server/src/low_mod.c#23%%%file:///home/herry/program/pm_server/src/low_mod.h#228%%%file:///home/herry/program/pm_server/src/common.h#81%%%file:///home/herry/program/pm_server/src/mbcrc.h#36%%%file:///home/herry/program/pm_server/src/main.cc#42
+Files=file:///home/herry/program/pm_server/src/main_window.hh#25%%%file:///home/herry/program/pm_server/src/main_window.cc#241%%%file:///home/herry/program/pm_server/src/low_mod.c#23%%%file:///home/herry/program/pm_server/src/low_mod.h#228%%%file:///home/herry/program/pm_server/src/main_window_glade.cc#68%%%file:///home/herry/program/pm_server/src/common.cc#12%%%file:///home/herry/program/pm_server/src/common.hh#10
+
+[Document Manager]
+bookmarks=<?xml version="1.0" encoding="UTF-8"?>\n<bookmarks/>\n
 
 [Execution]
 Program arguments=
+Program uri=file:///home/herry/program/pm_server/src/pm_server
 Run in terminal=2
-Last selected uri=file:///home/herry/program/pm_server/src/pm_server
+
+[Build]
+Configuration list=1:Default:%%%1:Debug:Debug%%%1:Profiling:Profiling%%%1:Optimized:Optimized
+Selected Configuration=Default
+BuildArgs/Debug='CFLAGS=-g -O0' 'CXXFLAGS=-g -O0' 'JFLAGS=-g -O0' 'FFLAGS=-g -O0'
+BuildArgs/Profiling='CFLAGS=-g -pg' 'CXXFLAGS=-g -pg' 'JFLAGS=-g -pg' 'FFLAGS=-g -pg'
+BuildArgs/Optimized='CFLAGS=-O2' 'CXXFLAGS=-O2' 'JFLAGS=-O2' 'FFLAGS=-O2'
