@@ -1,8 +1,8 @@
-# generated 2008/11/21 19:20:26 WIT by herry@LancarJaya.(none)
+# generated 2009/6/1 12:22:39 WIT by herry@LancarJaya.(none)
 # using glademm V2.6.0
 
 AC_PREREQ(2.50)
-AC_INIT(dlg_edit_sumber, 0.0,[herry@LancarJaya.(none)])
+AC_INIT(dl_edit_titik, 0.0,[herry@LancarJaya.(none)])
 AM_INIT_AUTOMAKE
 AC_CONFIG_HEADERS(config.h)
 
@@ -19,7 +19,7 @@ dnl *************************************************
 dnl gettext support
 dnl *************************************************
 
-GETTEXT_PACKAGE=dlg_edit_sumber
+GETTEXT_PACKAGE=dl_edit_titik
 AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE",
 		[the gettext domain])
@@ -39,7 +39,7 @@ fi
 
 AC_LANG_CPLUSPLUS
 
-PKG_CHECK_MODULES(GTKMM,[gtkmm-2.4 >= 2.12.5],,
+PKG_CHECK_MODULES(GTKMM,[gtkmm-2.4 >= 2.16.0],,
 	[PKG_CHECK_MODULES(GTKMM,[gtkmm-2.0 >= 2.0.0])])
 AC_SUBST(GTKMM_CFLAGS)
 AC_SUBST(GTKMM_LIBS)

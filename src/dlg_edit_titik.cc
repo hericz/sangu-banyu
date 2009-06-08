@@ -11,7 +11,20 @@
 
 #include "dlg_edit_titik.hh"
 
+#define JUMLAH_ENUM_WAKTU 5
+Glib::ustring enum_waktu[JUMLAH_ENUM_WAKTU]={
+		"Data terakhir",					//0
+		"1 menit sebelumnya",				//1
+		"1 jam sebelumnya",					//2
+		"Awal hari (jam 00:00)",			//3
+		"24 jam sebelumnya"};				//4
 
+#define JUMLAH_OPERATOR 4
+Glib::ustring enum_operator[JUMLAH_OPERATOR]={
+		"+",
+		"-",
+		"x",
+		"/"};
 
 dlg_edit_titik::dlg_edit_titik()
 {
@@ -134,6 +147,7 @@ void dlg_edit_titik::ReloadCombo(int id_combo)
 		
 		combo_sumber->set_active(iter);
 	}
+	MYQ.Buang();
 	//SELESAI ISI Combo Sumber
 	
 	printf(" |--* Combo no Board\n");
@@ -218,10 +232,121 @@ void dlg_edit_titik::ReloadCombo(int id_combo)
 	}
 	
 	
+	//COMBO titik ukur referensi titik hitung
+
+	Glib::ustring 	unama_titik,
+					uid_titik,
+					unama_equipment;
 	
+	//usQuery="SELECT * FROM titik_ukur ORDER BY id_equipment";
+	usQuery="SELECT tu.id_titik,tu.id_equipment,tu.nama_titik,eq.nama_equipment "; 
+	usQuery+="FROM titik_ukur as tu,equipment as eq "; 
+	usQuery+="WHERE tu.id_equipment=eq.id_equipment ";
+	usQuery+="ORDER BY id_equipment";
+	strcpy(MYQ.Text,usQuery.c_str());
+	
+	if(MYQ.Query())
+	{
+		//ERROR
+		printf("Gagal saat melakukan query ke database\n");
+		return;
+	}
+	
+	int jumlah_titik=MYQ.jum_row;
+	
+	m_refTitik=Gtk::ListStore::create(m_titik);
+	combo_hitung_a->set_model(m_refTitik);
+	combo_hitung_b->set_model(m_refTitik);
+	
+	//Isi default
+	row=*(m_refTitik->append());
+	row[m_titik.id_titik]=0;
+	row[m_titik.nama_titik] ="<pilih titik ukur>" ;
+	row[m_titik.kode_titik]="kode_titik";
+	row[m_titik.kode_equip]="kode_mesin";
+	row_tampil=row;
+	for(int i=0;i<jumlah_titik;i++)
+	{
+		row=*(m_refTitik->append());
+
+		row[m_titik.index]=i+1;
+		
+		uid_titik=MYQ.ambil_string ("id_titik");
+		row[m_titik.id_titik]=atoi(uid_titik.c_str());
+
+		unama_equipment=MYQ.ambil_string("nama_equipment");
+		unama_titik=MYQ.ambil_string("nama_titik");
+		row[m_titik.nama_titik] ="[" + unama_equipment + "] " +unama_titik ;
+		
+		row[m_titik.kode_titik]="kode_titik";
+		row[m_titik.kode_equip]="kode_mesin";
+
+		MYQ.Next();
+	}
+	combo_hitung_a->pack_start(m_titik.nama_titik);
+	combo_hitung_b->pack_start(m_titik.nama_titik);
+
+	iter=row_tampil;
+		
+	combo_hitung_a->set_active(iter);
+	combo_hitung_b->set_active(iter);
+	
+	//Selesai isi combo titik ukur
+
+	//MULAI isi combo waktu (titik hitung)
+	m_refWaktu=Gtk::ListStore::create(m_waktu);
+	combo_waktu_a->set_model(m_refWaktu);
+	combo_waktu_b->set_model(m_refWaktu);
+	
+	row=*(m_refWaktu->append());
+	row[m_waktu.id_waktu]=0;
+	row[m_waktu.nama_waktu] ="<pilih waktu>" ;
+	row_tampil=row;
+	
+	for(int i=0;i<JUMLAH_ENUM_WAKTU;i++)
+	{
+		row=*(m_refWaktu->append());
+		row[m_waktu.id_waktu]=i+1;
+		
+		row[m_waktu.nama_waktu]=enum_waktu[i];
+		//row_tampil=row;
+	}
+	combo_waktu_a->pack_start(m_waktu.nama_waktu);
+	combo_waktu_b->pack_start(m_waktu.nama_waktu);
+
+	iter=row_tampil;
+		
+	combo_waktu_a->set_active(iter);
+	combo_waktu_b->set_active(iter);
+	
+	//SELESAI isi combo waktu (titik hitung)
+
+	//MULAI isi combo operator aritmatika
+	m_refOperator=Gtk::ListStore::create(m_operator);
+
+	combo_operator->set_model(m_refOperator);
+	row=*(m_refOperator->append());
+	row[m_operator.index]=0;
+	row[m_operator.simbol] ="<pilih operator hitung>" ;
+	row_tampil=row;
+	
+	for(int i=0;i<JUMLAH_OPERATOR;i++)
+	{
+		row=*(m_refOperator->append());
+		row[m_operator.index]=i+1;
+		
+		row[m_operator.simbol]=enum_operator[i];
+		//row_tampil=row;
+	}
+	combo_operator->pack_start(m_operator.simbol);
+
+	iter=row_tampil;
+		
+	combo_operator->set_active(iter);
+	
+	//SELESAI isi combo operator aritmatika
 	show_all_children();
 	
-	MYQ.Buang();
 	MYQ.Close();
 }
 
@@ -258,6 +383,10 @@ void dlg_edit_titik::isi_form()
 			this->entry_nama_titik->set_text("Titik 0");
 			this->entry_kode_titik->set_text("TTK_0");
 		}
+
+		//Isi form kalibrasi
+		this->entry_kalib_a->set_text("1");
+		this->entry_kalib_b->set_text("0");
 		
 		MYQ.Buang();
 		return;
@@ -655,7 +784,7 @@ void dlg_edit_titik::TambahData()
 	
 	Glib::ustring usQuery,usTemp;
 	Glib::ustring uNamaTitik,uKodeTitik,uSatuan;
-	int iSumberData,iNoPort,iNoKanal;
+	int iSumberData,iNoPort,iNoKanal,iTipeData;
 	double dTemp;
 	//Pastikan belum ada id_titik
 	if(id_titik)
@@ -668,6 +797,13 @@ void dlg_edit_titik::TambahData()
 	uNamaTitik=this->entry_nama_titik->get_text();
 	uKodeTitik=this->entry_kode_titik->get_text();
 	uSatuan=this->entry_satuan->get_text();
+
+	if(this->radio_ukur->get_active())
+		iTipeData=0;
+	else if (this->radio_hitung->get_active())
+		iTipeData=1;
+	else 
+		iTipeData=0;
 	
 	//Ambil data informasi sumber data
 	//ID Sumber data
@@ -737,8 +873,10 @@ void dlg_edit_titik::TambahData()
 				"INSERT INTO titik_ukur (id_equipment,id_group_titik_ukur,nama_titik,kode_titik,satuan,sumber_data,no_port,no_kanal,kalibrasi_a,kalibrasi_b)");
 	sprintf(sTemp,"%s VALUES('%d','%d','%s','%s','%s','%d','%d','%d','%0.2f','%0.2f')",sTemp,id_equipment,id_group,
 				uNamaTitik.c_str(),uKodeTitik.c_str(),uSatuan.c_str(),iSumberData,iNoPort,iNoKanal,kalibrasi_a_baru,kalibrasi_b_baru);
+
 	//sprintf(sTemp,"%s WHERE id_titik='%d'",sTemp,id_titik);
 	printf(" |--* Query: %s\n",sTemp);
+	
 	if(MYQ.init_lengkap())
 	{
 		printf("|--|--* Tambah titik ukur ke Database...");

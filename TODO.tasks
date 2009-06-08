@@ -308,6 +308,11 @@ atau bahkan dibuat per 10 menit atau 15 menit. </comment>
       <comment>Dibenerin
 </comment>
     </item>
+    <item>
+      <attribute id="1243413709" priority="1" done="0" start_date="733554" enddate="733554" notify="0" endtime="-60" last_edited="1243413709"/>
+      <summary>Tambahi enter di edit sumber data</summary>
+      <comment/>
+    </item>
   </category>
   <category title="Jaringan/LAN/Socket" place="3">
     <item>
@@ -396,6 +401,12 @@ kurang lebih 3328.812698413 byte/siklus. sekitar 3kilobyte? wah apa ya?</comment
 	- Tambahkan di struk konfigurasi 
 	- Buat update dan simpannya
 	- Tes</comment>
+    </item>
+    <item>
+      <attribute id="1243414030" priority="1" done="0" start_date="733554" enddate="733554" notify="0" endtime="-60" last_edited="1243414030"/>
+      <summary>Tambahi SFC</summary>
+      <comment>Buat parameter chususon
+</comment>
     </item>
   </category>
 </gtodo>

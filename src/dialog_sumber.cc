@@ -6,6 +6,7 @@
 // This file is for your program, I won't touch it again!
 
 #include "config.h"
+
 #include "dialog_sumber.hh"
 
 dialog_sumber::dialog_sumber()

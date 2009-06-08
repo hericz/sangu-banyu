@@ -20,7 +20,7 @@
 #include "dlg_report.hh"
 
 #define MAX_DB_CONNECT 10
-#define JUMLAH_THREAD 20		//Jumlah thread maksimum
+#define JUMLAH_THREAD 25		//Jumlah thread maksimum
 
 //FUNGSI
 //void *f_timer(void *data);
@@ -374,11 +374,18 @@ main_window::main_window()
 	
 	
 	spin_tanggal->set_value(itanggal);
-	spin_bulan->set_value(ibulan);
 	spin_tahun->set_value(itahun);
+
+	printf(" |-- bulan: %d\n",ibulan);	
 	
-	Glib::ustring usTemp;
-	char asTemp[512];
+	double dtemp1,dtemp2;
+	spin_bulan->get_range(dtemp1,dtemp2);
+	printf(" |-- spin bulan range: %f - %f\n",dtemp1,dtemp2);
+	spin_bulan->set_value(ibulan);
+	printf(" |-- spin_bulan=%d\n",spin_bulan->get_value_as_int());
+	
+	Glib::ustring usTemp;	
+	char asTemp[512];		
 	
 	sprintf(asTemp,"<b>%d-%s-%d\n%d:%d:%d</b>",itanggal,bulan[ibulan-1].c_str(),itahun,ijam,imenit,idetik);
 	usTemp.assign(asTemp);
@@ -515,6 +522,8 @@ main_window::main_window()
 	//Curve
 	//curve1->set_curve_type();
 	//curve1->
+
+	
 	
 	time_counter=0;
 	telah_error=false;
@@ -524,7 +533,8 @@ main_window::main_window()
 	 
 	//m_connection_id_timeout = Glib::signal_timeout().connect(sigc::mem_fun(*this,
     //          &main_window::on_timeout_2),2000 );
-	
+	maximize();
+
 	
 	buffer_counter=0;
 	for(int i=0;i<BUFFER_DELAY;i++)
@@ -1200,7 +1210,6 @@ bool main_window::on_timeout()
 
 				dialog.run();
 			}
-				
 		}
 		
 		if(MYQ.isConnected)
@@ -2863,6 +2872,7 @@ int main_window::UpdateListView (int level,int id)
 	sprintf(cwaktu,"%04d%02d%02d",spin_tahun->get_value_as_int(),
 							spin_bulan->get_value_as_int(),
 							spin_tanggal->get_value_as_int());
+	
 	printf("Update List View(astanggal=%s)\n",cwaktu);
 	asTanggal=cwaktu;
 	
@@ -2958,6 +2968,7 @@ int main_window::UpdateListView (int level,int id)
 			dialog.set_secondary_text("Data yang lebih lama dari 7 hari di simpan \ndalam database yang lebih besar \nsehingga memerlukan waktu pembacaan yang lebh lama");
 			
 			int result=dialog.run();
+			
 			switch(result)
 			{
 				case(Gtk::RESPONSE_OK):

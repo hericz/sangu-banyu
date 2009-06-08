@@ -666,7 +666,7 @@
 					      <property name="update_policy">GTK_UPDATE_IF_VALID</property>
 					      <property name="snap_to_ticks">False</property>
 					      <property name="wrap">False</property>
-					      <property name="adjustment">1 1 31 1 10 10</property>
+					      <property name="adjustment">1 1 31 1 1 1</property>
 					    </widget>
 					    <packing>
 					      <property name="padding">0</property>
@@ -686,7 +686,7 @@
 					      <property name="update_policy">GTK_UPDATE_IF_VALID</property>
 					      <property name="snap_to_ticks">False</property>
 					      <property name="wrap">False</property>
-					      <property name="adjustment">1 1 12 1 10 10</property>
+					      <property name="adjustment">1 1 12 1 1 1</property>
 					    </widget>
 					    <packing>
 					      <property name="padding">0</property>
@@ -706,7 +706,7 @@
 					      <property name="update_policy">GTK_UPDATE_IF_VALID</property>
 					      <property name="snap_to_ticks">False</property>
 					      <property name="wrap">False</property>
-					      <property name="adjustment">2007 2007 2020 1 10 10</property>
+					      <property name="adjustment">2007 2007 2020 1 1 1</property>
 					    </widget>
 					    <packing>
 					      <property name="padding">0</property>

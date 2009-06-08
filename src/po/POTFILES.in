@@ -1,4 +1,4 @@
 # List of source files containing translatable strings.
-.//dlg_edit_sumber.cc
-.//dlg_edit_sumber_glade.cc
-.//dlg_edit_sumber.cc
+.//dl_edit_titik.cc
+.//dlg_edit_titik_glade.cc
+.//dlg_edit_titik.cc
