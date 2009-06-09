@@ -1,0 +1,42 @@
+Tue May  5 10:55:17 EIT 2009
+Jalankan Cron
+/home/herry/Monita/src
+Script Selesai
+Tue May  5 10:56:02 EIT 2009
+Jalankan Cron
+/home/herry/Monita/src
+Script Selesai
+Tue May  5 15:35:26 EIT 2009
+Jalankan Cron
+Tue May  5 15:35:28 EIT 2009
+Jalankan Cron
+Tue May  5 15:57:24 EIT 2009
+Jalankan Cron
+/home/herry/Monita/src
+Script Selesai
+Tue May  5 15:57:37 EIT 2009
+Jalankan Cron
+/home/herry/Monita/src
+Script Selesai
+Tue May  5 15:58:10 EIT 2009
+Jalankan Cron
+/home/herry/Monita/src
+Script Selesai
+Tue May  5 15:59:20 EIT 2009
+Jalankan Cron
+Tue May  5 15:59:33 EIT 2009
+Jalankan Cron
+Tue May  5 15:59:45 EIT 2009
+Jalankan Cron
+Tue May  5 16:00:03 EIT 2009
+Jalankan Cron
+Tue May  5 16:00:20 EIT 2009
+Jalankan Cron
+Tue May  5 16:10:39 EIT 2009
+Jalankan Cron
+Tue May  5 16:10:57 EIT 2009
+Jalankan Cron
+Tue May  5 16:11:07 EIT 2009
+Jalankan Cron
+Tue May  5 16:11:19 EIT 2009
+Jalankan Cron

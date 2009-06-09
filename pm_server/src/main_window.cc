@@ -165,36 +165,43 @@ void *thread_server(void *arg)
 					  	
 				//sprintf(ctemp,"|-- Data masuk: %s\n",data.c_str());
 				//ustemp=Glib::ustring::compose("|-- Data masuk: %s\n",data.c_str());
-				sprintf(ctemp,"|-- Data masuk: %s\n",data.c_str());
+				sprintf(ctemp,"|-- Data masuk: %s",data.c_str());
 				printlog (ctemp,0);
-					
-				if(!strncmp(data.c_str(),"stack_01",8))
-					no_pm=1;
-				else if(!strncmp(data.c_str(),"stack_02",8))
-					no_pm=2;
-				else if(!strncmp(data.c_str(),"stack_03",8))
-					no_pm=3;
-				else if(!strncmp(data.c_str(),"stack_04",8))
-					no_pm=4;
-				else if(!strncmp(data.c_str(),"stack_05",8))
-					no_pm=5;
-				//Yang baru yang bawah
-				else if(!strncmp(data.c_str(),"sampurasun1",11))
-					no_pm=1;
-				else if(!strncmp(data.c_str(),"sampurasun2",11))
-					no_pm=2;
-				else if(!strncmp(data.c_str(),"sampurasun3",11))
-					no_pm=3;
-				else if(!strncmp(data.c_str(),"sampurasun4",11))
-					no_pm=4;
-				else if(!strncmp(data.c_str(),"sampurasun5",11))
-					no_pm=5;
-				else
-					no_pm=0;
-						
-				printf("|-- Nomer rekues: %d\n",no_pm);
-				sprintf(ctemp,"|-- Nomer rekues: %d",no_pm);
-				printlog (ctemp,0);
+
+				try
+				{
+					if(!strncmp(data.c_str(),"stack_01",8))
+						no_pm=1;
+					else if(!strncmp(data.c_str(),"stack_02",8))
+						no_pm=2;
+					else if(!strncmp(data.c_str(),"stack_03",8))
+						no_pm=3;
+					else if(!strncmp(data.c_str(),"stack_04",8))
+						no_pm=4;
+					else if(!strncmp(data.c_str(),"stack_05",8))
+						no_pm=5;
+					//Yang baru yang bawah
+					else if(!strncmp(data.c_str(),"sampurasun1",11))
+						no_pm=1;
+					else if(!strncmp(data.c_str(),"sampurasun2",11))
+						no_pm=2;
+					else if(!strncmp(data.c_str(),"sampurasun3",11))
+						no_pm=3;
+					else if(!strncmp(data.c_str(),"sampurasun4",11))
+						no_pm=4;
+					else if(!strncmp(data.c_str(),"sampurasun5",11))
+						no_pm=5;
+					else
+						no_pm=0;
+				}
+				catch(...)
+				{
+					printlog("ERROR saat parsing input Data masuk",0);
+				}
+				//printf("|-- Nomer rekues: %d\n",no_pm);
+				//sprintf(ctemp,"|-- Nomer rekues: %d",no_pm);
+				//printlog (ctemp,0);
+				//printf("|-- Nomer rekues: %d\n",no_pm);	
 				//DATA ASLI	
 				
 				if(data_asli)
@@ -208,9 +215,9 @@ void *thread_server(void *arg)
 						kontrol_PM[no_pm].alamat = no_pm;
 						//printlog ("4",0);
 						pm_eth.alamat = kontrol_PM[no_pm].alamat;
-						printlog ("5",0);
+						//printlog ("5",0);
 						strcpy(pm_eth.mon, "monita1");
-						printlog ("6",0);
+						//printlog ("6",0);
 					}
 					catch(...)
 					{
@@ -246,8 +253,8 @@ void *thread_server(void *arg)
 				server_counter++;
 				  
 				//printf(".");
-				if(server_counter%50==0)
-					printf("|-- server_counter: %d\n",server_counter);
+				//if(server_counter%50==0)
+				//	printf("|-- server_counter: %d\n",server_counter);
 				//if(server_counter>1100)
 				//  	server_counter=0;
 				}
@@ -256,8 +263,6 @@ void *thread_server(void *arg)
 			{
 				//printf("ERROR: %s\n",e.description().c_str());
 			}
-			
-
 		}
 	}  
 	catch ( SocketException& e )

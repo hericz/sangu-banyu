@@ -1,0 +1,25 @@
+
+[Anjuta]
+Maximized=1
+Geometry=1280x728+0+25
+
+[File Loader]
+Files=file:///home/herry/Monita/src/main_window.cc#1216%%%file:///home/herry/Monita/src/dlg_edit_titik.cc#220%%%file:///home/herry/Monita/src/common.cc#162%%%file:///home/herry/Monita/src/common.hh#27%%%file:///home/herry/Monita/src/main_window.hh#212
+
+[Document Manager]
+bookmarks=<?xml version="1.0" encoding="UTF-8"?>\n<bookmarks/>\n
+
+[Execution]
+Program uri=file:///home/herry/Monita/src/monitaapp
+Run in terminal=2
+
+[Build]
+Configuration list=1:Default:%%%1:Debug:Debug%%%1:Profiling:Profiling%%%1:Optimized:Optimized
+Selected Configuration=Default
+BuildArgs/Debug='CFLAGS=-g -O0' 'CXXFLAGS=-g -O0' 'JFLAGS=-g -O0' 'FFLAGS=-g -O0'
+BuildArgs/Profiling='CFLAGS=-g -pg' 'CXXFLAGS=-g -pg' 'JFLAGS=-g -pg' 'FFLAGS=-g -pg'
+BuildArgs/Optimized='CFLAGS=-O2' 'CXXFLAGS=-O2' 'JFLAGS=-O2' 'FFLAGS=-O2'
+
+[Debugger]
+Breakpoint=1:file:///home/herry/Monita/src/main_window.cc:554:0:%%%1:file:///home/herry/Monita/src/main_window.cc:617:0:%%%1:file:///home/herry/Monita/src/main_window.cc:685:0:%%%1:file:///home/herry/Monita/src/main_window.cc:849:0:%%%1:file:///home/herry/Monita/src/main_window.cc:2863:0:%%%1:file:///home/herry/Monita/src/main_window.cc:2866:0:%%%1:file:///home/herry/Monita/src/main_window.cc:378:0:
+Stop at beginning=2
